@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="matrix">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LOGAN SOLAMAN — The Store Architect</title>
+<meta name="description" content="Logan Solaman — Shopify architecture specialist. Ten years engineering storefronts that compound: design, development, SEO, growth systems. Hong Kong." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=VT323&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23050505'/><text x='50' y='70' font-size='58' text-anchor='middle' fill='%2333FF00' font-family='monospace'>L_</text></svg>" />
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- analog layers -->
+<div class="grain" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="vhs-tracking" aria-hidden="true"></div>
+
+<!-- matrix rain -->
+<canvas id="matrix" aria-hidden="true"></canvas>
+
+<!-- CRT grid overlay (toggle with G) -->
+<div class="crt-grid" id="crtGrid" aria-hidden="true"></div>
+
+<!-- status bar -->
+<div class="statusbar" aria-hidden="true">
+  <span class="statusbar__item statusbar__rec"><span class="statusbar__dot"></span>REC</span>
+  <span class="statusbar__item" id="clock">00:00:00</span>
+  <span class="statusbar__item statusbar__hide-sm">SIG: STRONG</span>
+  <span class="statusbar__item">THEME: <span id="themeName">MATRIX</span></span>
+  <button class="statusbar__item statusbar__lang" id="langSwitch" type="button" aria-label="Switch language">LANG: <span id="langName">EN</span></button>
+  <span class="statusbar__item statusbar__hide-sm">TAPE 07 OF 12</span>
+  <span class="statusbar__item statusbar__keys">PRESS ? FOR COMMANDS</span>
+</div>
+
+<!-- boot overlay -->
+<div class="boot" id="boot">
+  <pre class="boot__log" id="bootLog"></pre>
+  <p class="boot__skip">[ SPACE ] skip boot</p>
+</div>
+
+<!-- help overlay -->
+<div class="overlay" id="helpOverlay" hidden>
+  <div class="overlay__panel glass" role="dialog" aria-label="Keyboard commands">    <button class="overlay__close" id="helpClose" aria-label="Close help">×</button>
+    <h2 class="overlay__title">KEYBOARD PROTOCOL</h2>
+    <ul class="overlay__list">
+      <li><kbd>1</kbd>–<kbd>6</kbd> jump to section</li>
+      <li><kbd>/</kbd> open command line</li>
+      <li><kbd>[</kbd> <kbd>]</kbd> cycle color theme</li>
+      <li><kbd>G</kbd> toggle CRT grid</li>
+      <li><kbd>T</kbd> glitch the title</li>
+      <li><kbd>M</kbd> toggle matrix rain</li>
+      <li><kbd>ESC</kbd> close / clear</li>
+      <li>type <code>help</code> in the terminal for commands</li>
+      <li class="overlay__secret">↑ ↑ ↓ ↓ ← → ← → B A … someone left this here</li>
+    </ul>
+  </div>
+</div>
+
+<!-- language picker overlay -->
+<div class="overlay langmodal" id="langModal" hidden>
+  <div class="crt__bezel langmodal__bezel">
+    <div class="crt__screen langmodal__screen" role="dialog" aria-label="Choose language">
+      <button class="overlay__close" id="langClose" aria-label="Close language picker">×</button>
+      <p class="langmodal__sysline">system://locale — SELECT DISPLAY LANGUAGE</p>
+      <h2 class="overlay__title">LANGUAGE</h2>
+      <div class="langmodal__grid" id="langGrid" role="listbox" aria-label="Available languages"></div>
+      <p class="langmodal__hint" data-i18n="langmodal.hint">auto-detects your browser language until you pick one · <kbd>L</kbd> cycles</p>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ 01 HERO / TERMINAL ============ -->
+<section class="hero" id="home">
+  <div class="hero__monitor crt">
+    <div class="crt__bezel">
+      <div class="crt__screen">
+        <p class="hero__sysline" id="sysline">guest@logansolaman ~ % whoami</p>
+
+        <h1 class="hero__name glitch" id="heroName" data-text="LOGAN SOLAMAN">LOGAN SOLAMAN</h1>
+        <p class="hero__role"><span class="hero__role-prefix">//</span> <span id="typewriter">THE STORE ARCHITECT</span><span class="cursor" aria-hidden="true"></span></p>
+
+        <pre class="hero__ascii" aria-hidden="true">
+ ┌─[ STOREFRONT ]──[ GROWTH ]──[ SYSTEMS ]─┐
+ │  design → build → optimize → compound   │
+ └────────────── EST. 2016 ─────────────────┘</pre>
+
+        <div class="hero__stats">
+          <div class="hero__stat"><strong data-count="10">0</strong><span data-i18n="hero.stat1">YRS ENGINEERING</span></div>
+          <div class="hero__stat"><strong data-count="15">0</strong><span data-i18n="hero.stat2">STOREFRONTS BUILT</span></div>
+          <div class="hero__stat"><strong data-count="50">0</strong><span data-i18n="hero.stat3">FREE MERCHANT TOOLS</span></div>
+        </div>
+
+        <div class="hero__prompt">
+          <span class="hero__prompt-sign">logan@solaman:~$</span>
+          <input id="cmd" class="hero__cmd" type="text" autocomplete="off" spellcheck="false" data-i18n-attr="aria-label:hero.cmd_aria;placeholder:hero.cmd_ph" aria-label="Command line — type help for commands" placeholder="type a command…" />
+        </div>
+        <p class="hero__hint" id="cmdHint" aria-live="polite">hint: type <kbd>help</kbd> to list commands · <kbd>Tab</kbd> autocompletes</p>
+        <div class="hero__out" id="cmdOut" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span data-i18n="hero.scroll">SCROLL TO DECRYPT</span>
+    <span class="hero__scroll-arrow">▼</span>
+  </div>
+</section>
+
+<!-- ============ 02 MANIFESTO ============ -->
+<section class="section" id="about">
+  <div class="section__frame glass">
+    <p class="section__index" data-i18n="about.index">FILE 02 / MANIFESTO</p>
+    <h2 class="section__title" data-reveal><span data-i18n="about.title_a">Stores don't grow by accident.</span><br /><span class="accent" data-i18n="about.title_b">They grow by architecture.</span></h2>
+    <div class="section__cols">
+      <p data-reveal data-i18n="about.p1" data-i18n-html>For ten years I've done both jobs that usually fight each other: <strong>the operator chasing revenue</strong> and <strong>the engineer chasing clean systems</strong>. That tension is the whole craft — a storefront is not a website, it's a machine that turns attention into orders, and every part either compounds or leaks.</p>
+      <p data-reveal data-i18n="about.p2" data-i18n-html>I build Shopify systems the way an architect builds load-bearing walls: theme engineering that survives updates, apps that earn their keep, SEO wired into the structure instead of painted on, and growth loops measured in weeks, not vibes. If it can't be measured, it doesn't ship.</p>
+      <p data-reveal data-i18n="about.p3" data-i18n-html>Based in Hong Kong. Working globally. The mission is simple: <strong>give small brands the infrastructure of big ones</strong> — which is why my entire merchant toolset is free.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 SERVICES ============ -->
+<section class="section" id="services">
+  <p class="section__index section__index--bare" data-i18n="services.index">FILE 03 / SYSTEM MODULES</p>
+  <h2 class="section__title section__title--bare" data-reveal><span data-i18n="services.title_a">Five modules.</span><br /><span data-i18n="services.title_b">One compounding machine.</span></h2>
+
+  <div class="modules">
+    <article class="module glass" data-reveal>
+      <span class="module__num">M1</span>
+      <h3 class="module__name" data-i18n="m1.name">STOREFRONT ENGINEERING</h3>
+      <p class="module__body" data-i18n="m1.body">Full Shopify builds from blank repo to launch day. Custom architecture tuned to your brand and your traffic — not a theme with a logo.</p>
+      <ul class="module__tags"><li>Headless-ready</li><li>90+ PageSpeed</li></ul>
+    </article>
+    <article class="module glass" data-reveal>
+      <span class="module__num">M2</span>
+      <h3 class="module__name" data-i18n="m2.name">THEME CUSTOMIZATION</h3>
+      <p class="module__body" data-i18n="m2.body">Off-the-shelf themes are starting points, not destinations. Deep Liquid/JS customization that keeps upgrade paths clean.</p>
+      <ul class="module__tags"><li>Liquid</li><li>Design systems</li></ul>
+    </article>
+    <article class="module glass" data-reveal>
+      <span class="module__num">M3</span>
+      <h3 class="module__name" data-i18n="m3.name">APP DEVELOPMENT</h3>
+      <p class="module__body" data-i18n="m3.body">When no app exists, I build the one your store needs — private apps, checkout extensions, integrations that earn their monthly cost.</p>
+      <ul class="module__tags"><li>Private apps</li><li>APIs</li></ul>
+    </article>
+    <article class="module glass" data-reveal>
+      <span class="module__num">M4</span>
+      <h3 class="module__name" data-i18n="m4.name">SEO &amp; VELOCITY</h3>
+      <p class="module__body" data-i18n="m4.body">Technical SEO built into the structure: Core Web Vitals, schema, international routing. Rank because the machine deserves to.</p>
+      <ul class="module__tags"><li>CWV</li><li>Schema</li><li>i18n</li></ul>
+    </article>
+    <article class="module glass" data-reveal>
+      <span class="module__num">M5</span>
+      <h3 class="module__name" data-i18n="m5.name">GROWTH OPERATIONS</h3>
+      <p class="module__body" data-i18n="m5.body">Conversion systems after launch: CRO, analytics, A/B discipline, retention flows. The store is never finished — it's tuned.</p>
+      <ul class="module__tags"><li>CRO</li><li>Retention</li></ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 04 CASES: FULL MISSION ARCHIVE ============ -->
+<section class="section" id="cases">
+  <p class="section__index section__index--bare" data-i18n="cases.index">FILE 04 / MISSION ARCHIVE — ALL 17</p>
+  <h2 class="section__title section__title--bare" data-reveal><span data-i18n="cases.title_a">Seventeen systems.</span><br /><span data-i18n="cases.title_b">All built by hand. All on Shopify.</span></h2>
+
+  <div class="archive-filters" role="toolbar" aria-label="Filter missions" data-reveal>
+    <button class="afilter is-active" data-f="all">ALL [17]</button>
+    <button class="afilter" data-f="outdoor">OUTDOOR</button>
+    <button class="afilter" data-f="luxury">LUXURY</button>
+    <button class="afilter" data-f="cellar">WINE &amp; CELLAR</button>
+    <button class="afilter" data-f="retail">RETAIL &amp; CURATION</button>
+    <button class="afilter" data-f="art">ART &amp; CULTURE</button>
+    <button class="afilter" data-f="service">SERVICE &amp; EDU</button>
+    <button class="afilter" data-f="infra">INFRA</button>
+    <button class="afilter afilter--status" data-f="building">◐ IN PRODUCTION</button>
+  </div>
+
+  <div class="archive" id="archive">
+
+    <article class="acard glass" data-cat="outdoor" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 01 · OUTDOOR</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case1.name">ALPAKA GEAR HK</h3>
+      <p class="acard__copy" data-i18n="case1.copy">Premium everyday-carry for people who notice details. Built the HK flagship for the full sling-and-backpack line — durability specs, comfort claims, and a checkout that converts commuters into carriers.</p>
+      <a class="acard__link" href="https://alpakagear.hk" target="_blank" rel="noopener">alpakagear.hk ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="art" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 02 · ART</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case16.name">CHI WAI STUDIO</h3>
+      <p class="acard__copy" data-i18n="case16.copy">A Hong Kong artist's digital gallery, built to let the work lead: a quiet, image-first archive for paintings, exhibitions, and a lifetime of making.</p>
+      <a class="acard__link" href="https://chiwaistudio.com/" target="_blank" rel="noopener">chiwaistudio.com ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="outdoor" data-status="building" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 03 · OUTDOOR</span><span class="acard__status acard__status--building">◐ BUILDING</span></div>
+      <h3 class="acard__name" data-i18n="case4.name">DOD CAMP HK</h3>
+      <p class="acard__copy" data-i18n="case4.copy">Japan's “StayCrazy” camp culture — gear with the playfulness of a kid and the spec sheet of an adult. Currently constructing the Hong Kong system for the brand's first push into the market.</p>
+      <span class="acard__link acard__link--dim">dod.camp · HK launch in progress</span>
+    </article>
+
+    <article class="acard glass" data-cat="retail" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 04 · AUDIO</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case14.name">FONOCO AUDIO</h3>
+      <p class="acard__copy" data-i18n="case14.copy">Sound hardware for a multi-region audience. Built the global storefront with multi-currency routing across TW, CA and US — one catalog, three markets, no friction at checkout.</p>
+      <a class="acard__link" href="https://fonocoaudio.com" target="_blank" rel="noopener">fonocoaudio.com ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="luxury" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 05 · LUXURY</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case6.name">HELIUM WATCHES</h3>
+      <p class="acard__copy" data-i18n="case6.copy">Professional sports watches for land, sea &amp; air. Built the global flagship — product theatre for limited editions, multi-currency checkout, multilingual routing. The brand reads premium in every market it ships to.</p>
+      <a class="acard__link" href="https://www.heliumwatches.com" target="_blank" rel="noopener">heliumwatches.com ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="infra" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 06 · INFRA</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case15.name">HKU PRESS — POS</h3>
+      <p class="acard__copy" data-i18n="case15.copy">Not a storefront — the brain behind one. A custom point-of-sale system for the university press, syncing counter sales with inventory and keeping the shelves honest at checkout speed.</p>
+      <span class="acard__link acard__link--dim">custom POS system · internal</span>
+    </article>
+
+    <article class="acard glass" data-cat="service" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 07 · SERVICE</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case13.name">INFINITY LEARNING</h3>
+      <p class="acard__copy" data-i18n="case13.copy">Australian private tuition and master maths classes — commerce infrastructure for an education brand. One-to-one and small-group bookings flow from a storefront that reassures parents in one scroll.</p>
+      <a class="acard__link" href="https://infinitylearning.au" target="_blank" rel="noopener">infinitylearning.au ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="retail" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 08 · RETAIL</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case10.name">INHERE</h3>
+      <p class="acard__copy" data-i18n="case10.copy">Minimal fashion, maximal logistics. Engineered the online-to-offline system: memberships, payments, delivery — one inventory brain for physical racks and digital carts, sharp on every screen.</p>
+      <a class="acard__link" href="https://inherehk.com" target="_blank" rel="noopener">inherehk.com ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="outdoor" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 09 · OUTDOOR</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case3.name">KAVU HK</h3>
+      <p class="acard__copy" data-i18n="case3.copy">Seattle outdoor soul, born 1993, shipped with “happy living” stitched in. Localized the full apparel line for HK without losing the brand's grin — playful tone, serious commerce underneath.</p>
+      <a class="acard__link" href="https://kavu.hk" target="_blank" rel="noopener">kavu.hk ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="art" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 10 · ART</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case8.name">KB FINE ART GALLERY</h3>
+      <p class="acard__copy" data-i18n="case8.copy">The white-wall gallery, rebuilt for the browser. A clean, museum-grade storefront where the works are the loudest thing on the page — and collecting becomes a two-step decision.</p>
+      <a class="acard__link" href="https://kbfineart.com" target="_blank" rel="noopener">kbfineart.com ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="service" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 11 · SERVICE</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case17.name">MASTER PEST HK</h3>
+      <p class="acard__copy" data-i18n="case17.copy">Professional pest control for Hong Kong homes and businesses. Built a clear service system that turns urgent problems into confident bookings, with education that earns trust before the call.</p>
+      <a class="acard__link" href="https://masterpesthk.com/" target="_blank" rel="noopener">masterpesthk.com ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="luxury" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 12 · LUXURY</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case7.name">NATACHA VAN</h3>
+      <p class="acard__copy" data-i18n="case7.copy">Luxury ready-to-wear &amp; couture — Cambodian craftsmanship, romantic-rebellious elegance, worn in the pages of Vogue, Elle and Marie Claire. The store carries that couture weight and still loads fast.</p>
+      <a class="acard__link" href="https://www.natachavan.com" target="_blank" rel="noopener">natachavan.com ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="retail" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 13 · RETAIL</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case11.name">PRODUCTPRO 百得好</h3>
+      <p class="acard__copy" data-i18n="case11.copy">Gadgets, smart wallets, backpacks, electronics — a thousand SKUs that needed one coherent machine. Catalog restructure, logistics wired, technical SEO turned into a steady organic intake.</p>
+      <a class="acard__link" href="https://www.productpro.com.hk" target="_blank" rel="noopener">productpro.com.hk ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="outdoor" data-status="building" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 14 · OUTDOOR</span><span class="acard__status acard__status--building">◐ BUILDING</span></div>
+      <h3 class="acard__name" data-i18n="case5.name">RAB EQUIPMENT HK</h3>
+      <p class="acard__copy" data-i18n="case5.copy">British mountain engineering — down, shells, and protection built for altitude. Wiring the HK storefront so alpine-grade technical kit gets a commerce system worthy of its fabric.</p>
+      <span class="acard__link acard__link--dim">HK build in progress</span>
+    </article>
+
+    <article class="acard glass" data-cat="outdoor" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 15 · OUTDOOR</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case2.name">SUUNTO HK</h3>
+      <p class="acard__copy" data-i18n="case2.copy">Finnish precision instruments for the toughest conditions — sports watches, dive computers, compasses. Engineered the official Hong Kong storefront to the same standard the brand builds hardware to.</p>
+      <a class="acard__link" href="https://suunto.com.hk" target="_blank" rel="noopener">suunto.com.hk ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="retail" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 16 · RETAIL</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case12.name">TOPICKSTORE</h3>
+      <p class="acard__copy" data-i18n="case12.copy">The global brand pick-up shop — proxy-buying across US, UK, Japan and Korea with a 100% authentic guarantee. Built the trust machinery: sourcing, shipping tiers, and a storefront that sells certainty.</p>
+      <a class="acard__link" href="https://topickstorehk.com" target="_blank" rel="noopener">topickstorehk.com ▸</a>
+    </article>
+
+    <article class="acard glass" data-cat="cellar" data-status="live" data-reveal>
+      <div class="acard__bar"><span class="acard__tape">TAPE 17 · WINE &amp; CELLAR</span><span class="acard__status acard__status--live">● LIVE</span></div>
+      <h3 class="acard__name" data-i18n="case9.name">TWO MORE GLASSES</h3>
+      <p class="acard__copy" data-i18n="case9.copy">Bordeaux, Burgundy, Champagne and rare vintages — a catalog deep enough to drown in, so I architected region-by-region navigation instead. Four locales, one cellar, zero overwhelm.</p>
+      <a class="acard__link" href="https://www.twomoreglasses.com" target="_blank" rel="noopener">twomoreglasses.com ▸</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ 05 TOOLS ============ -->
+<section class="section" id="tools">
+  <div class="section__frame glass">
+    <p class="section__index" data-i18n="tools.index">FILE 05 / OPEN ARMORY</p>
+    <h2 class="section__title" data-reveal><span data-i18n="tools.title_a">50 free tools.</span><br /><span class="accent" data-i18n="tools.title_b">Small brands deserve big infrastructure.</span></h2>
+    <p class="section__lede" data-reveal data-i18n="tools.lede">The merchant toolset I use daily, opened to everyone — no account, no upsell. A few from the rack:</p>
+    <div class="tools" data-reveal>
+      <span class="tool">product_scraper</span>
+      <span class="tool">pdf-ocr</span>
+      <span class="tool">invoice_gen</span>
+      <span class="tool">qrcode_gen</span>
+      <span class="tool">seo_auditor</span>
+      <span class="tool">meta_writer</span>
+      <span class="tool">sku_mapper</span>
+      <span class="tool">alt_text_forge</span>
+      <span class="tool" data-i18n="tools.more">…42 more</span>
+    </div>
+    <p class="section__lede section__lede--small" data-reveal>→ <a class="lnk" href="tools/">ENTER THE ARMORY — all 50, fully functional</a>, or type <code>tools</code> in the terminal.</p>
+  </div>
+</section>
+
+<!-- ============ 06 PROCESS ============ -->
+<section class="section" id="process">
+  <p class="section__index section__index--bare" data-i18n="process.index">FILE 06 / PROTOCOL</p>
+  <h2 class="section__title section__title--bare" data-reveal data-i18n="process.title">Three steps. No mystery.</h2>
+  <ol class="protocol">
+    <li class="protocol__step glass" data-reveal>
+      <span class="protocol__num">01</span>
+      <h3 data-i18n="proc1.t">DECRYPT</h3>
+      <p data-i18n="proc1.b">A free consult. I listen for the real constraint — it's rarely the one you think it is.</p>
+    </li>
+    <li class="protocol__step glass" data-reveal>
+      <span class="protocol__num">02</span>
+      <h3 data-i18n="proc2.t">BLUEPRINT</h3>
+      <p data-i18n="proc2.b">A custom plan with scope, stack, and numbers. You see the machine before we build it.</p>
+    </li>
+    <li class="protocol__step glass" data-reveal>
+      <span class="protocol__num">03</span>
+      <h3 data-i18n="proc3.t">LAUNCH &amp; TUNE</h3>
+      <p data-i18n="proc3.b">We ship, then we iterate. The system starts compounding from day one of traffic.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ 07 CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="section__frame section__frame--terminal glass">
+    <p class="section__index" data-i18n="contact.index">FILE 07 / OPEN CHANNEL</p>
+    <h2 class="section__title" data-reveal><span data-i18n="contact.title_a">The consultation is free.</span><br /><span class="accent" data-i18n="contact.title_b">The insight isn't cheap.</span></h2>
+    <p class="section__lede" data-reveal data-i18n="contact.lede">Tell me about the store — or the store you haven't built yet. One reply, usually within a day.</p>
+
+    <form class="contact glass" id="contactForm" data-reveal>
+      <label class="contact__label" for="f-name" data-i18n="contact.f_name">NAME</label>
+      <input class="contact__input" id="f-name" type="text" autocomplete="name" placeholder="Ada Lovelace" />
+      <label class="contact__label" for="f-mail" data-i18n="contact.f_mail">EMAIL</label>
+      <input class="contact__input" id="f-mail" type="email" autocomplete="email" placeholder="ada@analytical.engine" required />
+      <label class="contact__label" for="f-msg" data-i18n="contact.f_msg">TRANSMISSION</label>
+      <textarea class="contact__input contact__textarea" id="f-msg" rows="4" placeholder="My store does X. I want Y. The problem is Z."></textarea>
+      <button class="btn" type="submit" data-magnet data-i18n="contact.submit">TRANSMIT ▸</button>
+      <p class="contact__fine" data-i18n="contact.fine">HK based · replies worldwide · usually within a day</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__row">
+    <span class="footer__logo">LOGAN SOLAMAN<span class="accent">_</span></span>
+    <span class="footer__tag" data-i18n="footer.tag">THE STORE ARCHITECT — EST. 2016</span>
+  </div>
+  <div class="footer__row footer__row--meta">
+    <span data-i18n="footer.copy">© 2026 · ALL SIGNALS RESERVED</span>
+    <span class="footer__langs">50 FREE TOOLS · <a class="lnk" href="tools/">ARMORY</a> · <a class="lnk" href="dashboard/">DASHBOARD</a></span>
+    <span data-i18n="footer.sys">SYSTEM: ONLINE</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

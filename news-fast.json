@@ -1,0 +1,23 @@
+[
+  { "category": "World News", "name": "Reuters Top News", "url": "https://feeds.reuters.com/reuters/topNews", "high": true },
+  { "category": "World News", "name": "BBC World", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "high": true },
+  { "category": "World News", "name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "high": true },
+  { "category": "World News", "name": "DW News", "url": "https://rss.dw.com/rdf/rss-en-top", "high": true },
+  { "category": "World News", "name": "France 24", "url": "https://www.france24.com/en/rss", "high": true },
+  { "category": "World News", "name": "CNN Top Stories", "url": "http://rss.cnn.com/rss/cnn_topstories.rss", "high": true },
+  { "category": "World News", "name": "NHK World", "url": "https://www3.nhk.or.jp/rss/news/world.xml", "high": true },
+  { "category": "Business", "name": "Bloomberg Markets", "url": "https://feeds.bloomberg.com/markets/news", "high": true },
+  { "category": "Business", "name": "MarketWatch Top", "url": "https://feeds.marketwatch.com/marketwatch/topstories/", "high": true },
+  { "category": "Business", "name": "CNBC Top News", "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html", "high": true },
+  { "category": "Business", "name": "The Economist", "url": "https://www.economist.com/feed", "high": true },
+  { "category": "Business", "name": "FT", "url": "https://www.ft.com/rss/home", "high": true },
+  { "category": "Technology", "name": "The Verge", "url": "https://www.theverge.com/rss/index.xml", "high": true },
+  { "category": "Technology", "name": "TechCrunch", "url": "https://techcrunch.com/feed/", "high": true },
+  { "category": "Technology", "name": "WIRED", "url": "https://www.wired.com/feed/rss", "high": true },
+  { "category": "Technology", "name": "Ars Technica", "url": "https://arstechnica.com/feed", "high": true },
+  { "category": "Technology", "name": "MIT Tech Review", "url": "https://www.technologyreview.com/feed", "high": true },
+  { "category": "World News", "name": "SCMP", "url": "https://www.scmp.com/rss/91/feed", "high": true },
+  { "category": "World News", "name": "Democracy Now", "url": "https://www.democracynow.org/feed", "high": true },
+  { "category": "World News", "name": "Vox World", "url": "https://www.vox.com/rss/world-politics/index.xml", "high": true },
+  { "category": "Business", "name": "Barron's", "url": "https://www.barrons.com/feed", "high": true }
+]

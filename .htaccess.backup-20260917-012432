@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(?:www\.)?sunfar\.com\.hk$ [NC]
+RewriteRule ^(.*)$ https://google.com [R=301,L]
+
+# Route the dashboard API to the self-hosted Node worker on localhost:4173.
+# Static site files continue to be served directly by Apache.
+RewriteRule ^api/(.*)$ http://127.0.0.1:4173/api/$1 [P,L]
+
+# Redirect common error codes to homepage
+ErrorDocument 400 https://logansolaman.com
+ErrorDocument 401 https://logansolaman.com
+ErrorDocument 403 https://logansolaman.com
+ErrorDocument 404 https://logansolaman.com
+ErrorDocument 500 https://logansolaman.com

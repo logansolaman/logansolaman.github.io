@@ -1,0 +1,1107 @@
+[
+  {
+    "category": "World News",
+    "name": "Al Jazeera RSS Feed",
+    "url": "https://www.aljazeera.com/xml/rss/all.xml"
+  },
+  {
+    "category": "World News",
+    "name": "BBC World RSS Feed",
+    "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+  },
+  {
+    "category": "World News",
+    "name": "CNN RSS Feed",
+    "url": "http://rss.cnn.com/rss/cnn_topstories.rss"
+  },
+  {
+    "category": "World News",
+    "name": "Democracy Now! RSS Feed",
+    "url": "https://www.democracynow.org/feed"
+  },
+  {
+    "category": "World News",
+    "name": "DW News RSS Feed",
+    "url": "https://rss.dw.com/rdf/rss-en-top"
+  },
+  {
+    "category": "World News",
+    "name": "France 24 RSS Feed",
+    "url": "https://www.france24.com/en/rss"
+  },
+  {
+    "category": "World News",
+    "name": "NHK World RSS Feed",
+    "url": "https://www3.nhk.or.jp/rss/news/world.xml"
+  },
+  {
+    "category": "World News",
+    "name": "Nikkei Asia RSS Feed",
+    "url": "https://asia.nikkei.com/rss"
+  },
+  {
+    "category": "World News",
+    "name": "ProPublica RSS Feed",
+    "url": "https://www.propublica.org/feeds/propublica/main"
+  },
+  {
+    "category": "World News",
+    "name": "Reuters",
+    "url": "https://feeds.reuters.com/reuters/topNews"
+  },
+  {
+    "category": "World News",
+    "name": "Reuters RSS Feed",
+    "url": "http://feeds.reuters.com/reuters/topNews"
+  },
+  {
+    "category": "World News",
+    "name": "SCMP RSS Feed",
+    "url": "https://www.scmp.com/rss/91/feed"
+  },
+  {
+    "category": "World News",
+    "name": "Vox » World RSS Feed",
+    "url": "https://www.vox.com/rss/world-politics/index.xml"
+  },
+  {
+    "category": "Business",
+    "name": "Bloomberg RSS Feed",
+    "url": "https://feeds.bloomberg.com/markets/news"
+  },
+  {
+    "category": "Business",
+    "name": "CNBC Top News RSS Feed",
+    "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+  },
+  {
+    "category": "Business",
+    "name": "Financial Times RSS Feed",
+    "url": "https://www.ft.com/rss/home"
+  },
+  {
+    "category": "Business",
+    "name": "MarketWatch RSS Feed",
+    "url": "https://feeds.marketwatch.com/marketwatch/topstories/"
+  },
+  {
+    "category": "Business",
+    "name": "The Economist RSS Feed",
+    "url": "https://www.economist.com/feed"
+  },
+  {
+    "category": "Markets",
+    "name": "Barron's",
+    "url": "https://www.barrons.com/feed"
+  },
+  {
+    "category": "Markets",
+    "name": "MarketWatch Real-time",
+    "url": "https://feeds.marketwatch.com/marketwatch/realtimemostread/"
+  },
+  {
+    "category": "Technology",
+    "name": "Ars Technica RSS Feed",
+    "url": "https://arstechnica.com/feed"
+  },
+  {
+    "category": "Technology",
+    "name": "MIT Technology Review RSS Feed",
+    "url": "https://www.technologyreview.com/feed"
+  },
+  {
+    "category": "Technology",
+    "name": "Rest of World RSS Feed",
+    "url": "https://restofworld.org/feed/latest/"
+  },
+  {
+    "category": "Technology",
+    "name": "TechCrunch RSS Feed",
+    "url": "https://techcrunch.com/feed/"
+  },
+  {
+    "category": "Technology",
+    "name": "The Verge RSS Feed",
+    "url": "https://www.theverge.com/rss/index.xml"
+  },
+  {
+    "category": "Technology",
+    "name": "WIRED RSS Feed",
+    "url": "https://www.wired.com/feed/rss"
+  },
+  {
+    "category": "Climate",
+    "name": "Carbon Brief RSS Feed",
+    "url": "https://www.carbonbrief.org/feed/"
+  },
+  {
+    "category": "Climate",
+    "name": "DeSmog RSS Feed",
+    "url": "https://www.desmog.com/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "5 Things To Do Today",
+    "url": "https://5thingstodotoday.com/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "A Lady in London",
+    "url": "https://www.aladyinlondon.com/feed"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "A Luxury Travel Blog",
+    "url": "https://www.aluxurytravelblog.com/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "Age UK",
+    "url": "https://www.ageuk.org.uk/discover/rss/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "Alan Malcher",
+    "url": "https://alanmalcher.com/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "British Beauty Blogger",
+    "url": "https://britishbeautyblogger.com/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "Chique Home Living",
+    "url": "https://chiquehomeliving.com/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "ClubWise Blog",
+    "url": "https://www.clubwise.com/clubwise-blog/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "England, Naturally",
+    "url": "https://englandnaturally.com/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "GitBreeze Blog",
+    "url": "https://gitbreeze.dev/feed"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "Guido Fawkes",
+    "url": "https://feeds.feedburner.com/guidofawkes"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "LifeStyleLinked.com",
+    "url": "https://lifestylelinked.com/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "London Review of Books Blog",
+    "url": "https://www.lrb.co.uk/blog/feed"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "Love My Dress Blog",
+    "url": "https://www.lovemydress.net/feed"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "MANIC MUM LIFE…….",
+    "url": "https://www.manic-mumdays.co.uk/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "Office Breaks",
+    "url": "http://office-breaks.com/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "Really Ree",
+    "url": "https://reallyree.com/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "Rock n Roll Bride",
+    "url": "https://feeds2.feedburner.com/rocknrollbride/index"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "Snippet Finance",
+    "url": "https://snippet.finance/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "The Curry Guy",
+    "url": "https://greatcurryrecipes.net/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "The New Statesman",
+    "url": "https://www.newstatesman.com/feed"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "The Stratfordian",
+    "url": "https://thestratfordian.co.uk/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "Training Express Blog",
+    "url": "https://trainingexpress.org.uk/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "UK Constitutional Law Association Blog",
+    "url": "https://ukconstitutionallaw.org/blog/feed/"
+  },
+  {
+    "category": "United Kingdom",
+    "name": "We Are Social UK Blog",
+    "url": "http://wearesocial.com/uk/feed/"
+  },
+  {
+    "category": "India",
+    "name": "Accent Software, Inc Blog",
+    "url": "https://www.accenterp.com/feed/"
+  },
+  {
+    "category": "India",
+    "name": "All Perfect Stories",
+    "url": "https://www.allperfectstories.com/feed/"
+  },
+  {
+    "category": "India",
+    "name": "Flickside",
+    "url": "https://flickside.com/feed/"
+  },
+  {
+    "category": "India",
+    "name": "Formula Group Blog",
+    "url": "https://www.formulaindia.com/blog/index.php/feed"
+  },
+  {
+    "category": "India",
+    "name": "Hensley Legal Group Blog",
+    "url": "https://hensleylegal.com/feed/"
+  },
+  {
+    "category": "India",
+    "name": "Indy Homes Blog",
+    "url": "http://feeds.sierrainteractive.com/rss.ashx/12/685"
+  },
+  {
+    "category": "India",
+    "name": "Indy's Child Magazine",
+    "url": "https://indyschild.com/feed/"
+  },
+  {
+    "category": "India",
+    "name": "Jambudveep's Blog",
+    "url": "https://jambudveep.wordpress.com/feed/"
+  },
+  {
+    "category": "India",
+    "name": "Music Aloud",
+    "url": "https://www.musicaloud.com/feed/"
+  },
+  {
+    "category": "India",
+    "name": "My foodarama",
+    "url": "https://www.reshmaseetharam.com/feeds/posts/default"
+  },
+  {
+    "category": "India",
+    "name": "Namaste UI",
+    "url": "https://www.namasteui.com/feed/"
+  },
+  {
+    "category": "India",
+    "name": "Njkinny's Blog",
+    "url": "https://www.njkinnysblog.com/feed/"
+  },
+  {
+    "category": "India",
+    "name": "Oh My Dog! Blog",
+    "url": "https://ohmydogblog.com/feed/"
+  },
+  {
+    "category": "India",
+    "name": "Philately",
+    "url": "http://philateli.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "category": "India",
+    "name": "Reachivy Blog",
+    "url": "https://www.reachivy.com/blog/feed"
+  },
+  {
+    "category": "India",
+    "name": "Search Darjeeling",
+    "url": "https://www.searchdarjeeling.com/feeds/posts/default"
+  },
+  {
+    "category": "India",
+    "name": "Social Beat Blog",
+    "url": "https://www.socialbeat.in/feed/"
+  },
+  {
+    "category": "India",
+    "name": "TechMediaToday",
+    "url": "https://www.techmediatoday.com/feed/"
+  },
+  {
+    "category": "India",
+    "name": "The Arbitration Workshop",
+    "url": "https://www.thearbitrationworkshop.com/blog-feed.xml"
+  },
+  {
+    "category": "India",
+    "name": "Think With Niche",
+    "url": "https://www.thinkwithniche.com/feed-rss.xml"
+  },
+  {
+    "category": "India",
+    "name": "Two Twenty One",
+    "url": "https://www.twotwentyone.net/feed/"
+  },
+  {
+    "category": "India",
+    "name": "VarnaChitra",
+    "url": "https://www.varnachitra.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "category": "India",
+    "name": "WISH-TV",
+    "url": "https://www.wishtv.com/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "AVO Magazine One click closer to Japan",
+    "url": "https://avo-magazine.com/nl/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "BFF Tokyo | Your Best Friend in Tokyo",
+    "url": "https://bfftokyo.com/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "Boutique Japan | Japan Travel Blog",
+    "url": "https://boutiquejapan.com/blog/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "Carused.jp Blog",
+    "url": "https://carused.jp/blog/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "Find Japan Blog",
+    "url": "https://findjapan.superdelivery.com/feed"
+  },
+  {
+    "category": "Japan",
+    "name": "Food Diversity",
+    "url": "https://fooddiversity.today/en/feed"
+  },
+  {
+    "category": "Japan",
+    "name": "Get Hiroshima",
+    "url": "https://gethiroshima.com/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "Go! Go! Nihon Blog",
+    "url": "https://gogonihon.com/en/blog/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "JAPAN Forward",
+    "url": "https://japan-forward.com/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "Japan Luggage Express Blog",
+    "url": "https://www.jluggage.com/blog/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "Japan Nakama",
+    "url": "https://www.japannakama.co.uk/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "Japan Today",
+    "url": "https://japantoday.com/feed/atom"
+  },
+  {
+    "category": "Japan",
+    "name": "Japan Wonder Travel Blog",
+    "url": "https://blog.japanwondertravel.com/feed"
+  },
+  {
+    "category": "Japan",
+    "name": "Jobs in Japan Blog",
+    "url": "https://jobsinjapan.com/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "JPCERT/CC",
+    "url": "https://blogs.jpcert.or.jp/en/atom.xml"
+  },
+  {
+    "category": "Japan",
+    "name": "Linger in the East",
+    "url": "https://rinosseros.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "category": "Japan",
+    "name": "Live Japan",
+    "url": "https://livejapan.com/rss/article_latest_en.xml"
+  },
+  {
+    "category": "Japan",
+    "name": "Mirai no Mori | Empowering marginalized youth in the outdoors",
+    "url": "https://mirai-no-mori.jp/blogs/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "Modern Tokyo Times",
+    "url": "https://moderntokyotimes.com/feed/atom/"
+  },
+  {
+    "category": "Japan",
+    "name": "Sake Industry News",
+    "url": "https://sakeindustrynews.substack.com/feed"
+  },
+  {
+    "category": "Japan",
+    "name": "Tamai Diary",
+    "url": "https://tamai.net/feed"
+  },
+  {
+    "category": "Japan",
+    "name": "The Japan Times",
+    "url": "https://www.japantimes.co.jp/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "Tiny Tot In Tokyo",
+    "url": "https://tinytotintokyo.com/feed"
+  },
+  {
+    "category": "Japan",
+    "name": "Unseen Japan",
+    "url": "https://unseen-japan.com/feed/"
+  },
+  {
+    "category": "Japan",
+    "name": "WESCO JAPAN STAFF BLOG",
+    "url": "https://wescojapan.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "category": "Germany",
+    "name": "Alexandra Lapp » Beauty",
+    "url": "https://www.alexandralapp.com/beauty/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "Andreas Fertig Blog",
+    "url": "https://andreasfertig.com/feed.xml"
+  },
+  {
+    "category": "Germany",
+    "name": "Bake to the roots",
+    "url": "https://baketotheroots.de/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "Christina Key Blog » Damen Outfits",
+    "url": "https://www.christinakey.com/blog/damen-outfits/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "Depot Student Blog",
+    "url": "https://depotstudent.de/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "DIE ZEIT » Hamburg",
+    "url": "https://newsfeed.zeit.de/hamburg/index"
+  },
+  {
+    "category": "Germany",
+    "name": "DimensionAlley Blog",
+    "url": "https://dimensionalley.com/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "Düsseldorf Congress News",
+    "url": "https://www.duesseldorfcongress.de/news/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "FusionReactor Blog",
+    "url": "https://fusion-reactor.com/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "i Heart Berlin",
+    "url": "https://www.iheartberlin.de/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "IoT Analytics Blog",
+    "url": "https://iot-analytics.com/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "Kunstblog-Mannheim.de",
+    "url": "http://www.kunstblog-mannheim.de/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "La Cuisine de Géraldine",
+    "url": "https://lacuisinedegeraldine.fr/en/feed"
+  },
+  {
+    "category": "Germany",
+    "name": "Love Decorations",
+    "url": "https://lovedecorations.de/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "Me Made Mittwoch",
+    "url": "https://memademittwoch.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "category": "Germany",
+    "name": "pi3g.com Blog",
+    "url": "https://pi3g.com/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "Production Music Live Blog",
+    "url": "https://www.productionmusiclive.com/blogs/news.atom"
+  },
+  {
+    "category": "Germany",
+    "name": "Seitan Is My Motor",
+    "url": "https://www.seitanismymotor.com/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "The BIccountant",
+    "url": "https://www.thebiccountant.com/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "The Local Germany",
+    "url": "https://feeds.thelocal.com/rss/builder/de"
+  },
+  {
+    "category": "Germany",
+    "name": "TruckOnline Blog",
+    "url": "https://truckonline.de/blog/feed/"
+  },
+  {
+    "category": "Germany",
+    "name": "Vinyl-keks",
+    "url": "https://vinyl-keks.eu/feed/"
+  },
+  {
+    "category": "France",
+    "name": "A French Life",
+    "url": "https://judicastille.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "A Taste of France",
+    "url": "https://www.a-taste-of-france.com/france.xml"
+  },
+  {
+    "category": "France",
+    "name": "Bonjour Paris",
+    "url": "https://bonjourparis.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "France Today",
+    "url": "https://francetoday.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "FranceSays",
+    "url": "https://francesays.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "FRENCH A L.A CARTE USA ®",
+    "url": "https://frenchalacarteblog.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "French Country Cottage Blog",
+    "url": "https://www.frenchcountrycottage.net/feed/"
+  },
+  {
+    "category": "France",
+    "name": "HiP Paris",
+    "url": "https://hipparis.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "Le Francophile",
+    "url": "https://lefrancophile.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "Life on La Lune",
+    "url": "https://lifeonlalune.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "Live-French Blog",
+    "url": "https://live-french.net/blog/feed/"
+  },
+  {
+    "category": "France",
+    "name": "MY FRENCH COUNTRY HOME",
+    "url": "http://sharonsantoni.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "Oui In France",
+    "url": "https://www.ouiinfrance.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "Paris Missives... - 'The reluctant Francophile...'",
+    "url": "https://parismissives.blogspot.com/feeds/posts/default"
+  },
+  {
+    "category": "France",
+    "name": "Paris Perfect Blog",
+    "url": "https://www.parisperfect.com/blog/feed/"
+  },
+  {
+    "category": "France",
+    "name": "Rosbif Blog",
+    "url": "https://rosbifblog.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "Secrets of Paris",
+    "url": "https://secretsofparis.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "SIG & Territories",
+    "url": "https://www.sigterritoires.fr/index.php/feed/"
+  },
+  {
+    "category": "France",
+    "name": "Snippets of Paris",
+    "url": "https://snippetsofparis.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "Tech N Play",
+    "url": "https://technplay.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "The French Life",
+    "url": "http://www.thefrenchlife.org/feed/"
+  },
+  {
+    "category": "France",
+    "name": "The Good Life France",
+    "url": "https://thegoodlifefrance.com/feed/"
+  },
+  {
+    "category": "France",
+    "name": "The Provence Post",
+    "url": "http://theprovencepost.blogspot.com/feeds/posts/default"
+  },
+  {
+    "category": "France",
+    "name": "The Rendez-vous of La Francophonie",
+    "url": "https://rvf.ca/nouvelles/feed/"
+  },
+  {
+    "category": "France",
+    "name": "Yapaslefeuaulac",
+    "url": "https://www.yapaslefeuaulac.ch/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Bank of Canada Museum Blog",
+    "url": "https://www.bankofcanadamuseum.ca/feed/?content_type=blog&post_type%5B0%5D=post"
+  },
+  {
+    "category": "Canada",
+    "name": "Bellissimo Law Group PC | Canadian Immigration Blog",
+    "url": "https://www.bellissimolawgroup.com/news/canadian-immigration-blog/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Birds Canada",
+    "url": "https://www.birdscanada.org/feed"
+  },
+  {
+    "category": "Canada",
+    "name": "BookNet Canada Blog",
+    "url": "https://www.booknetcanada.ca/blog?format=RSS"
+  },
+  {
+    "category": "Canada",
+    "name": "Breakthrough T1D Blog",
+    "url": "https://breakthrought1d.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Canadian Chamber of Commerce Blog",
+    "url": "https://chamber.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Canadian Immigrant",
+    "url": "https://canadianimmigrant.ca/feed"
+  },
+  {
+    "category": "Canada",
+    "name": "Canadian Mining Magazine",
+    "url": "http://canadianminingmagazine.com/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "CAPRA Blog",
+    "url": "https://capra.ca/en/blog/?comaction=rss"
+  },
+  {
+    "category": "Canada",
+    "name": "CIC News",
+    "url": "https://www.cicnews.com/feed"
+  },
+  {
+    "category": "Canada",
+    "name": "Generation1.ca",
+    "url": "https://generation1.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Immigration Canada",
+    "url": "https://immigration.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "IMPACT Magazine",
+    "url": "https://impactmagazine.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "iPhone in Canada",
+    "url": "https://www.iphoneincanada.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Law Bytes",
+    "url": "https://www.michaelgeist.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Liberal Party of Canada Blog",
+    "url": "https://liberal.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Re New Canada Magazine",
+    "url": "https://www.renewcanada.net/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Remax Blog",
+    "url": "https://blog.remax.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Restaurants Canada",
+    "url": "https://menumag.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Snowboard Canada Magazine",
+    "url": "https://snowboardcanada.com/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "The Maple",
+    "url": "https://www.readthemaple.com/rss/"
+  },
+  {
+    "category": "Canada",
+    "name": "Tow Canada Magazine",
+    "url": "https://www.towcanada.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Triathlon Magazine Canada",
+    "url": "https://triathlonmagazine.ca/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "Wings Magazine",
+    "url": "https://www.wingsmagazine.com/feed/"
+  },
+  {
+    "category": "Canada",
+    "name": "WWF News",
+    "url": "https://wwf.ca/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "AA Xpose Media",
+    "url": "https://aaxpose.com/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "Adoni Media Blog",
+    "url": "https://www.adonimedia.com.au/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "Airtasker Blog",
+    "url": "https://www.airtasker.com/blog/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "Arielle Executive",
+    "url": "https://arielle.com.au/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "Australian Manufacturing News",
+    "url": "https://australianmanufacturingnews.com/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "Brisbane Times",
+    "url": "https://www.brisbanetimes.com.au/rss/feed.xml"
+  },
+  {
+    "category": "Australia",
+    "name": "Destination Perth Blog",
+    "url": "https://www.destinationperth.com.au/blog/rss/"
+  },
+  {
+    "category": "Australia",
+    "name": "Getting Down Under Blog",
+    "url": "https://gettingdownunder.com/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "Go Study Australia Blog",
+    "url": "https://www.gostudy.com.au/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "Greenpeace",
+    "url": "https://www.greenpeace.org.au/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "Implant Media Blog",
+    "url": "https://www.implant.com.au/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "Lorraine Elliott Not Quite Nigella",
+    "url": "https://feeds.feedburner.com/NotQuiteNigella"
+  },
+  {
+    "category": "Australia",
+    "name": "Meyer West IP Pty Ltd Blog",
+    "url": "https://www.meyerwestip.com.au/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "Ponderings Magazine",
+    "url": "https://ponderings.com.au/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "Roland Australia Blog",
+    "url": "https://rolandcorp.com.au/blog/feed"
+  },
+  {
+    "category": "Australia",
+    "name": "RSL Tanunda Sub-Branch",
+    "url": "https://www.rsltanunda.org/feeds/posts/default"
+  },
+  {
+    "category": "Australia",
+    "name": "RUSSH Magazine",
+    "url": "https://www.russh.com/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "SCBWI Australia East",
+    "url": "https://scbwiaustraliaeast.com/our-blog?format=rss"
+  },
+  {
+    "category": "Australia",
+    "name": "Sydney Morning Herald",
+    "url": "https://www.smh.com.au/rss/feed.xml"
+  },
+  {
+    "category": "Australia",
+    "name": "The Shovel",
+    "url": "https://theshovel.com.au/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "The Sidesmith",
+    "url": "https://thesidesmith.com/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "THE WORLD LOVES MELBOURNE",
+    "url": "https://theworldlovesmelbourne.com/?format=feed&type=rss"
+  },
+  {
+    "category": "Australia",
+    "name": "Time Travel Turtle By Michael Turtle",
+    "url": "https://feeds.feedburner.com/TimeTravelTurtle"
+  },
+  {
+    "category": "Australia",
+    "name": "TV Blackbox",
+    "url": "https://tvblackbox.com.au/feed/"
+  },
+  {
+    "category": "Australia",
+    "name": "TV Tonight",
+    "url": "https://tvtonight.com.au/feed"
+  },
+  {
+    "category": "Russia",
+    "name": "56th Parallel Blog",
+    "url": "https://www.56thparallel.com/blog/feed/"
+  },
+  {
+    "category": "Russia",
+    "name": "Art Of Watercolor",
+    "url": "https://sterkhovart.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "category": "Russia",
+    "name": "Bonfire of the Vanities",
+    "url": "https://frmartinfox.blogspot.com/feeds/posts/default?alt=rss"
+  },
+  {
+    "category": "Russia",
+    "name": "Chita.Ru",
+    "url": "https://www.chita.ru/rss-feeds/rss.xml"
+  },
+  {
+    "category": "Russia",
+    "name": "Cosmos Chronicle » Latin America",
+    "url": "https://cosmoschronicle.com/category/latin-america/feed/"
+  },
+  {
+    "category": "Russia",
+    "name": "DGMA News",
+    "url": "https://dgma.io/feed/"
+  },
+  {
+    "category": "Russia",
+    "name": "InstaForex Blog",
+    "url": "https://www.instaforex.com/blog/feed"
+  },
+  {
+    "category": "Russia",
+    "name": "iPhone.ru",
+    "url": "https://www.iphones.ru/feed"
+  },
+  {
+    "category": "Russia",
+    "name": "LEDinside News",
+    "url": "https://www.ledinside.com/news/feed"
+  },
+  {
+    "category": "Russia",
+    "name": "Max Korzh Blog",
+    "url": "https://maxkorzh.com/feed/"
+  },
+  {
+    "category": "Russia",
+    "name": "Natalia Telezhinskaya Blog",
+    "url": "https://natalya-telezhinskaya.ru/feed/"
+  },
+  {
+    "category": "Russia",
+    "name": "O.L.G.A. Fertility Blog",
+    "url": "https://olgafertilityclinic.com/en/feed/"
+  },
+  {
+    "category": "Russia",
+    "name": "Orthodox Christianity",
+    "url": "https://orthochristian.com/xml/rss.xml"
+  },
+  {
+    "category": "Russia",
+    "name": "Russia Travel Blog » History",
+    "url": "https://feeds.feedburner.com/russiatrekblog"
+  },
+  {
+    "category": "Russia",
+    "name": "Russian Military Analysis - A blog on the Russian military",
+    "url": "https://russianmilitaryanalysis.wordpress.com/feed/"
+  },
+  {
+    "category": "Russia",
+    "name": "Russian Military Reform",
+    "url": "https://russiamil.wordpress.com/feed/"
+  },
+  {
+    "category": "Russia",
+    "name": "Securelist",
+    "url": "https://securelist.com/feed/"
+  },
+  {
+    "category": "Russia",
+    "name": "Sputnik » World",
+    "url": "https://sputnikglobe.com/export/rss2/archive/index.xml"
+  },
+  {
+    "category": "Russia",
+    "name": "TASS",
+    "url": "https://tass.com/rss/v2.xml?sections=NDg4Mw=="
+  },
+  {
+    "category": "Russia",
+    "name": "The Word's Worth",
+    "url": "https://feeds.simplecast.com/w8vplQvW"
+  },
+  {
+    "category": "Nigeria",
+    "name": "BellaNaija",
+    "url": "https://www.bellanaija.com/feed/"
+  },
+  {
+    "category": "Nigeria",
+    "name": "Linda Ikeji's Blog",
+    "url": "https://www.lindaikejisblog.com/feed"
+  },
+  {
+    "category": "Nigeria",
+    "name": "Ogbonge Blog",
+    "url": "https://feeds.feedburner.com/SecretInfos-Ogbongeblog"
+  }
+]

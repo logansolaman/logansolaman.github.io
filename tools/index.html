@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="matrix">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>THE ARMORY — 50 Free Merchant Tools · Logan Solaman</title>
+<meta name="description" content="50 free browser tools for ecommerce store owners: SEO, pricing, logistics, marketing, analytics. No account, no upload, no upsell." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=VT323&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/tools.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23050505'/><text x='50' y='70' font-size='58' text-anchor='middle' fill='%2333FF00' font-family='monospace'>L_</text></svg>" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+
+<div class="statusbar" aria-hidden="true">
+  <span class="statusbar__item statusbar__rec"><span class="statusbar__dot"></span><span data-i18n="armory.rec">ARMORY</span></span>
+  <span class="statusbar__item" id="clock">00:00:00</span>
+  <span class="statusbar__item statusbar__hide-sm" data-i18n="armory.meta">50 TOOLS · 0 ACCOUNTS · 0 UPLOADS</span>
+  <button class="statusbar__item statusbar__lang" id="langSwitch" type="button" aria-label="Switch language">LANG: <span id="langName">EN</span></button>
+  <span class="statusbar__item statusbar__keys"><a href="../" data-i18n="armory.back">← BACK TO TERMINAL</a></span>
+</div>
+
+<header class="armory-head">
+  <h1 class="armory-title" data-i18n="armory.title">THE ARMORY</h1>
+  <p class="armory-sub" data-i18n="armory.sub">50 free tools for people who run stores. Everything runs in your browser — your data never leaves the machine.</p>
+  <div class="armory-controls">
+    <div class="search">
+      <span class="search__sign">grep</span>
+      <input id="search" type="text" autocomplete="off" spellcheck="false" data-i18n-attr="placeholder:armory.search_ph;aria-label:armory.search_aria" placeholder="filter tools… (press /)" aria-label="Search tools" />
+    </div>
+    <nav class="tabs" id="tabs" aria-label="Tool categories"></nav>
+  </div>
+  <p class="armory-count" id="count" aria-live="polite"></p>
+</header>
+
+<main class="grid" id="grid"></main>
+
+<footer class="armory-foot">
+  <span><span data-i18n="armory.builtby">BUILT BY</span> <a href="../">LOGAN SOLAMAN</a> — <span data-i18n="footer.tag">THE STORE ARCHITECT</span></span>
+  <span data-i18n="armory.foot">NO ACCOUNT · NO UPLOAD · NO UPSELL</span>
+</footer>
+
+<!-- language picker modal -->
+<div class="overlay langmodal" id="langModal" hidden>
+  <div class="crt__bezel langmodal__bezel">
+    <div class="crt__screen langmodal__screen" role="dialog" aria-label="Choose language">
+      <button class="overlay__close" id="langClose" aria-label="Close language picker">×</button>
+      <p class="langmodal__sysline">system://locale — SELECT DISPLAY LANGUAGE</p>
+      <h2 class="overlay__title">LANGUAGE</h2>
+      <div class="langmodal__grid" id="langGrid" role="listbox" aria-label="Available languages"></div>
+    </div>
+  </div>
+</div>
+
+<!-- tool workspace modal -->
+<div class="ws" id="ws" hidden role="dialog" aria-modal="true" aria-label="Tool workspace">  <div class="ws__panel">
+    <div class="ws__head">
+      <div>
+        <h2 class="ws__name" id="wsName"></h2>
+        <p class="ws__desc" id="wsDesc"></p>
+      </div>
+      <button class="ws__close" id="wsClose" aria-label="Close tool">×</button>
+    </div>
+    <div class="ws__body">
+      <form class="ws__fields" id="wsFields"></form>
+      <div class="ws__actions">
+        <button class="btn" id="wsRun" type="button">RUN ▸</button>
+        <button class="btn btn--ghost" id="wsCopy" type="button" hidden>COPY</button>
+        <a class="btn btn--ghost" id="wsDownload" hidden>DOWNLOAD</a>
+      </div>
+      <pre class="ws__out" id="wsOut" aria-live="polite"></pre>
+      <div class="ws__media" id="wsMedia"></div>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="../assets/js/i18n.js"></script>
+<script src="assets/tools-app.js"></script>
+</body>
+</html>

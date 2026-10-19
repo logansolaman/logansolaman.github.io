@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(?:www\.)?sunfar\.com\.hk$ [NC]
+RewriteRule ^(.*)$ https://google.com [R=301,L]
+
+# Route WineLibrary API to Node.js backend on port 3000
+RewriteCond %{HTTP_HOST} ^(?:www\.)?winelibrary\.com\.hk$ [NC]
+RewriteRule ^api/(.*)$ http://127.0.0.1:3000/api/ [P,L]
+
+# Route the dashboard API to the self-hosted Node worker on localhost:4173.
+RewriteRule ^dashboard/api/(.*)$ http://127.0.0.1:4173/api/ [P,L]
+
+# Force no-cache on html files so updates reflect immediately
+<FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</FilesMatch>

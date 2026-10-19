@@ -1,0 +1,973 @@
+{
+  "generatedAt": "2026-09-03T10:41:03.895Z",
+  "geo": {
+    "city": "Ping Shan",
+    "country": "Hong Kong",
+    "countryCode": "HK",
+    "timezone": "Asia/Hong_Kong",
+    "currency": "HKD",
+    "lat": 22.4411,
+    "lon": 114.006,
+    "source": "ip-api.com"
+  },
+  "indices": [
+    {
+      "symbol": "^GSPC",
+      "price": 7666.6,
+      "change": 35.26636,
+      "changePct": 0.46,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788381754,
+      "name": "S&P 500"
+    },
+    {
+      "symbol": "^DJI",
+      "price": 53061.95,
+      "change": 296.6163005,
+      "changePct": 0.559,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788381761,
+      "name": "Dow Jones"
+    },
+    {
+      "symbol": "^IXIC",
+      "price": 26217.828,
+      "change": 118.50458256,
+      "changePct": 0.452,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788383759,
+      "name": "Nasdaq"
+    },
+    {
+      "symbol": "^VIX",
+      "price": 15.42,
+      "change": 0.2232816,
+      "changePct": 1.448,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788431146,
+      "name": "VIX"
+    },
+    {
+      "symbol": "^HSI",
+      "price": 25213.31,
+      "change": -97.57550970000001,
+      "changePct": -0.387,
+      "currency": "HKD",
+      "source": "yahoo",
+      "ts": 1788422922,
+      "name": "Hang Seng"
+    },
+    {
+      "symbol": "000001.SS",
+      "price": 3942.088,
+      "change": 0.70957584,
+      "changePct": 0.018,
+      "currency": "CNY",
+      "source": "yahoo",
+      "ts": 1788418825,
+      "name": "Shanghai"
+    },
+    {
+      "symbol": "^N225",
+      "price": 64214.48,
+      "change": -111.09105039999999,
+      "changePct": -0.173,
+      "currency": "JPY",
+      "source": "yahoo",
+      "ts": 1788417903,
+      "name": "Nikkei 225"
+    },
+    {
+      "symbol": "^KS11",
+      "price": 6579.48,
+      "change": 16.777674,
+      "changePct": 0.255,
+      "currency": "KRW",
+      "source": "yahoo",
+      "ts": 1788426340,
+      "name": "KOSPI"
+    },
+    {
+      "symbol": "^FTSE",
+      "price": 10754.08,
+      "change": -2.3658976,
+      "changePct": -0.022,
+      "currency": "GBP",
+      "source": "yahoo",
+      "ts": 1788431158,
+      "name": "FTSE 100"
+    },
+    {
+      "symbol": "^GDAXI",
+      "price": 25790.85,
+      "change": -48.48679799999999,
+      "changePct": -0.188,
+      "currency": "EUR",
+      "source": "yahoo",
+      "ts": 1788431159,
+      "name": "DAX"
+    }
+  ],
+  "stocks": [
+    {
+      "symbol": "AAPL",
+      "price": 324.96,
+      "change": -0.16897919999999997,
+      "changePct": -0.052,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788379201,
+      "name": "Apple"
+    },
+    {
+      "symbol": "MSFT",
+      "price": 496.82,
+      "change": -4.1633516,
+      "changePct": -0.838,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788379201,
+      "name": "Microsoft"
+    },
+    {
+      "symbol": "NVDA",
+      "price": 224.41,
+      "change": 7.1923405,
+      "changePct": 3.205,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788379200,
+      "name": "NVIDIA"
+    },
+    {
+      "symbol": "GOOGL",
+      "price": 337.12,
+      "change": 2.1137424,
+      "changePct": 0.627,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788379201,
+      "name": "Alphabet"
+    },
+    {
+      "symbol": "AMZN",
+      "price": 254.98,
+      "change": 0.0611952,
+      "changePct": 0.024,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788379201,
+      "name": "Amazon"
+    },
+    {
+      "symbol": "META",
+      "price": 592.85,
+      "change": 14.6611805,
+      "changePct": 2.473,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788379201,
+      "name": "Meta"
+    },
+    {
+      "symbol": "TSLA",
+      "price": 357.01,
+      "change": 0.9210858000000001,
+      "changePct": 0.258,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788379200,
+      "name": "Tesla"
+    },
+    {
+      "symbol": "BTC-USD",
+      "price": 77476.66,
+      "change": 849.1441936000001,
+      "changePct": 1.096,
+      "currency": "USD",
+      "source": "yahoo",
+      "ts": 1788432059,
+      "name": "Bitcoin"
+    }
+  ],
+  "crypto": [
+    {
+      "id": "bitcoin",
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "price": 77495,
+      "changePct24h": 1.331889949243482,
+      "currency": "USD",
+      "source": "coingecko"
+    },
+    {
+      "id": "ethereum",
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "price": 2390.93,
+      "changePct24h": 1.1962445299361124,
+      "currency": "USD",
+      "source": "coingecko"
+    },
+    {
+      "id": "solana",
+      "symbol": "SOL",
+      "name": "Solana",
+      "price": 100.01,
+      "changePct24h": 2.045182534111859,
+      "currency": "USD",
+      "source": "coingecko"
+    },
+    {
+      "id": "binancecoin",
+      "symbol": "BNB",
+      "name": "BNB",
+      "price": 701.17,
+      "changePct24h": 2.789053436344945,
+      "currency": "USD",
+      "source": "coingecko"
+    },
+    {
+      "id": "ripple",
+      "symbol": "XRP",
+      "name": "XRP",
+      "price": 1.36,
+      "changePct24h": 3.2598818287588314,
+      "currency": "USD",
+      "source": "coingecko"
+    },
+    {
+      "id": "cardano",
+      "symbol": "ADA",
+      "name": "Cardano",
+      "price": 0.205817,
+      "changePct24h": 6.633733606544919,
+      "currency": "USD",
+      "source": "coingecko"
+    },
+    {
+      "id": "dogecoin",
+      "symbol": "DOGE",
+      "name": "Dogecoin",
+      "price": 0.082655,
+      "changePct24h": 2.4483780820185572,
+      "currency": "USD",
+      "source": "coingecko"
+    },
+    {
+      "id": "tether",
+      "symbol": "USDT",
+      "name": "Tether",
+      "price": 0.999547,
+      "changePct24h": -0.007200123128025401,
+      "currency": "USD",
+      "source": "coingecko"
+    }
+  ],
+  "fx": [
+    {
+      "quote": "USD",
+      "base": "HKD",
+      "rate": 0.127521,
+      "source": "open.er-api"
+    },
+    {
+      "quote": "EUR",
+      "base": "HKD",
+      "rate": 0.110082,
+      "source": "open.er-api"
+    },
+    {
+      "quote": "GBP",
+      "base": "HKD",
+      "rate": 0.094552,
+      "source": "open.er-api"
+    },
+    {
+      "quote": "JPY",
+      "base": "HKD",
+      "rate": 20.287877,
+      "source": "open.er-api"
+    },
+    {
+      "quote": "CNY",
+      "base": "HKD",
+      "rate": 0.859029,
+      "source": "open.er-api"
+    },
+    {
+      "quote": "HKD",
+      "base": "HKD",
+      "rate": 1,
+      "source": "open.er-api"
+    },
+    {
+      "quote": "SGD",
+      "base": "HKD",
+      "rate": 0.162239,
+      "source": "open.er-api"
+    },
+    {
+      "quote": "KRW",
+      "base": "HKD",
+      "rate": 173.625063,
+      "source": "open.er-api"
+    },
+    {
+      "quote": "AUD",
+      "base": "HKD",
+      "rate": 0.178129,
+      "source": "open.er-api"
+    },
+    {
+      "quote": "CAD",
+      "base": "HKD",
+      "rate": 0.176729,
+      "source": "open.er-api"
+    },
+    {
+      "quote": "CHF",
+      "base": "HKD",
+      "rate": 0.103713,
+      "source": "open.er-api"
+    },
+    {
+      "quote": "INR",
+      "base": "HKD",
+      "rate": 12.109665,
+      "source": "open.er-api"
+    }
+  ],
+  "fxPairs": [
+    {
+      "pair": "GBPUSD=X",
+      "label": "GBP/USD",
+      "from": "GBP",
+      "to": "USD",
+      "price": 1.3485,
+      "changePct": 0.0067,
+      "prevClose": 1.3484,
+      "source": "yahoo"
+    },
+    {
+      "pair": "EURUSD=X",
+      "label": "EUR/USD",
+      "from": "EUR",
+      "to": "USD",
+      "price": 1.1601,
+      "changePct": 0.0812,
+      "prevClose": 1.1592,
+      "source": "yahoo"
+    },
+    {
+      "pair": "USDJPY=X",
+      "label": "USD/JPY",
+      "from": "USD",
+      "to": "JPY",
+      "price": 156.393,
+      "changePct": -1.4313,
+      "prevClose": 158.664,
+      "source": "yahoo"
+    },
+    {
+      "pair": "USDCNY=X",
+      "label": "USD/CNY",
+      "from": "USD",
+      "to": "CNY",
+      "price": 6.709,
+      "changePct": -0.1414,
+      "prevClose": 6.7185,
+      "source": "yahoo"
+    },
+    {
+      "pair": "USDSGD=X",
+      "label": "USD/SGD",
+      "from": "USD",
+      "to": "SGD",
+      "price": 1.2689,
+      "changePct": -0.1204,
+      "prevClose": 1.2705,
+      "source": "yahoo"
+    },
+    {
+      "pair": "USDHKD=X",
+      "label": "USD/HKD",
+      "from": "USD",
+      "to": "HKD",
+      "price": 7.8414,
+      "changePct": -0.0006,
+      "prevClose": 7.8414,
+      "source": "yahoo"
+    },
+    {
+      "pair": "USDKRW=X",
+      "label": "USD/KRW",
+      "from": "USD",
+      "to": "KRW",
+      "price": 1358.58,
+      "changePct": -0.0022,
+      "prevClose": 1358.61,
+      "source": "yahoo"
+    },
+    {
+      "pair": "AUDUSD=X",
+      "label": "AUD/USD",
+      "from": "AUD",
+      "to": "USD",
+      "price": 0.7183,
+      "changePct": 0.1724,
+      "prevClose": 0.7171,
+      "source": "yahoo"
+    },
+    {
+      "pair": "USDCHF=X",
+      "label": "USD/CHF",
+      "from": "USD",
+      "to": "CHF",
+      "price": 0.8098,
+      "changePct": -0.3348,
+      "prevClose": 0.8125,
+      "source": "yahoo"
+    },
+    {
+      "pair": "USDINR=X",
+      "label": "USD/INR",
+      "from": "USD",
+      "to": "INR",
+      "price": 94.475,
+      "changePct": -0.5107,
+      "prevClose": 94.96,
+      "source": "yahoo"
+    },
+    {
+      "pair": "GBPEUR=X",
+      "label": "GBP/EUR",
+      "from": "GBP",
+      "to": "EUR",
+      "price": 1.1622,
+      "changePct": -0.0774,
+      "prevClose": 1.1631,
+      "source": "yahoo"
+    },
+    {
+      "pair": "EURNZD=X",
+      "label": "EUR/NZD",
+      "from": "EUR",
+      "to": "NZD",
+      "price": 1.9787,
+      "changePct": -0.0853,
+      "prevClose": 1.9804,
+      "source": "yahoo"
+    }
+  ],
+  "commodities": [
+    {
+      "symbol": "SI=F",
+      "name": "Silver",
+      "unit": "USD/oz",
+      "price": 66.015,
+      "changePct": 0.843,
+      "currency": "USD",
+      "source": "yahoo"
+    },
+    {
+      "symbol": "CL=F",
+      "name": "WTI Crude",
+      "unit": "USD/bbl",
+      "price": 92.67,
+      "changePct": 1.824,
+      "currency": "USD",
+      "source": "yahoo"
+    },
+    {
+      "symbol": "GC=F",
+      "name": "Gold",
+      "unit": "USD/oz",
+      "price": 4467.5,
+      "changePct": 1.198,
+      "currency": "USD",
+      "source": "yahoo"
+    },
+    {
+      "symbol": "HG=F",
+      "name": "Copper",
+      "unit": "USD/lb",
+      "price": 6.6,
+      "changePct": 0.106,
+      "currency": "USD",
+      "source": "yahoo"
+    },
+    {
+      "symbol": "NG=F",
+      "name": "Nat Gas",
+      "unit": "USD/MMBtu",
+      "price": 2.987,
+      "changePct": 1.049,
+      "currency": "USD",
+      "source": "yahoo"
+    },
+    {
+      "symbol": "ZW=F",
+      "name": "Wheat",
+      "unit": "USc/bu",
+      "price": 744,
+      "changePct": -3.876,
+      "currency": "USX",
+      "source": "yahoo"
+    },
+    {
+      "symbol": "^BCOM",
+      "name": "Bloomberg Comm",
+      "unit": "index",
+      "price": 62.5325,
+      "changePct": -0.2188,
+      "currency": "USD",
+      "source": "yahoo"
+    },
+    {
+      "symbol": "ZC=F",
+      "name": "Corn",
+      "unit": "USc/bu",
+      "price": 530.75,
+      "changePct": -2.346,
+      "currency": "USX",
+      "source": "yahoo"
+    },
+    {
+      "symbol": "ZS=F",
+      "name": "Soybeans",
+      "unit": "USc/bu",
+      "price": 1297.5,
+      "changePct": -0.973,
+      "currency": "USX",
+      "source": "yahoo"
+    }
+  ],
+  "centralBankRates": [
+    {
+      "country": "Australia",
+      "rate": 4.35,
+      "change": 0.25,
+      "effectiveDate": "6 May 2026",
+      "source": "wikipedia"
+    },
+    {
+      "country": "Brazil",
+      "rate": 14,
+      "change": 0.25,
+      "effectiveDate": "5 August 2026",
+      "source": "wikipedia"
+    },
+    {
+      "country": "Canada",
+      "rate": 2.25,
+      "change": 0.25,
+      "effectiveDate": "30 October 2025",
+      "source": "wikipedia"
+    },
+    {
+      "country": "China",
+      "rate": 3,
+      "change": 0.1,
+      "effectiveDate": "20 May 2025",
+      "source": "wikipedia"
+    },
+    {
+      "country": "Eurozone",
+      "rate": 2.4,
+      "change": 0.25,
+      "effectiveDate": "11 June 2026",
+      "source": "wikipedia"
+    },
+    {
+      "country": "Hong Kong",
+      "rate": 4,
+      "change": 0.25,
+      "effectiveDate": "11 December 2025",
+      "source": "wikipedia"
+    },
+    {
+      "country": "India",
+      "rate": 5.25,
+      "change": 0.25,
+      "effectiveDate": "5 December 2025",
+      "source": "wikipedia"
+    },
+    {
+      "country": "Japan",
+      "rate": 1,
+      "change": 0.25,
+      "effectiveDate": "16 June 2026",
+      "source": "wikipedia"
+    },
+    {
+      "country": "New Zealand",
+      "rate": 2.75,
+      "change": 0.25,
+      "effectiveDate": "2 September 2026",
+      "source": "wikipedia"
+    },
+    {
+      "country": "Norway",
+      "rate": 4.25,
+      "change": 0.25,
+      "effectiveDate": "7 May 2026",
+      "source": "wikipedia"
+    },
+    {
+      "country": "Russia",
+      "rate": 14,
+      "change": 0.25,
+      "effectiveDate": "24 July 2026",
+      "source": "wikipedia"
+    },
+    {
+      "country": "South Korea",
+      "rate": 3,
+      "change": 0.25,
+      "effectiveDate": "27 August 2026",
+      "source": "wikipedia"
+    },
+    {
+      "country": "Sweden",
+      "rate": 1.75,
+      "change": 0.25,
+      "effectiveDate": "1 October 2025",
+      "source": "wikipedia"
+    },
+    {
+      "country": "Switzerland",
+      "rate": 0,
+      "change": 0.25,
+      "effectiveDate": "20 June 2025",
+      "source": "wikipedia"
+    },
+    {
+      "country": "United Kingdom",
+      "rate": 3.75,
+      "change": 0.25,
+      "effectiveDate": "18 December 2025",
+      "source": "wikipedia"
+    },
+    {
+      "country": "United States",
+      "rate": 3.75,
+      "change": 0.25,
+      "effectiveDate": "11 December 2025",
+      "source": "wikipedia"
+    }
+  ],
+  "economicIndicators": [
+    {
+      "seriesId": "PAYEMS",
+      "title": "Nonfarm Payrolls",
+      "unit": "K jobs",
+      "freq": "monthly",
+      "value": 158858,
+      "change": -23,
+      "updated": "2026-07-01",
+      "source": "fred"
+    },
+    {
+      "seriesId": "UNRATE",
+      "title": "Unemployment Rate",
+      "unit": "%",
+      "freq": "monthly",
+      "value": 4.1,
+      "change": -0.10000000000000053,
+      "updated": "2026-07-01",
+      "source": "fred"
+    },
+    {
+      "seriesId": "CES0500000003",
+      "title": "Avg Hourly Earnings",
+      "unit": "$",
+      "freq": "monthly",
+      "value": 37.62,
+      "change": 0.01999999999999602,
+      "updated": "2026-07-01",
+      "source": "fred"
+    },
+    {
+      "seriesId": "CPIAUCSL",
+      "title": "CPI (index)",
+      "unit": "",
+      "freq": "monthly",
+      "value": 332.813,
+      "change": 0.24500000000000455,
+      "updated": "2026-07-01",
+      "source": "fred"
+    },
+    {
+      "seriesId": "PPIACO",
+      "title": "PPI (index)",
+      "unit": "",
+      "freq": "monthly",
+      "value": 284.057,
+      "change": -2.22199999999998,
+      "updated": "2026-07-01",
+      "source": "fred"
+    },
+    {
+      "seriesId": "GDP",
+      "title": "GDP (annualized)",
+      "unit": "$B",
+      "freq": "quarterly",
+      "value": 32486.066,
+      "change": 620.3449999999975,
+      "updated": "2026-04-01",
+      "source": "fred"
+    },
+    {
+      "seriesId": "RSXFS",
+      "title": "Retail Sales",
+      "unit": "$M",
+      "freq": "monthly",
+      "value": 660047,
+      "change": -5007,
+      "updated": "2026-07-01",
+      "source": "fred"
+    }
+  ],
+  "weather": {
+    "city": "Fui Sha Wai",
+    "country": "Hong Kong",
+    "tempC": 29,
+    "feelsLikeC": 32,
+    "humidity": 62,
+    "windKph": 20,
+    "description": "Partly cloudy",
+    "source": "wttr.in"
+  },
+  "news": [
+    {
+      "title": "2 dead and multiple people injured — including police officers — in mass shooting at downtown Minneapolis apartment building - CNN",
+      "source": "google news",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9pS2xsUjVGZWV6MG96OWpLM0lBYTVoQ3ZsSGtYOEt4eXRHZXlwUkJqSFRqZVFjc3c5Skx6OW5vaFlSOU56SlRTaFR1UmNDRlk0QmIwd1ZoSUF3MzRGRGwwd2Q3Nkp5TGNTY2ltVi10dV9XVmpGbTY3NS02SQ?oc=5",
+      "publishedAt": "2026-09-02 22:18:42"
+    },
+    {
+      "title": "Chevron to expand in Venezuela, days after the U.S. and Venezuela strike oil deal - NPR",
+      "source": "google news",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBQQTNWTFJjaGNrOXdrSEs5aERCSThCMFNRZmd2S0JMejZaOVdOYXdDeGtQRVpWMjJWcWgyVHU0emlNZlhKd2J6dmh2cUVJV2FBVUZLdGpoQi05cEdIZl9YVzJtM2Z4bTJ1Z3dtMm5PTmxKV2NHR0liakE3RQ?oc=5",
+      "publishedAt": "2026-09-02 14:08:03"
+    },
+    {
+      "title": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany - BBC",
+      "source": "google news",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMYV9ZN2R2OTZjZzlXU19jcGJHRF9qNjRHZHp1ZElzdG5OWVZtWVJxVEhLeHpxbjBTSGJKZnJFWlFwV3N1LUE5WVl1Nmh4NVgyUWFwd0FScGJmdw?oc=5",
+      "publishedAt": "2026-09-03 03:21:24"
+    },
+    {
+      "title": "Iran retaliates after US strikes, defying Trump’s warning it could be hit ‘much harder’ - CNN",
+      "source": "google news",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBzY0VMRVZiZHJWUnM5czgtUlNkTGdCU001M3hVR2NuZVRWdkcxS0ptRklJQjIwdV80XzRSdXc5alR5Y3lpdFNPTFc0OS1NTldSOHlsYzZ4NEVVaHB5aGpzdllheld0N0NuSU95T01MZU5RRjZ3?oc=5",
+      "publishedAt": "2026-09-01 16:50:45"
+    },
+    {
+      "title": "Clancy jurors tell judge they're still deadlocked on fifth day of deliberations - WBUR",
+      "source": "google news",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNa09mN1daa042ZFI0bXFGbWZrQlhsWV83YzFPaGxYLWcwZkllN1ZoTlNoX3Fab1h6ZGQ1NVZybXZuN3RHWU5VRkZEVDVQOS1QNHhpWVF2Y0FtZTc2Ni13NUF1SlZYdllyU0pkQ2NGY25MaldiRGdISUNyQVNwbkpFejRnSVR0TUlBUEpqbFZ2Y3pHR05WZTZBN0FB?oc=5",
+      "publishedAt": "2026-09-02 22:19:20"
+    },
+    {
+      "title": "Symbolic funerals held in Nepal for those feared lost as some missing tourists make contact - AP News",
+      "source": "google news",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUVdRVkJTSmh6dDVnNk1rXzdHaDNSUGE1SU5xVUJkd2JPcjZubGh3Z1JsbHUwSGhPc01mSDhhVGhqbDdlZFFrRkh3VDVKS1hheHJrMW5uRmZCcUZ1eU5hVnlWZWpJUzVBZVRkTzYxRUM3bU5NdEVqWVhpMUtDdU1IX2dJZUdpN3JNLUotVg?oc=5",
+      "publishedAt": "2026-09-03 05:40:00"
+    },
+    {
+      "title": "Apple Maps renames Lake Ontario as ‘Lake America’ for US users after Trump order - The Guardian",
+      "source": "google news",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPV1pMU2x2b2pNQTVaOEdac1h3TTV6dlpLUlIya0RLQy1XaXZjMUxseWpxeFRXdFNqNlU1NmxHa0lEOGdBREZSZEpKT0RWRlY3WHN4RTZHdWRFV1VJLUtCX3F3dTl4TlhvMk9GX2lNU1l0RWJGNUg2NFR5VktpaU5Fakk4QXRJbTVnWms5aUxLdS1zSEZ2emM0Yjd1SQ?oc=5",
+      "publishedAt": "2026-09-02 19:06:00"
+    },
+    {
+      "title": "Venezuela’s Maduro asserts immunity in US court, urges dismissal of charges - Al Jazeera",
+      "source": "google news",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeUZwa2JSV1dfS2Z3Znh3OGo1eEFUdkJFd1hLVGQwQkZfREIwT3k2QU5rLVlmckM0X0Y1VEhDX0NjZGtmMnlObHhCbTdCdlNocDdHSlpad1pFRllVYURzRkhIa3hIMHAydjVxMjRxRWU1Z1lSckFEa0ZwczJNUThzZG03QlZwWXdTV293WUFGTUxSZU5hZXU2bjd3NGQ1ZDBQbDkydVhKcDh6T09lc0l3RS1oMNIBuAFBVV95cUxQX0VSbmw4XzBDU0UxbDFSUXhwUFJ6NGptc1QzcnIwZWFUZDBqQnFaZ3dSc2VvQmxlZkNIU2FNLWFWc3RiQWpEamVkNWdLdjFfcC1XTUpXeEROTGVCdnQtUlZvNldQc2c3X25LWEFYT21EUjlzUmZxWUlfZDU1cXJOMVNhaTFUYlk0MTAzX1g0ekY4cHFYN28zRXJPVVMyLUoyX0FsQlVUbDJHc2IxMWdLeUVHZnZITFFp?oc=5",
+      "publishedAt": "2026-09-03 01:26:33"
+    },
+    {
+      "title": "Trump encouraged Army secretary to stay in job - The Washington Post",
+      "source": "google news",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRWgxRGlNVC1BQUNiS1ZjS3ZPUlV3ZWdGM2FrNUtKbGlCWExpUnhjWUFOUVJiclctU2lRaUJVSXJ5bGVRbDQwZ19LNkFBUDJtRFo5X0FoRS1ZYkZ1by1nUlNLZW9QVlRXbnlmbktqc0JGR1A3djNlSjNsMGxWSjRZc3BkVHJvWFREY2Y4Rm9DSEh3akhjeVlLVkRvN0lwcHJsbWpZ?oc=5",
+      "publishedAt": "2026-09-03 05:33:23"
+    },
+    {
+      "title": "Democrats sink Republican bid to cap Supreme Court at nine justices - Reuters",
+      "source": "google news",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNT1ZPNmVMcEF2RFdQM3BQdXh4TE12YkgtRTZnT0lJWU1uMlN1Q1IzSnlDVzhtQkwzOUdSTExNSWRmTDctTXAxd0FUdGg5cGx2TDVjUEZlY1ZJTWtjVWtNbXFnWVk5Q3FpUTZIa202aUhHdWI5QzVYcTJLWkJPNHFyLXRRWHlOV0UwUDQ3VTItMWxUWmlaRmx3dFJZdGZHbVJuUjJiamN4Vm1zRWV0bXM5dXhHU2FOdGx4WXVUV2JfZzNGUjVnWFJGOQ?oc=5",
+      "publishedAt": "2026-09-02 22:07:59"
+    }
+  ],
+  "macro": [
+    {
+      "seriesId": "DGS10",
+      "title": "US 10Y Yield",
+      "value": 4.79,
+      "unit": "%",
+      "updated": "2026-09-01",
+      "source": "fred"
+    },
+    {
+      "seriesId": "DFF",
+      "title": "Fed Funds",
+      "value": 3.63,
+      "unit": "%",
+      "updated": "2026-09-01",
+      "source": "fred"
+    },
+    {
+      "seriesId": "UNRATE",
+      "title": "Unemployment",
+      "value": 4.1,
+      "unit": "%",
+      "updated": "2026-07-01",
+      "source": "fred"
+    },
+    {
+      "seriesId": "DEXUSEU",
+      "title": "USD/EUR",
+      "value": 1.1598,
+      "unit": "",
+      "updated": "2026-08-28",
+      "source": "fred"
+    }
+  ],
+  "country": {
+    "cc": "HK",
+    "flag": "🇭🇰",
+    "name": "Hong Kong",
+    "capital": "Hong Kong",
+    "population": 7536000,
+    "languages": "Cantonese, English",
+    "gdpPcap": 56983.0663059906,
+    "hdiRank": 4,
+    "inflation": 2.1,
+    "emergency": "999",
+    "currency": "HKD",
+    "source": "countries.json"
+  },
+  "climate": {
+    "sunrise": "2026-09-03T06:07",
+    "sunset": "2026-09-03T18:39",
+    "daylightMinutes": 752,
+    "isDaytime": false,
+    "daylightRemainingMin": 0,
+    "goldenHourStart": "2026-09-03T09:39:00.000Z",
+    "goldenHour": {
+      "isGolden": false,
+      "untilMin": 0
+    },
+    "sunProgress": 1,
+    "uvIndexMax": 6.35,
+    "pm25": 22.7,
+    "pm10": 22.7,
+    "usAqi": 70,
+    "euAqi": 58,
+    "moonPhase": 0.708
+  },
+  "onThisDay": [
+    {
+      "text": "North Korea conducted its sixth and most powerful nuclear test at Punggye-ri, causing a magnitude-6.3 earthquake.",
+      "year": 2017,
+      "source": "wikimedia onthisday"
+    },
+    {
+      "text": "North Korea conducted its sixth and most powerful nuclear test at Punggye-ri, causing a magnitude-6.3 earthquake.",
+      "year": 2017,
+      "source": "wikimedia onthisday"
+    },
+    {
+      "text": "The Troubles: Ulster loyalists resumed a picket outside a Catholic girls' primary school in the Protestant portion of Ardoyne, in Belfast, Northern Ireland.",
+      "year": 2001,
+      "source": "wikimedia onthisday"
+    }
+  ],
+  "quote": {
+    "q": "He who is brave is free.",
+    "a": "Seneca",
+    "source": "curated"
+  },
+  "trends": [
+    {
+      "title": "Wikipedia:Featured pictures",
+      "views": 691871,
+      "rank": 4,
+      "source": "wikipedia top"
+    },
+    {
+      "title": "Killing of the Clancy children",
+      "views": 509600,
+      "rank": 5,
+      "source": "wikipedia top"
+    },
+    {
+      "title": ".xxx",
+      "views": 216260,
+      "rank": 6,
+      "source": "wikipedia top"
+    },
+    {
+      "title": "Toxic (2026 film)",
+      "views": 214459,
+      "rank": 7,
+      "source": "wikipedia top"
+    },
+    {
+      "title": "Deaths in 2026",
+      "views": 143195,
+      "rank": 8,
+      "source": "wikipedia top"
+    },
+    {
+      "title": "Dolly Parton",
+      "views": 132978,
+      "rank": 9,
+      "source": "wikipedia top"
+    },
+    {
+      "title": "Hanuman Ansh",
+      "views": 126374,
+      "rank": 10,
+      "source": "wikipedia top"
+    },
+    {
+      "title": ".xyz",
+      "views": 105025,
+      "rank": 11,
+      "source": "wikipedia top"
+    },
+    {
+      "title": "Murder of Tupac Shakur",
+      "views": 100954,
+      "rank": 12,
+      "source": "wikipedia top"
+    },
+    {
+      "title": "John Ternus",
+      "views": 96174,
+      "rank": 13,
+      "source": "wikipedia top"
+    },
+    {
+      "title": "Spider-Man: Brand New Day",
+      "views": 93433,
+      "rank": 14,
+      "source": "wikipedia top"
+    },
+    {
+      "title": "Neatsville, Kentucky",
+      "views": 89234,
+      "rank": 15,
+      "source": "wikipedia top"
+    }
+  ],
+  "latencyMs": 5813,
+  "errors": []
+}

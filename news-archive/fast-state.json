@@ -1,0 +1,26 @@
+{
+  "day": "2026-09-02",
+  "etags": {
+    "https://www.aljazeera.com/xml/rss/all.xml": "W/\"adacc74278562ae92f12f044f20a9702\"",
+    "https://feeds.marketwatch.com/marketwatch/topstories/": "W/\"2221-489zch/KSB+hW6+YKYSTms/R3C0\"",
+    "https://www.ft.com/rss/home": "W/\"194c-3dy+bR3zoh750AkLSSo4vbegho0\"",
+    "https://www.theverge.com/rss/index.xml": "W/\"883bfd133d2de7a2ae2c7ee168fc7aac\"",
+    "https://techcrunch.com/feed/": "W/\"d4adaae56250fcbfb25975fb8d385161\"",
+    "https://arstechnica.com/feed": "\"2c5c35108ea66e1f57041a06a0f89460\"",
+    "https://www.technologyreview.com/feed": "W/\"31b9a9c60956ddda6abdfb19d467205d\"",
+    "https://www.vox.com/rss/world-politics/index.xml": "W/\"918e76a7ae431ad1e4eb49f12bc8a1f9\"",
+    "https://hongkongfp.com/feed/": "W/\"2ba14deca561551c3ad2c085b7a2e194\""
+  },
+  "modified": {
+    "https://www.aljazeera.com/xml/rss/all.xml": "Wed, 02 Sep 2026 14:15:00 GMT",
+    "http://rss.cnn.com/rss/cnn_topstories.rss": "Thu, 22 Aug 2024 15:19:24 GMT",
+    "https://techcrunch.com/feed/": "Wed, 02 Sep 2026 14:29:22 GMT",
+    "https://arstechnica.com/feed": "Wed, 02 Sep 2026 13:29:03 GMT",
+    "https://www.technologyreview.com/feed": "Fri, 28 Aug 2026 18:22:13 GMT",
+    "https://www.scmp.com/rss/91/feed": "Wed, 02 Sep 2026 14:28:26 GMT",
+    "https://hongkongfp.com/feed/": "Wed, 02 Sep 2026 14:19:06 GMT"
+  },
+  "runs": 2,
+  "lastRun": "2026-09-02T14:29:31.942Z",
+  "country": "HK"
+}
