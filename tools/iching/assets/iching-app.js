@@ -157,8 +157,14 @@
     return bitsToNumber(lower.concat(upper));
   }
 
+  // 錯卦 (inverse): every line's polarity flips, order unchanged.
   function inverseOf(bits) { return bitsToNumber(bits.map((b) => 1 - b)); }
 
+  // 綜卦 (reversed): the figure turned upside down. The ORDER of the six
+  // lines is reversed (初↔上, 二↔五, 三↔四) and each line KEEPS its
+  // polarity. Verified against the classical eight self-opposite
+  // hexagrams: 乾坤坎離頤大過小過中孚 — reversing the order alone
+  // reproduces exactly that set.
   function reversedOf(bits) { return bitsToNumber(bits.slice().reverse()); }
 
   function relatingOf(bits, tosses) {

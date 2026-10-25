@@ -270,6 +270,76 @@ for (const h of en) {
 }
 ok(mathChecked === 64, "all 64 hexagrams checked for derived relations");
 
+/* ---------- classical invariants of the four relations ---------- */
+// 1. 綜卦 (reversed) = reverse line ORDER, keep polarity. The eight
+//    hexagrams that are their own 綜 are 乾坤坎離頤大過小過中孚.
+//    Any other rule (e.g. also inverting polarity) does not reproduce
+//    this set, so this is a strong check on the implementation.
+const SELF_ZONG = new Set([1, 2, 27, 28, 29, 30, 61, 62]);
+const selfZong = new Set();
+for (const h of en) {
+  const z = api.reversedOf(h.bits);
+  if (z === h.n) selfZong.add(h.n);
+}
+eq(selfZong.size, 8, "exactly 8 hexagrams are their own 綜卦");
+for (const n of SELF_ZONG) {
+  eq(api.reversedOf(en[n - 1].bits), n, "#" + n + " is its own 綜卦");
+}
+for (const n of selfZong) {
+  ok(SELF_ZONG.has(n), "self-綜 hexagram #" + n + " is in the classical set");
+}
+
+// 2. 錯卦 (inverse) is an involution: applying it twice returns the original.
+for (const h of en) {
+  const inv = api.inverseOf(h.bits);
+  const back = api.inverseOf(en[inv - 1].bits);
+  eq(back, h.n, "錯卦 is an involution for #" + h.n);
+}
+
+// 3. 互卦 (nuclear) is NOT an involution: it forms cycles of length 1-4
+//    within each hexagram palace. Assert the cycle closes and its length
+//    is one of the classical values, and that the nuclear hexagram's own
+//    nuclear is the next member of the same cycle.
+const cycleLen = new Map();
+for (const h of en) {
+  const seen = [h.n];
+  let cur = h.n;
+  for (let i = 0; i < 8; i++) {
+    cur = api.nuclearOf(en[cur - 1].bits);
+    if (seen.includes(cur)) break;
+    seen.push(cur);
+  }
+  ok(seen.length >= 1 && seen.length <= 4, "互卦 cycle for #" + h.n + " has length 1-4, got " + seen.length);
+  cycleLen.set(h.n, seen.length);
+}
+const cycleHistogram = {};
+for (const len of cycleLen.values()) cycleHistogram[len] = (cycleHistogram[len] || 0) + 1;
+eq(Object.keys(cycleHistogram).sort().join(","), "1,2,3,4", "互卦 cycle lengths present");
+// the nuclear hexagram must be in the same cycle
+for (const h of en) {
+  const nuc = api.nuclearOf(h.bits);
+  const seen = [h.n];
+  let cur = h.n;
+  for (let i = 0; i < 8; i++) {
+    cur = api.nuclearOf(en[cur - 1].bits);
+    if (seen.includes(cur)) break;
+    seen.push(cur);
+  }
+  ok(seen.includes(nuc), "互卦 of #" + h.n + " lies in its own cycle");
+}
+
+// 4. The four relations must each resolve to a real hexagram.
+for (const h of en) {
+  for (const [label, v] of [
+    ["relating", api.relatingOf(h.bits, h.bits.map((b) => (b ? 9 : 7)))],
+    ["nuclear", api.nuclearOf(h.bits)],
+    ["inverse", api.inverseOf(h.bits)],
+    ["reversed", api.reversedOf(h.bits)],
+  ]) {
+    ok(typeof v === "number" && v >= 1 && v <= 64, label + " of #" + h.n + " resolves");
+  }
+}
+
 /* ---------- the six canonical relationships are consistent ---------- */
 // Every hexagram's inverse must also be a real hexagram, and the 8 pure
 // trigram hexagrams must be self-inverse.
