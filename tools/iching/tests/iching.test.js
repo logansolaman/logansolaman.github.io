@@ -175,13 +175,36 @@ for (const lang of shippedFiles()) {
     }
     if (h.lines.length !== 6) empty++;
     for (const l of h.lines) if (!l.text || !l.text.trim()) empty++;
+    // Leak rule per locale. Korean legitimately keeps Chinese terms as
+    // bracketed glosses ("건괘(乾卦)는 원(元)"), so a CJK run there is only
+    // a leak when it is NOT in a bracket and not a leading name.
     if (!lang.startsWith("zh")) {
       const fields = ["summary", "judgment", "xiang", "core", "plain", "advice"];
-      for (const k of fields) {
-        if (CJK.test(h[k] || "") && !(lang === "ja" && KANA.test(h[k]))) leaks++;
-      }
+      const isLeak = (t) => {
+        if (!t) return false;
+        if (lang === "ja") return CJK.test(t) && !KANA.test(t);
+        if (lang === "ko") {
+          for (const m of t.matchAll(/[\u4e00-\u9fff]+/g)) {
+            const run = m[0];
+            const prefix = t.slice(0, m.index);
+            const after = t.slice(m.index + run.length);
+            if (/^[\s:;,.\-\u2014\u2013()\u3000]*$/.test(prefix) &&
+                [":", " ", "\uC740", "\uC774", "\uAC00", "\uC744", "\uC758", ".", ")", "\uFF09"].includes(after[0])) continue;
+            if (run.length <= 4) {
+              const before = prefix.slice(-1);
+              if (before === "(" || before === "\uFF08") continue;
+              if ((before === "," || before === " ") && /^[)\uFF09,\uFF0C]/.test(after)) continue;
+            }
+            return true;
+          }
+          return false;
+        }
+        return CJK.test(t);
+      };
+      for (const k of fields) if (isLeak(h[k])) leaks++;
       for (const l of h.lines) {
-        if (CJK.test(l.text || "") && !(lang === "ja" && KANA.test(l.text))) leaks++;
+        if (isLeak(l.text)) leaks++;
+        if (isLeak(l.image)) leaks++;
       }
     }
   }
