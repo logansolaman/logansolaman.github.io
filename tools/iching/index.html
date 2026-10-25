@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="matrix">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#050505" />
+<meta name="description" content="Cast the coins, read the hexagram, decide. The I Ching as a decision tool — 64 hexagrams, all six lines, ten languages, entirely in your browser." />
+<title>I CHING DECISION — Logan Solaman</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/iching.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23050505'/><text x='50' y='72' font-size='56' text-anchor='middle' fill='%2333FF00' font-family='monospace'>☰</text></svg>" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="bar">
+  <a class="bar__back" href="../../" data-i18n="back">← BACK TO SITE</a>
+  <div class="bar__mid">
+    <h1 class="bar__title" data-i18n="title">I CHING DECISION</h1>
+  </div>
+  <button class="bar__lang" id="langBtn" type="button" aria-label="Language" aria-haspopup="dialog">
+    <span id="langName">EN</span>
+  </button>
+</header>
+
+<main id="main">
+
+  <!-- ============ STEP 1: QUESTION ============ -->
+  <section class="panel" id="panelAsk">
+    <p class="hero__sub" data-i18n="subtitle">Cast the coins, read the hexagram, decide.</p>
+    <label class="lbl" for="question" data-i18n="ask">Ask one question</label>
+    <input class="qinput" id="question" type="text" autocomplete="off" spellcheck="false"
+           data-i18n-attr="placeholder:question_ph" placeholder="e.g. Should I take this job offer?" />
+    <p class="hint" data-i18n="question_hint">One decision. Write it down before you cast.</p>
+    <button class="btn btn--big" id="btnStart" type="button" data-i18n="cast">CAST THE COINS</button>
+  </section>
+
+  <!-- ============ STEP 2: CAST ============ -->
+  <section class="panel" id="panelCast" hidden>
+    <div class="casthead">
+      <p class="casthead__q" id="castQuestion"></p>
+      <p class="casthead__hint" data-i18n="toss_hint">Tap to toss the three coins</p>
+    </div>
+
+    <button class="coins" id="coinBtn" type="button" aria-label="Toss the three coins">
+      <span class="coin" id="coinA"><i></i></span>
+      <span class="coin" id="coinB"><i></i></span>
+      <span class="coin" id="coinC"><i></i></span>
+    </button>
+
+    <ol class="lines" id="lines" aria-live="polite"></ol>
+
+    <div class="castfoot">
+      <p class="tossline" id="tossLine"></p>
+      <button class="btn btn--ghost" id="btnRedo" type="button" hidden data-i18n="cast_again">CAST AGAIN</button>
+      <button class="btn" id="btnRead" type="button" hidden data-i18n="meaning">READ THE CAST</button>
+    </div>
+  </section>
+
+  <!-- ============ STEP 3: READING ============ -->
+  <section id="panelRead" hidden>
+
+    <div class="result" id="result"></div>
+
+    <div class="derived" id="derived"></div>
+
+    <div class="actionbox">
+      <label class="lbl" for="action" data-i18n="write_action">Write your action</label>
+      <input class="qinput" id="action" type="text" autocomplete="off"
+             data-i18n-attr="placeholder:action_ph" placeholder="One concrete thing you will do, and by when" />
+      <button class="btn btn--big" id="btnSave" type="button" data-i18n="save_cast">SAVE THIS CAST</button>
+      <p class="saved" id="savedNote" hidden data-i18n="saved">Saved</p>
+    </div>
+
+    <div class="row2">
+      <button class="btn btn--ghost" id="btnAgain" type="button" data-i18n="cast_again">CAST AGAIN</button>
+      <button class="btn btn--ghost" id="btnNewQ" type="button" data-i18n="new_q">NEW QUESTION</button>
+    </div>
+
+    <section class="how">
+      <h2 class="how__h" data-i18n="how">HOW TO READ THIS</h2>
+      <ol class="how__l">
+        <li data-i18n="how_1"></li>
+        <li data-i18n="how_2"></li>
+        <li data-i18n="how_3"></li>
+        <li data-i18n="how_4"></li>
+      </ol>
+      <p class="disclaimer" data-i18n="disclaimer"></p>
+    </section>
+
+    <section class="ref">
+      <h2 class="how__h" data-i18n="reference">ALL 64 HEXAGRAMS</h2>
+      <p class="hint" data-i18n="reference_hint">Tap any hexagram to read it.</p>
+      <div class="refgrid" id="refGrid"></div>
+    </section>
+  </section>
+
+  <!-- ============ JOURNAL ============ -->
+  <section class="journal" id="panelJournal" hidden>
+    <div class="jhead">
+      <h2 class="how__h" data-i18n="journal">JOURNAL</h2>
+      <div class="jbtns">
+        <button class="btn btn--tiny" id="btnExport" type="button" data-i18n="export_j">EXPORT</button>
+        <button class="btn btn--tiny btn--danger" id="btnClear" type="button" data-i18n="clear_j">CLEAR ALL</button>
+      </div>
+    </div>
+    <div id="journalList"></div>
+  </section>
+
+</main>
+
+<!-- language picker -->
+<div class="modal" id="langModal" hidden role="dialog" aria-modal="true" aria-label="Choose language">
+  <div class="modal__panel">
+    <button class="modal__close" id="langClose" type="button" aria-label="Close">×</button>
+    <p class="modal__sys" data-i18n="lang">LANGUAGE</p>
+    <div class="langgrid" id="langGrid" role="listbox"></div>
+  </div>
+</div>
+
+<!-- hexagram detail modal -->
+<div class="modal" id="hxModal" hidden role="dialog" aria-modal="true" aria-label="Hexagram">
+  <div class="modal__panel modal__panel--wide">
+    <button class="modal__close" id="hxClose" type="button" aria-label="Close">×</button>
+    <div id="hxBody"></div>
+  </div>
+</div>
+
+<footer class="foot">
+  <span><a href="../../">LOGAN SOLAMAN</a> · <span data-i18n="title">I CHING DECISION</span></span>
+  <span data-i18n="disclaimer"></span>
+</footer>
+
+<script src="assets/iching-data.js"></script>
+<script src="assets/iching-app.js"></script>
+</body>
+</html>
