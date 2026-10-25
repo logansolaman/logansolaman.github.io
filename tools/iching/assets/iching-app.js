@@ -79,7 +79,9 @@
     renderLangMenu();
 
     // Hexagram text is ~200 KB per language — fetch it on demand rather than
-    // shipping all ten in one bundle.
+    // shipping all ten in one bundle. Mark the page as loading so the
+    // previous language's reading is not mistaken for the new one.
+    document.body.dataset.loading = "1";
     const path = "assets/data/hexagrams." + code + ".json";
     try {
       const r = await fetch(path, { cache: "no-cache" });
@@ -101,6 +103,7 @@
     buildRefGrid();
     if (state.cast) renderResult();
     renderJournal();
+    delete document.body.dataset.loading;
   }
 
   function applyStatic() {
