@@ -1,0 +1,3644 @@
+{
+  "meta": {
+    "title": "Canada Rockies · fixed Airbnb route + Vancouver neighbourhood bases",
+    "start": "2026-09-23",
+    "end": "2026-10-07",
+    "travelers": 2,
+    "currency": "CAD",
+    "flights": [
+      {
+        "flight": "CX814",
+        "date": "2026-09-23",
+        "from": "Hong Kong (HKG)",
+        "depart": "11:05",
+        "to": "Vancouver (YVR)",
+        "arrive": "07:40",
+        "duration": "11h 35m",
+        "note": "Arrival time is local Vancouver time."
+      },
+      {
+        "flight": "CX867",
+        "date": "2026-10-07",
+        "from": "Vancouver (YVR)",
+        "depart": "14:10",
+        "to": "Hong Kong (HKG)",
+        "arrive": "19:20 on 8 Oct",
+        "duration": "14h 10m elapsed local-time conversion",
+        "note": "Arrival is the next calendar day in Hong Kong."
+      }
+    ],
+    "assumption": "Route rebuilt around the supplied Airbnb bases: Kananaskis on the 30 Sep arrival day with the Bragg Creek check-in at 16:00, a full Calgary day on 1 Oct, and the latest booking sequence from 2 Oct. The sequence ends where the booked CX867 departs (7 Oct 14:10), so there is no flight conflict. Items flagged rather than assumed: the 2 Oct Bragg Creek checkout falls inside the transfer day, the 2–3 Oct Yellowhead stay is a single night so the 3 Oct Jasper content runs from a checked-out base, and the final Dunbar night must be confirmed with the host.",
+    "wake_time": "08:00",
+    "lodging_note": "Fixed stays per the latest booking: Clive Avenue, Vancouver (23–26 Sep); Kamloops 824 Nicolani Drive (26–27 Sep); Golden 818 12 St S (27–28 Sep); Harvie Heights (28–30 Sep); Bragg Creek (30 Sep–2 Oct); Yellowhead County (2–3 Oct, 1 night); Revelstoke (3–4 Oct); Kelowna (4–5 Oct); Dunbar Street, Vancouver (5–7 Oct, checkout 7 Oct 11:00).",
+    "lodging_currency": "HKD",
+    "exchange_rate_hkd_to_cad": 0.176799,
+    "rental_car": {
+      "model": "Toyota RAV4",
+      "drivetrain": "FWD / without 4-wheel drive",
+      "mileage": "Unlimited",
+      "days": 14,
+      "price_hkd": 3507,
+      "price_cad": 620.03,
+      "pickup": "YVR airport rental centre on 23 Sep (Day 1)",
+      "return": "YVR airport rental centre on 7 Oct (Day 15)",
+      "note": "One rental car for the whole trip, picked up and returned at YVR. Confirm insurance, taxes, deposits, fuel policy, winter-rated tires and the spare/puncture kit at the counter."
+    },
+    "park_pass_status": "Annual Parks Canada Discovery Pass active — covers Yoho, Glacier, Banff, Jasper, and Mount Revelstoke National Parks.",
+    "description": "A one-hour-block Canada Rockies road trip plan for Vancouver, Kamloops, Golden, Yoho, the Icefields Parkway (Bow Lake, Peyto Lake, Columbia Icefield), Jasper, Calgary, Kananaskis, Revelstoke, Kelowna and Vancouver.",
+    "days": 15,
+    "calgary_day_added": true,
+    "booking_vs_booked_flight": {
+      "status": "MATCHES — one item to confirm",
+      "applied_booking_sequence": [
+        "Bragg Creek 30 Sep–2 Oct (Kananaskis 30 Sep, Calgary 1 Oct)",
+        "Yellowhead County 2–3 Oct",
+        "Revelstoke 3–4 Oct",
+        "Kelowna 4–5 Oct",
+        "Vancouver 5–7 Oct"
+      ],
+      "booked_flight": "CX867 departs YVR 14:10 on 7 Oct 2026",
+      "issue": "The supplied sequence lines up with the booked flight: the last night is 6→7 Oct and the flight leaves 7 Oct 14:10. The one thing to confirm is the Dunbar checkout time — 'Oct 5–7' with a 11:00 checkout leaves a 3-hour gap before the flight, which is fine, but a checkout on 8 Oct would mean an extra unbooked night.",
+      "options": [
+        "Confirm the Dunbar checkout is 7 Oct at or before 11:00 — then this sequence is exactly right.",
+        "If checkout is actually 8 Oct, book the extra night and push the flight one day later."
+      ]
+    }
+  },
+  "route": [
+    {
+      "name": "Vancouver · Clive Avenue",
+      "date": "23–26 Sep",
+      "km": "East Vancouver · outlet on arrival",
+      "stay": "first 3 nights",
+      "color": "#7dd3fc"
+    },
+    {
+      "name": "Kamloops",
+      "date": "26–27 Sep",
+      "km": "824 Nicolani Drive",
+      "stay": "Coquihalla route",
+      "color": "#fde68a"
+    },
+    {
+      "name": "Golden",
+      "date": "27–28 Sep",
+      "km": "Rogers Pass corridor",
+      "stay": "818 12 St S",
+      "color": "#fca5a5"
+    },
+    {
+      "name": "Harvie Heights",
+      "date": "28–30 Sep",
+      "km": "Yoho, Minnewanka & Vermilion Lakes",
+      "stay": "Two Jack Lake & Banff",
+      "color": "#86efac"
+    },
+    {
+      "name": "Bragg Creek",
+      "date": "30 Sep–2 Oct",
+      "km": "Kananaskis, Calgary & Icefields Parkway",
+      "stay": "50023 Boyce Ranch Rd",
+      "color": "#f0abfc"
+    },
+    {
+      "name": "Yellowhead County",
+      "date": "2–3 Oct",
+      "km": "Jasper National Park base",
+      "stay": "50410 Yellowhead Hwy · 1 night",
+      "color": "#93c5fd"
+    },
+    {
+      "name": "Revelstoke",
+      "date": "3–4 Oct",
+      "km": "Valemount / Blue River corridor",
+      "stay": "1500 1 St W",
+      "color": "#fdba74"
+    },
+    {
+      "name": "Kelowna",
+      "date": "4–5 Oct",
+      "km": "Okanagan wineries",
+      "stay": "104 Clifton Rd N",
+      "color": "#c4b5fd"
+    },
+    {
+      "name": "Vancouver · Dunbar Street",
+      "date": "5–7 Oct",
+      "km": "West Side residential base",
+      "stay": "final 2 nights",
+      "color": "#f0abfc"
+    },
+    {
+      "name": "Departure",
+      "date": "7 Oct",
+      "km": "YVR airport day",
+      "stay": "CX867 14:10",
+      "color": "#f9a8d4"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-09-23",
+      "label": "Day 1 · Arrival, McArthurGlen outlet, then Clive Avenue",
+      "base": "Clive Avenue, Joyce-Collingwood",
+      "route": "CX814 · HKG 11:05 → YVR 07:40 · YVR → McArthurGlen → Clive Avenue",
+      "focus": "Land, collect the rental car, and spend the pre-check-in hours at McArthurGlen beside YVR, which opens at 10:00 and has luggage lockers. The Airbnb cannot be entered until 16:00, so nothing before that depends on the host.",
+      "overnight": "Clive Avenue / Collingwood · 3264 Vanness Avenue, Vancouver, BC V5R 4V3",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "YVR arrival, immigration and bags",
+          "detail": "CX814 is scheduled to arrive at 07:40 local time. Allow immigration, baggage, customs and a first coffee before anything else.",
+          "kind": "travel"
+        },
+        {
+          "time": "09:00",
+          "title": "Collect rental car at YVR",
+          "detail": "Pick up the Toyota RAV4 (FWD) at the airport rental centre. Inspect tires (winter-rated after the 1 Oct rule), spare/puncture kit, insurance, roadside assistance and any mountain-road restrictions.",
+          "kind": "travel"
+        },
+        {
+          "time": "10:00",
+          "title": "McArthurGlen Designer Outlet",
+          "detail": "Beside YVR on Sea Island, two stops from the airport on the Canada Line, and opens at 10:00. Go here first because the Airbnb is not available until 16:00. Leave the bags in the car park or use the luggage lockers at Guest Services on the second floor rather than hauling them around.",
+          "kind": "shop"
+        },
+        {
+          "time": "11:00",
+          "title": "Outlet first pass",
+          "detail": "Work the brands you came for while the village is quiet. Confirm the day's opening hours on the official plan-your-visit page, since they vary by season.",
+          "kind": "shop"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch at the outlet village",
+          "detail": "Eat here rather than waiting until East Vancouver. Keeps the bags stationary and the car parked in one place.",
+          "kind": "food"
+        },
+        {
+          "time": "13:00",
+          "title": "Outlet second pass and coffee",
+          "detail": "Second sweep for anything missed, then load the car. Set a hard stop so the drive to the Airbnb is unhurried.",
+          "kind": "shop"
+        },
+        {
+          "time": "14:00",
+          "title": "Drive to Clive Avenue",
+          "detail": "Roughly 35 to 45 minutes from Richmond to the Collingwood / Joyce-Collingwood area depending on traffic on Knight Street or the Oak Street Bridge. No check-in yet, so there is no reason to rush.",
+          "kind": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "Groceries and neighbourhood supplies",
+          "detail": "Use the spare hour on a supermarket run near the stay, or park and walk the block. This is the hour that was previously spent hoping for an early luggage drop.",
+          "kind": "explore"
+        },
+        {
+          "time": "16:00",
+          "title": "Clive Avenue check-in",
+          "detail": "Check-in opens at 16:00. Bring the luggage in, confirm Airbnb parking and get the keys sorted before anything else.",
+          "kind": "rest"
+        },
+        {
+          "time": "17:00",
+          "title": "Settle in and jet-lag reset",
+          "detail": "Shower, unpack the essentials, hydrate. No sightseeing obligation on arrival day.",
+          "kind": "rest"
+        },
+        {
+          "time": "18:00",
+          "title": "Dinner nearby",
+          "detail": "Choose somewhere close to the stay. The 3300-block Kingsway food walk is a short drive and open late.",
+          "kind": "food"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner",
+          "detail": "Keep the first evening short and local.",
+          "kind": "food"
+        },
+        {
+          "time": "20:00",
+          "title": "Wind down",
+          "detail": "Confirm tomorrow's city plan; the rental car is now in hand for the whole trip.",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Sleep",
+          "detail": "Prepare for a normal 08:00 start.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "label": "Day 2 · East Vancouver and downtown",
+      "base": "Clive Avenue / Collingwood",
+      "route": "Joyce-Collingwood → Central Park / Metrotown → Gastown → Stanley Park → Joyce-Collingwood",
+      "focus": "Use the rental car for the east-side stops and either SkyTrain or the car for downtown; parking downtown is pricey but manageable.",
+      "overnight": "Clive Avenue / Collingwood · 3264 Vanness Avenue, Vancouver, BC V5R 4V3",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Breakfast near Joyce-Collingwood",
+          "detail": "Start locally before heading out in the rental car.",
+          "kind": "food"
+        },
+        {
+          "time": "09:00",
+          "title": "Joyce-Collingwood / Central Park",
+          "detail": "Easy neighbourhood start or Central Park walk.",
+          "kind": "walk"
+        },
+        {
+          "time": "10:00",
+          "title": "Metrotown",
+          "detail": "Shopping, coffee and a practical rainy-day option close to the Airbnb.",
+          "kind": "explore"
+        },
+        {
+          "time": "11:00",
+          "title": "Metrotown / lunch",
+          "detail": "Keep the morning close to home.",
+          "kind": "food"
+        },
+        {
+          "time": "12:00",
+          "title": "SkyTrain to Waterfront",
+          "detail": "Use Joyce Station for the direct Expo Line ride downtown, or drive and pay for parking near Waterfront.",
+          "kind": "travel"
+        },
+        {
+          "time": "13:00",
+          "title": "Gastown",
+          "detail": "Water Street, galleries and historic streets.",
+          "kind": "explore"
+        },
+        {
+          "time": "14:00",
+          "title": "Canada Place",
+          "detail": "Waterfront views and harbour walk.",
+          "kind": "walk"
+        },
+        {
+          "time": "15:00",
+          "title": "Stanley Park",
+          "detail": "Walk the eastern seawall or use a bike rental.",
+          "kind": "walk"
+        },
+        {
+          "time": "16:00",
+          "title": "Stanley Park / Coal Harbour",
+          "detail": "Finish a comfortable loop; do not force the entire seawall.",
+          "kind": "explore"
+        },
+        {
+          "time": "17:00",
+          "title": "Return to Joyce-Collingwood",
+          "detail": "SkyTrain or drive back before dinner.",
+          "kind": "travel"
+        },
+        {
+          "time": "18:00",
+          "title": "Dinner",
+          "detail": "Choose one neighbourhood restaurant.",
+          "kind": "food"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner",
+          "detail": "Slow meal.",
+          "kind": "food"
+        },
+        {
+          "time": "20:00",
+          "title": "Pack for road start",
+          "detail": "Layers, snacks, documents and rental-car details.",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Sleep",
+          "detail": "Tomorrow is North Shore day.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "label": "Day 3 · East Vancouver, Burnaby and Richmond",
+      "base": "Clive Avenue / Collingwood",
+      "route": "Joyce-Collingwood → Central Park / Metrotown → Richmond or waterfront → Joyce-Collingwood",
+      "focus": "Use the final Clive Avenue day for nearby East Vancouver and Burnaby sights, with an optional Richmond stop before the road trip.",
+      "overnight": "Clive Avenue / Collingwood · 3264 Vanness Avenue, Vancouver, BC V5R 4V3",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Breakfast near Joyce-Collingwood",
+          "detail": "Start locally and check weather.",
+          "kind": "food"
+        },
+        {
+          "time": "09:00",
+          "title": "Central Park",
+          "detail": "Easy walk close to the Airbnb; use Metrotown as the rainy-day alternative.",
+          "kind": "walk"
+        },
+        {
+          "time": "10:00",
+          "title": "Metrotown / Burnaby",
+          "detail": "Shopping and coffee, or continue to Deer Lake Park if weather is comfortable.",
+          "kind": "explore"
+        },
+        {
+          "time": "11:00",
+          "title": "Deer Lake Park option",
+          "detail": "Easy lake loop, Burnaby Village Museum or Shadbolt Centre if open.",
+          "kind": "explore"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch near Metrotown",
+          "detail": "Keep this East Vancouver / Burnaby day practical.",
+          "kind": "food"
+        },
+        {
+          "time": "13:00",
+          "title": "Richmond option",
+          "detail": "Optional Canada Line trip to Richmond Centre or Steveston; skip if you prefer a slower day.",
+          "kind": "travel"
+        },
+        {
+          "time": "14:00",
+          "title": "Steveston village option",
+          "detail": "Historic fishing village and waterfront if the Richmond option is chosen.",
+          "kind": "explore"
+        },
+        {
+          "time": "15:00",
+          "title": "Return to Clive Avenue",
+          "detail": "Allow transit time and rest before the road trip.",
+          "kind": "travel"
+        },
+        {
+          "time": "16:00",
+          "title": "Airbnb reset",
+          "detail": "Prepare the car plan and luggage for tomorrow's road start.",
+          "kind": "rest"
+        },
+        {
+          "time": "17:00",
+          "title": "Rental-car check",
+          "detail": "Confirm the RAV4 tires (winter-rated for Oct 1+), spare/puncture kit, insurance and roadside assistance are all set.",
+          "kind": "plan"
+        },
+        {
+          "time": "18:00",
+          "title": "Dinner",
+          "detail": "Stay close to the Vancouver base.",
+          "kind": "food"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner",
+          "detail": "Keep the evening unhurried.",
+          "kind": "food"
+        },
+        {
+          "time": "20:00",
+          "title": "Pack for Kamloops",
+          "detail": "Layers, snacks, offline maps and documents.",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Sleep",
+          "detail": "Final first-stay Vancouver night.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "label": "Day 4 · Vancouver to Kamloops via Coquihalla",
+      "base": "Kamloops",
+      "route": "Vancouver → Highway 1 → Hope → Highway 5/Coquihalla → Merritt → Kamloops",
+      "focus": "Coquihalla route to Kamloops; evening photo shoot at the Kamloops hoodoos and Lac du Bois grasslands — the 'desert of BC' — then Riverside Park sunset.",
+      "overnight": "Kamloops · 824 Nicolani Drive, Kamloops, BC V2B 5B3",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Depart Vancouver",
+          "detail": "Check out from Clive Avenue, pack the RAV4 and take Highway 1 East toward Hope.",
+          "kind": "travel"
+        },
+        {
+          "time": "09:00",
+          "title": "Drive to Hope",
+          "detail": "Highway 1 through Fraser Valley with mountain views.",
+          "kind": "travel"
+        },
+        {
+          "time": "10:00",
+          "title": "Hope coffee & fuel stop",
+          "detail": "First coffee and rest stop in Hope before entering the mountain highway.",
+          "kind": "food"
+        },
+        {
+          "time": "11:00",
+          "title": "Othello Tunnels / Coquihalla Canyon",
+          "detail": "If open, take a 1–1.5 hour short walk and photography stop through the canyon and tunnels.",
+          "kind": "explore"
+        },
+        {
+          "time": "12:00",
+          "title": "Coquihalla Highway 5",
+          "detail": "Drive through the Coquihalla pass; stop at a safe highway rest area for mountain photography.",
+          "kind": "travel"
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch & fuel in Merritt",
+          "detail": "Refuel the vehicle and enjoy lunch in Merritt.",
+          "kind": "food"
+        },
+        {
+          "time": "14:00",
+          "title": "Merritt to Kamloops",
+          "detail": "Continue along Highway 5 into the interior plateau toward Kamloops.",
+          "kind": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "Kamloops arrival & check-in",
+          "detail": "Check into Airbnb at 824 Nicolani Drive, unpack and refresh.",
+          "kind": "rest"
+        },
+        {
+          "time": "16:00",
+          "title": "Kamloops Hoodoos & silt bluffs",
+          "detail": "Drive ~10 min to the hoodoo formations off Westside Road / Lac du Bois area — desert-like pillars that look nothing like Canada. Best golden-hour light.",
+          "kind": "explore"
+        },
+        {
+          "time": "17:00",
+          "title": "Lac du Bois Grasslands viewpoint",
+          "detail": "Dry grassland vistas and rolling hills; the 'Arizona of BC' photo stop. 20-30 min.",
+          "kind": "explore"
+        },
+        {
+          "time": "18:00",
+          "title": "Riverside Park sunset",
+          "detail": "Golden-hour photos on the Thompson River waterfront, then Riverside Park.",
+          "kind": "walk"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner downtown Kamloops",
+          "detail": "Victoria Street: The Noble Pig or Brownstone Restaurant.",
+          "kind": "food"
+        },
+        {
+          "time": "20:00",
+          "title": "Wind down & route check",
+          "detail": "Check DriveBC for Hwy 1 east tomorrow; confirm Discovery Pass in the car (covers Glacier NP at Rogers Pass tomorrow).",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "label": "Day 5 · Kamloops to Golden via Rogers Pass",
+      "base": "Golden",
+      "route": "Kamloops → Sicamous → Revelstoke → Rogers Pass → Golden",
+      "focus": "Trans-Canada through the Selkirks — Rogers Pass Discovery Centre and Hemlock Grove boardwalk (both inside Glacier NP, covered by your Discovery Pass) — to Golden Skybridge.",
+      "overnight": "Golden · 818 12 Street South, Golden, BC V0A 1H0",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Depart Kamloops",
+          "detail": "Start eastward along Highway 1 past Shuswap Lake toward Sicamous.",
+          "kind": "travel"
+        },
+        {
+          "time": "09:00",
+          "title": "Sicamous rest & photo stop",
+          "detail": "Short coffee break by the channel/lake.",
+          "kind": "food"
+        },
+        {
+          "time": "10:00",
+          "title": "Drive through Revelstoke corridor",
+          "detail": "Scenic mountain driving along the Illecillewaet River toward Glacier National Park.",
+          "kind": "travel"
+        },
+        {
+          "time": "11:00",
+          "title": "Rogers Pass Discovery Centre",
+          "detail": "Visit the historic pass summit, museum exhibits on avalanche control and railway heritage.",
+          "kind": "explore"
+        },
+        {
+          "time": "12:00",
+          "title": "Hemlock Grove Boardwalk",
+          "detail": "30–45 min barrier-free boardwalk trail through old-growth rainforest in Glacier National Park.",
+          "kind": "walk"
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch / picnic near pass",
+          "detail": "Casual lunch stop surrounded by towering Selkirk peaks.",
+          "kind": "food"
+        },
+        {
+          "time": "14:00",
+          "title": "Drive to Golden",
+          "detail": "Descend through Kicking Horse Canyon pullouts toward the Rocky Mountain Trench.",
+          "kind": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "Golden Skybridge",
+          "detail": "Walk Canada's highest suspension bridges with canyon and waterfall views (1.5–2 hours).",
+          "kind": "explore"
+        },
+        {
+          "time": "16:00",
+          "title": "Check in at Golden Airbnb",
+          "detail": "Check-in at 818 12 Street South opens at 16:00 — arrive, unload, and settle. Nothing before 16:00 assumes access to the property.",
+          "kind": "rest"
+        },
+        {
+          "time": "17:00",
+          "title": "Columbia River & pedestrian bridge",
+          "detail": "Stroll the Kicking Horse Pedestrian Bridge in downtown Golden.",
+          "kind": "walk"
+        },
+        {
+          "time": "18:00",
+          "title": "Dinner in Golden",
+          "detail": "Dinner in town (e.g. Whitetooth Mountain Bistro or Reposados).",
+          "kind": "food"
+        },
+        {
+          "time": "19:00",
+          "title": "Relax in Golden",
+          "detail": "Unwind after the mountain pass crossing.",
+          "kind": "rest"
+        },
+        {
+          "time": "20:00",
+          "title": "Plan Yoho & park passes",
+          "detail": "Ensure Parks Canada Discovery Pass is ready for Yoho and Banff.",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Sleep",
+          "detail": "Early night before Yoho National Park.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "label": "Day 6 · Golden to Harvie Heights via Yoho",
+      "base": "Harvie Heights",
+      "route": "Golden → Field → Yoho National Park → Lake Louise area → Harvie Heights",
+      "focus": "Peak Yoho photo day: Natural Bridge, Emerald Lake (the most photographed lake loop in Yoho), Takakkaw Falls — all covered by the Discovery Pass.",
+      "overnight": "Harvie Heights · 750 Harvie Heights Road, Harvie Heights, AB T1W 2W2",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Depart Golden for Yoho",
+          "detail": "Drive east on Highway 1 past the Kicking Horse Pass into Yoho National Park.",
+          "kind": "travel"
+        },
+        {
+          "time": "09:00",
+          "title": "Natural Bridge",
+          "detail": "20–30 min stop to see the Kicking Horse River carved through solid rock.",
+          "kind": "explore"
+        },
+        {
+          "time": "10:00",
+          "title": "Emerald Lake shoreline walk",
+          "detail": "1.5–2 hour walk and premier photography around the vibrant turquoise lake and President Range.",
+          "kind": "walk"
+        },
+        {
+          "time": "11:00",
+          "title": "Emerald Lake photography",
+          "detail": "Take time along the peaceful western shore and bridge.",
+          "kind": "walk"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch in Field or Emerald Lake",
+          "detail": "Lunch at Truffle Pigs Bistro in Field or Cilantro on the Lake.",
+          "kind": "food"
+        },
+        {
+          "time": "13:00",
+          "title": "Takakkaw Falls",
+          "detail": "Drive the Yoho Valley Road to Canada's second-highest waterfall (check seasonal road status).",
+          "kind": "explore"
+        },
+        {
+          "time": "14:00",
+          "title": "Yoho Valley viewpoint",
+          "detail": "Photography at the base of the thundering falls.",
+          "kind": "explore"
+        },
+        {
+          "time": "15:00",
+          "title": "Cross Continental Divide",
+          "detail": "Drive into Alberta past Lake Louise village toward the Bow Valley.",
+          "kind": "travel"
+        },
+        {
+          "time": "16:00",
+          "title": "Scenic Bow Valley drive",
+          "detail": "Follow Highway 1 toward Canmore and Harvie Heights.",
+          "kind": "travel"
+        },
+        {
+          "time": "17:00",
+          "title": "Check in at Harvie Heights",
+          "detail": "Check into 750 Harvie Heights Road; quiet wooded base between Banff and Canmore.",
+          "kind": "rest"
+        },
+        {
+          "time": "18:00",
+          "title": "Canmore Bow River & Policeman's Creek",
+          "detail": "Gentle evening stroll along Policeman's Creek Boardwalk with views of the Three Sisters.",
+          "kind": "walk"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner in Canmore",
+          "detail": "Dinner in vibrant downtown Canmore (e.g. The Grizzly Paw or Crazyweed).",
+          "kind": "food"
+        },
+        {
+          "time": "20:00",
+          "title": "Prepare tomorrow's lake day",
+          "detail": "Review layers, camera and water for tomorrow's drive-up lake day — Two Jack, Minnewanka and Vermilion. No tickets, no 6:30 AM start.",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Sleep",
+          "detail": "Early rest for the big alpine lake day.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "label": "Day 7 · Banff Lakes & Mountain Panorama",
+      "base": "Harvie Heights",
+      "route": "Harvie Heights → Two Jack Lake → Lake Minnewanka → Bow Falls & Surprise Corner → Banff Town → Vermilion Lakes → Harvie Heights",
+      "focus": "Zero-shuttle lake day directly from Harvie Heights: morning calm at Two Jack Lake with Mount Rundle reflections, Lake Minnewanka shoreline, Bow Falls & Surprise Corner, and golden-hour reflections at Vermilion Lakes.",
+      "overnight": "Harvie Heights · 750 Harvie Heights Road, Harvie Heights, AB T1W 2W2",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Unhurried breakfast at cabin",
+          "detail": "Relaxed morning at Harvie Heights cabin; no 6:30 AM shuttle rush needed.",
+          "kind": "food"
+        },
+        {
+          "time": "09:00",
+          "title": "Two Jack Lake morning reflections",
+          "detail": "15-min drive from Harvie Heights. Mirror-still emerald water reflecting Mount Rundle; walk the shoreline rocks and picnic area.",
+          "kind": "walk"
+        },
+        {
+          "time": "10:00",
+          "title": "Lake Minnewanka shoreline & dock",
+          "detail": "Banff's largest glacial lake right next door: historic red wooden boat dock, turquoise water, lakeside trail.",
+          "kind": "explore"
+        },
+        {
+          "time": "11:00",
+          "title": "Lake Minnewanka trail stroll",
+          "detail": "Gentle walk along Stewart Canyon trail / shoreline path with mountain panoramas.",
+          "kind": "walk"
+        },
+        {
+          "time": "12:00",
+          "title": "Bow Falls & Surprise Corner",
+          "detail": "Drive into Banff: view Bow River tumbling over Bow Falls and the classic postcard viewpoint of the castle-like Fairmont Banff Springs hotel.",
+          "kind": "explore"
+        },
+        {
+          "time": "13:00",
+          "title": "Lunch in Banff Town",
+          "detail": "Leisurely lunch on Banff Avenue or Bear Street (e.g. Bear Street Tavern or Park Distillery).",
+          "kind": "food"
+        },
+        {
+          "time": "14:00",
+          "title": "Banff Avenue & artisan shops",
+          "detail": "Explore historic Banff Avenue, local art galleries, and Cascade of Time Garden.",
+          "kind": "explore"
+        },
+        {
+          "time": "15:00",
+          "title": "Banff Gondola (optional) / Cave & Basin",
+          "detail": "Optional ride up Sulphur Mountain for 360-degree vistas across six mountain ranges, or visit Cave & Basin National Historic Site.",
+          "kind": "explore"
+        },
+        {
+          "time": "16:00",
+          "title": "Sulphur Mountain / town viewpoints",
+          "detail": "Panoramic mountain views from above or relaxing stroll around town.",
+          "kind": "explore"
+        },
+        {
+          "time": "17:00",
+          "title": "Vermilion Lakes golden hour",
+          "detail": "Drive Vermilion Lakes Road: the premier sunset & reflection location in Banff. Mount Rundle reflected in glassy wetland waters from wooden docks.",
+          "kind": "walk"
+        },
+        {
+          "time": "18:00",
+          "title": "Vermilion Lakes sunset photography",
+          "detail": "Peak golden hour / sunset light on the peaks with water reflections. Zero walking difficulty.",
+          "kind": "walk"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner in Banff or Canmore",
+          "detail": "Dinner in town (e.g. The Bison in Banff or Crazyweed in Canmore).",
+          "kind": "food"
+        },
+        {
+          "time": "20:00",
+          "title": "Return to Harvie Heights",
+          "detail": "Short 10-15 min drive back to the cabin; pack bags for tomorrow's transfer to Bragg Creek.",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Wind down by the fire",
+          "detail": "Relax at the Harvie Heights base.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "label": "Day 8 · Harvie Heights to Bragg Creek via Kananaskis",
+      "base": "Bragg Creek",
+      "route": "Harvie Heights → Canmore → Highway 22 South → Highway 66 Kananaskis Country (Elbow Falls, Elbow Valley) → Bragg Creek",
+      "focus": "Kananaskis first, exactly as you asked: the Kananaskis Country stops come on the drive south, then you check in to the Bragg Creek acreage at 16:00 for the first of two nights.",
+      "overnight": "Bragg Creek · 50023 Boyce Ranch Road, Bragg Creek / Rocky View County, AB",
+      "summary": "This is the trip's Kananaskis-on-arrival day. The route drops out of the Bow Valley at Canmore, runs south on the Cowboy Trail (Highway 22) and turns west onto Highway 66 for the Elbow Valley, which puts Elbow Falls 20 km short of the Bragg Creek turnoff — so the park comes before check-in, not after it.",
+      "notes": "Kananaskis Conservation Pass required for the Elbow Falls and Elbow Valley parking lots: buy online at alberta.ca and register the rental car's licence plate before 11:59 pm on 30 Sep.",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Depart Harvie Heights",
+          "detail": "Check out by 11:00 and head west along the Bow Valley Parkway, then into Canmore.",
+          "kind": "travel"
+        },
+        {
+          "time": "09:00",
+          "title": "Canmore morning stop",
+          "detail": "Coffee and a short stroll along the Bow River in Canmore — last easy mountain-town stop before the foothills.",
+          "kind": "food"
+        },
+        {
+          "time": "10:00",
+          "title": "Highway 22 South (Cowboy Trail)",
+          "detail": "Leave the Trans-Canada at Canmore and run south on Highway 22 through the ranch country toward the Highway 66 junction.",
+          "kind": "travel"
+        },
+        {
+          "time": "11:00",
+          "title": "Lunch before Kananaskis",
+          "detail": "Lunch at the Bragg Creek hamlet or a Canmore bakery — services thin out once you are onto Highway 66.",
+          "kind": "food"
+        },
+        {
+          "time": "12:00",
+          "title": "Enter Kananaskis Country · Highway 66",
+          "detail": "Turn west onto Highway 66 into the Elbow Valley. Display the Kananaskis Conservation Pass on the dashboard; the plate is registered to the rental car.",
+          "kind": "travel"
+        },
+        {
+          "time": "13:00",
+          "title": "Elbow Falls",
+          "detail": "The Jumanji / Bourne Legacy waterfall: the Elbow River surges over a limestone ledge seconds from the parking lot. Kananaskis Conservation Pass covers parking.",
+          "kind": "walk"
+        },
+        {
+          "time": "14:00",
+          "title": "Elbow Valley viewpoints",
+          "detail": "Riverside pullouts along Highway 66 with the front ranges ahead; short easy walks and golden aspens this week.",
+          "kind": "walk"
+        },
+        {
+          "time": "15:00",
+          "title": "Drive to Bragg Creek & check in",
+          "detail": "Highway 66 east to the Bragg Creek turnoff (Elbow Falls is 20 km short of it), then the acreage. Check-in opens at 16:00 — nothing before then assumes property access.",
+          "kind": "travel"
+        },
+        {
+          "time": "16:00",
+          "title": "Check in at Bragg Creek Airbnb",
+          "detail": "Arrive at 50023 Boyce Ranch Road for a two-night stay (30 Sep–2 Oct); unload, settle, reset after the drive.",
+          "kind": "rest"
+        },
+        {
+          "time": "17:00",
+          "title": "Explore Bragg Creek village",
+          "detail": "Browse the rustic trading post, hamlet shops and country stores — five minutes from the property.",
+          "kind": "explore"
+        },
+        {
+          "time": "18:00",
+          "title": "Dinner in Bragg Creek",
+          "detail": "Dinner at The Italian Farmhouse or PowderHorn Saloon in the hamlet.",
+          "kind": "food"
+        },
+        {
+          "time": "19:00",
+          "title": "Evening on the acreage",
+          "detail": "Quiet foothills evening under clear skies; deck views and wildlife.",
+          "kind": "rest"
+        },
+        {
+          "time": "20:00",
+          "title": "Confirm Kananaskis pass & tomorrow's plan",
+          "detail": "The Conservation Pass covers today's parking. Check the Elbow Falls parking status if you want a second stop, and lay out the Calgary day.",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Sleep",
+          "detail": "Peaceful countryside rest.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "label": "Day 9 · Full day in Calgary",
+      "base": "Bragg Creek",
+      "route": "Bragg Creek → Highway 8 → Calgary (Stephen Avenue, Olympic Plaza, East Village, Studio Bell) → MEC & Bass Pro Shops (Deerfoot Meadows) → Bragg Creek",
+      "focus": "The whole day is Calgary: downtown heritage blocks and the RiverWalk first, then gear shopping, then back to the Bragg Creek acreage for the second night.",
+      "overnight": "Bragg Creek · 50023 Boyce Ranch Road, Bragg Creek / Rocky View County, AB",
+      "summary": "Day 9 is now a pure city day — Kananaskis already happened on 30 Sep, so nothing pulls you west. Calgary is about an hour east of Bragg Creek via Highway 8, and the loop is built as downtown first, retail on the way out, home for the second night at the same address.",
+      "notes": "CHECK-OUT CONFLICT: the Bragg Creek stay ends 11:00 on 2 Oct, inside tomorrow's transfer day. Pack tonight so nothing after 11:00 assumes property access; the 16:00 Yellowhead check-in (2 Oct 16:00) is the next fixed anchor.",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Breakfast at the Airbnb",
+          "detail": "Slow morning on the acreage — you are two nights in the same bed, so no repacking today.",
+          "kind": "food"
+        },
+        {
+          "time": "09:00",
+          "title": "Drive Highway 8 to Calgary",
+          "detail": "Roomier and more scenic than the Trans-Canada: Bragg Creek → Highway 22 → Highway 8 east past Springbank into Calgary's west side. About 1 hour.",
+          "kind": "travel"
+        },
+        {
+          "time": "10:00",
+          "title": "Calgary downtown · Stephen Avenue Walk",
+          "detail": "Park at Calgary City Hall or the Telus Convention Centre parkade. Walk the 8th Avenue Mall heritage block — sandstone facades, patios, street performers.",
+          "kind": "explore"
+        },
+        {
+          "time": "11:00",
+          "title": "Olympic Plaza, East Village & The Bow",
+          "detail": "Olympic Plaza and the Municipal Building, then Studio Bell / National Music Centre and the RiverWalk in East Village. If the weather turns, the +15 skywalk network keeps the downtown walk indoors.",
+          "kind": "explore"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch downtown Calgary",
+          "detail": "Calgary-favourite lunch options: Charcut Roast House, Native Tongues taqueria, or the Calgary Farmers' Market West. Confirm weekend hours before committing.",
+          "kind": "food"
+        },
+        {
+          "time": "13:00",
+          "title": "MEC Calgary (830 10 Ave SW)",
+          "detail": "Outdoor-gear top-up — microspikes, spare socks, headlamp, rain shell. Downtown, easy to combine with the walking block.",
+          "kind": "shop"
+        },
+        {
+          "time": "14:00",
+          "title": "Bass Pro Shops Calgary (Deerfoot Meadows)",
+          "detail": "11411 40 St SE — the big destination outdoor store. About 15 minutes from downtown via Deerfoot Trail, on the way back south.",
+          "kind": "shop"
+        },
+        {
+          "time": "15:00",
+          "title": "Chinatown & Kensington option",
+          "detail": "If energy allows, add Calgary's Chinatown food strip or the Kensington shops across the river before heading out of the city.",
+          "kind": "explore"
+        },
+        {
+          "time": "16:00",
+          "title": "Drive back to Bragg Creek",
+          "detail": "Highway 8 west out of the city — about an hour back to the foothills.",
+          "kind": "travel"
+        },
+        {
+          "time": "17:00",
+          "title": "Return to the acreage",
+          "detail": "Second night at 50023 Boyce Ranch Road; unpack the shopping and reset.",
+          "kind": "rest"
+        },
+        {
+          "time": "18:00",
+          "title": "Dinner in Bragg Creek",
+          "detail": "Dinner in the village (The Bavarian Inn or a local bistro).",
+          "kind": "food"
+        },
+        {
+          "time": "19:00",
+          "title": "Quiet evening",
+          "detail": "Relax before the biggest driving day of the trip.",
+          "kind": "rest"
+        },
+        {
+          "time": "20:00",
+          "title": "Repack & prep for tomorrow",
+          "detail": "Icefields Parkway transfer tomorrow: build an early bag, load snacks and water, set the alarm for a 07:00 start ahead of the long drive to Lake Louise.",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Weather & road check",
+          "detail": "Check 511 Alberta and Parks Canada for the Icefields Parkway, plus a winter-tire check — BC's winter-tire rule is now in force.",
+          "kind": "plan"
+        },
+        {
+          "time": "22:00",
+          "title": "Wind down",
+          "detail": "Quiet hour before the trip's biggest driving day.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery before the Icefields Parkway transfer.",
+          "kind": "rest"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "label": "Day 10 · Bragg Creek to Yellowhead via Icefields Parkway",
+      "base": "Yellowhead County / Hinton",
+      "route": "Bragg Creek → Lake Louise → Crowfoot Glacier → Bow Lake → Peyto Lake → Columbia Icefield → Jasper → Yellowhead County",
+      "focus": "The world's most scenic highway: Crowfoot Glacier roadside view, Bow Lake reflections, Peyto Lake (the iconic wolf-head turquoise lake), and the Athabasca Glacier at Columbia Icefield — all fully covered by your Annual Discovery Pass.",
+      "overnight": "Yellowhead County / Hinton · 50410 Yellowhead Highway, Yellowhead County / Hinton, AB",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Depart Bragg Creek at 07:00",
+          "detail": "Check out before leaving. The 457 km Icefields Parkway transfer needs the full day: Highway 1 west past Banff to Lake Louise, then north onto Highway 93.",
+          "kind": "travel"
+        },
+        {
+          "time": "09:00",
+          "title": "Drive Bow Valley corridor",
+          "detail": "Scenic Trans-Canada drive into Banff National Park with the Castle Mountain backdrop.",
+          "kind": "travel"
+        },
+        {
+          "time": "10:00",
+          "title": "Enter Icefields Parkway (Hwy 93N)",
+          "detail": "Flash your Discovery Pass at the Parkway entrance. First roadside photo: Crowfoot Glacier pullout overlooking the Wapta Icefield.",
+          "kind": "explore"
+        },
+        {
+          "time": "11:00",
+          "title": "Bow Lake & Num-Ti-Jah Lodge",
+          "detail": "Walk the 2-minute shoreline trail for mirror reflections of the Bow Glacier and the historic red-roof lodge — the purest turquoise water on the drive.",
+          "kind": "walk"
+        },
+        {
+          "time": "12:00",
+          "title": "Peyto Lake / Bow Summit",
+          "detail": "The single most famous Instagram vista in the Canadian Rockies: 15-min uphill walk to the wolf-head-shaped electric blue lake at 2,069 m summit.",
+          "kind": "walk"
+        },
+        {
+          "time": "13:00",
+          "title": "Saskatchewan River Crossing lunch",
+          "detail": "Fuel up and have a quick lunch/rest stop at the only services along the 230-km Parkway.",
+          "kind": "food"
+        },
+        {
+          "time": "14:00",
+          "title": "Drive past Big Bend & Weeping Wall",
+          "detail": "Dramatic switchback canyon climb over Sunwapta Pass with towering rock walls.",
+          "kind": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "Columbia Icefield & Athabasca Glacier",
+          "detail": "Park at the Discovery Centre. Walk the 1.4-km Toe of the Glacier trail for close-up photos of massive blue ice, or visit the glass-floored Glacier Skywalk.",
+          "kind": "explore"
+        },
+        {
+          "time": "16:00",
+          "title": "Glacier photo & interpretive walk",
+          "detail": "Historic markers showing where the ice stood each decade since 1890; surreal lunar moraine landscape.",
+          "kind": "walk"
+        },
+        {
+          "time": "17:00",
+          "title": "Sunwapta Falls & Athabasca Falls",
+          "detail": "Two thunderous canyon waterfalls on the final run toward Jasper — multiple bridges and misty platforms for golden-hour shots.",
+          "kind": "explore"
+        },
+        {
+          "time": "18:00",
+          "title": "Drive Jasper townsite to Hinton",
+          "detail": "Exit Jasper National Park East Gate along the Athabasca river valley at sunset.",
+          "kind": "travel"
+        },
+        {
+          "time": "19:00",
+          "title": "Check in at Yellowhead County Airbnb",
+          "detail": "Arrive at 50410 Yellowhead Highway cabin. Check-in is 16:00; this is a ONE-NIGHT stay — checkout is 10:00 tomorrow.",
+          "kind": "rest"
+        },
+        {
+          "time": "20:00",
+          "title": "Dinner in Hinton",
+          "detail": "Local dinner at Folding Mountain Brewing or in Hinton.",
+          "kind": "food"
+        },
+        {
+          "time": "21:00",
+          "title": "Sleep",
+          "detail": "Deep recovery after the biggest sightseeing day of the entire trip.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ],
+      "summary": "Long 457 km scenic transfer. Leave Bragg Creek by 07:00 to bank daylight; if weather or road conditions on the Parkway deteriorate, skip optional stops rather than driving the passes after dark. Check-in is 16:00, so the day is gated by that time, not by property access."
+    },
+    {
+      "date": "2026-10-03",
+      "label": "Day 11 · Yellowhead County checkout, Jasper day & transfer to Revelstoke",
+      "base": "Revelstoke",
+      "route": "Yellowhead County (10:00 checkout) → Hinton → Jasper East Gate → Pyramid Lake → Maligne / Medicine Lake → Hinton → Hwy 16 West → Valemount → Blue River → Clearwater → Hwy 1 → Revelstoke",
+      "focus": "One day doing two things: a Jasper morning from a base you have already checked out of, then the westbound transfer through Mount Robson and the North Thompson corridor to Revelstoke.",
+      "overnight": "Revelstoke · 1500 1 Street West, Revelstoke, BC V0E 2S0",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Breakfast & final pack at Yellowhead",
+          "detail": "Checkout is 10:00 and this is a one-night stay, so have bags by the door before you leave for Jasper.",
+          "kind": "food"
+        },
+        {
+          "time": "09:00",
+          "title": "Drive to Jasper East Gate",
+          "detail": "Short hop west on Highway 16 into Jasper National Park. Drive slowly and watch for elk and bighorn sheep on the road.",
+          "kind": "travel"
+        },
+        {
+          "time": "10:00",
+          "title": "Check out of Yellowhead County",
+          "detail": "Return the key and confirm the checkout — the property is no longer available from this point, so there is no luggage drop later in the day.",
+          "kind": "plan"
+        },
+        {
+          "time": "11:00",
+          "title": "Pyramid Lake & Pyramid Island",
+          "detail": "Straight to Pyramid Lake for the classic Jasper shot: cross the wooden footbridge to Pyramid Island for mirror reflections of Pyramid Mountain.",
+          "kind": "walk"
+        },
+        {
+          "time": "12:00",
+          "title": "Jasper townsite walk & lunch",
+          "detail": "Connaught Drive and Patricia Street, then lunch in town (Harvest Food & Drink or Jasper Brewing Company).",
+          "kind": "food"
+        },
+        {
+          "time": "13:00",
+          "title": "Maligne / Medicine Lake — only if you accept a late arrival",
+          "detail": "The 45-km Maligne corridor is beautiful but adds 1.5 hours round trip. On this combined day, doing it means reaching Revelstoke after dark — make it the deliberate sacrifice, not the default.",
+          "kind": "explore"
+        },
+        {
+          "time": "14:00",
+          "title": "Leave Jasper westbound on Highway 16",
+          "detail": "Exit through the Jasper East Gate and turn west for Hinton, Valemount and the Yellowhead Pass. Fill up in Hinton; services thin out from here.",
+          "kind": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "Mount Robson Viewpoint",
+          "detail": "The highest peak in the Canadian Rockies (3,954 m) rises straight off Highway 16 at the Mount Robson Visitor Centre. Best quick stop of the transfer.",
+          "kind": "explore"
+        },
+        {
+          "time": "16:00",
+          "title": "Valemount to Blue River (Highway 5)",
+          "detail": "South along the North Thompson River between the Monashee and Cariboo ranges.",
+          "kind": "travel"
+        },
+        {
+          "time": "17:00",
+          "title": "Blue River / Clearwater leg",
+          "detail": "Mountain road with long empty stretches; watch for deer and moose at dusk.",
+          "kind": "travel"
+        },
+        {
+          "time": "18:00",
+          "title": "Clearwater to Kamloops junction",
+          "detail": "Continue south through the Thompson Valley, then connect to Highway 1 east along the Shuswap lakeshore.",
+          "kind": "travel"
+        },
+        {
+          "time": "19:00",
+          "title": "Drive into Revelstoke",
+          "detail": "Trans-Canada east through the Eagle River valley. Expect the final hour in dusk or dark at this time of year.",
+          "kind": "travel"
+        },
+        {
+          "time": "20:00",
+          "title": "Check in at Revelstoke Airbnb",
+          "detail": "Arrive at 1500 1 Street West, unload and settle. Save the town for the morning.",
+          "kind": "rest"
+        },
+        {
+          "time": "21:00",
+          "title": "Late dinner in Revelstoke",
+          "detail": "The Woolsey Creek Bistro, Taco Club or the Village Idiot — check closing times on arrival, options thin out late in October.",
+          "kind": "food"
+        },
+        {
+          "time": "22:00",
+          "title": "Wind down",
+          "detail": "Long day: 435 km plus a Jasper morning. Recover properly.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ],
+      "summary": "ONE-NIGHT BOOKING: Yellowhead County is a single night (2–3 Oct) in the latest booking, so the Jasper content has to fit a checkout-morning day-trip plus a 435 km transfer. Keep Jasper to the townsite and Pyramid Lake; skip the Maligne corridor unless you are willing to arrive at Revelstoke after dark.",
+      "notes": "CHECK-OUT CONFLICT: the Yellowhead stay ends 10:00 on 3 Oct. Nothing after 10:00 may assume access to that property — the Jasper loop runs from a base you have already vacated, and the car is your only shelter."
+    },
+    {
+      "date": "2026-10-04",
+      "label": "Day 12 · Revelstoke to Kelowna & Okanagan Wineries",
+      "base": "Kelowna / Glenmore",
+      "route": "Revelstoke → Sicamous → Salmon Arm → Enderby → Vernon → Kelowna",
+      "focus": "Transition from mountain ranges to Okanagan lake country: Shuswap photo stop, Vernon, Kelowna waterfront, and premier West Kelowna wine tastings.",
+      "overnight": "Kelowna / Glenmore · 104 Clifton Road North, Kelowna, BC V1V 1A1",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Revelstoke morning coffee",
+          "detail": "Breakfast at a local cafe (e.g. Dose Coffee) and depart along Highway 1.",
+          "kind": "food"
+        },
+        {
+          "time": "09:00",
+          "title": "Sicamous & Shuswap Lake",
+          "detail": "Short scenic photography stop along the Shuswap waterways.",
+          "kind": "explore"
+        },
+        {
+          "time": "10:00",
+          "title": "Drive south via Vernon",
+          "detail": "Highway 97 South past Kalamalka Lake and through Lake Country orchards.",
+          "kind": "travel"
+        },
+        {
+          "time": "11:00",
+          "title": "Lake Country scenic viewpoints",
+          "detail": "Views over the turquoise waters of Kalamalka Lake.",
+          "kind": "explore"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch in Vernon or Kelowna",
+          "detail": "Casual vineyard or lakeside cafe lunch.",
+          "kind": "food"
+        },
+        {
+          "time": "13:00",
+          "title": "Arrive in Kelowna (check-in from 15:00)",
+          "detail": "Check-in at 104 Clifton Road North opens at 15:00, so park downtown first and walk the lakefront rather than assuming early access.",
+          "kind": "rest"
+        },
+        {
+          "time": "14:00",
+          "title": "Okanagan Lake waterfront walk",
+          "detail": "City Park, the boardwalk and the downtown marina — the busiest, most photographed stretch of the lake.",
+          "kind": "walk"
+        },
+        {
+          "time": "15:00",
+          "title": "Check in at Kelowna Airbnb",
+          "detail": "Check into 104 Clifton Road North (Glenmore/Clifton), unpack, then head across the bridge for the wine trail.",
+          "kind": "travel"
+        },
+        {
+          "time": "16:00",
+          "title": "Mission Hill Family Estate",
+          "detail": "Tour the striking architecture, bell tower and cellar; wine tasting.",
+          "kind": "explore"
+        },
+        {
+          "time": "17:00",
+          "title": "Quails' Gate Winery option",
+          "detail": "Visit neighbouring Quails' Gate overlooking the vineyard rows sloping into Okanagan Lake.",
+          "kind": "explore"
+        },
+        {
+          "time": "18:00",
+          "title": "Dinner in Kelowna",
+          "detail": "Lakeside dining at Waterfront Wines or Cactus Club on the boardwalk.",
+          "kind": "food"
+        },
+        {
+          "time": "19:00",
+          "title": "Waterfront evening stroll",
+          "detail": "Sunset over Okanagan Lake.",
+          "kind": "walk"
+        },
+        {
+          "time": "20:00",
+          "title": "Pack for return to Vancouver",
+          "detail": "Review Coquihalla highway weather on DriveBC for tomorrow's return.",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Sleep",
+          "detail": "Final interior BC night.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "label": "Day 13 · Kelowna to Vancouver Dunbar Street",
+      "base": "Dunbar-Southlands",
+      "route": "Kelowna → Highway 97C → Merritt → Coquihalla Highway 5 → Hope → Vancouver (Dunbar Street)",
+      "focus": "Return west across the Okanagan Connector and Coquihalla Highway to Vancouver, landing in the residential Dunbar-Southlands base for the final booked nights.",
+      "overnight": "Dunbar Street Airbnb · 3540 West 37th Avenue, Vancouver, BC V6N 2V8",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Depart Kelowna",
+          "detail": "Check out, fuel up, and climb Highway 97C (Okanagan Connector).",
+          "kind": "travel"
+        },
+        {
+          "time": "09:00",
+          "title": "Okanagan Connector to Merritt",
+          "detail": "Scenic high-elevation drive over the plateau.",
+          "kind": "travel"
+        },
+        {
+          "time": "10:00",
+          "title": "Merritt fuel & coffee stop",
+          "detail": "Top up fuel and grab coffee in Merritt before Highway 5.",
+          "kind": "food"
+        },
+        {
+          "time": "11:00",
+          "title": "Coquihalla Summit crossing",
+          "detail": "Descend through the dramatic Coquihalla Canyon toward Hope.",
+          "kind": "travel"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch in Hope",
+          "detail": "Casual lunch in Hope after clearing the mountain highways.",
+          "kind": "food"
+        },
+        {
+          "time": "13:00",
+          "title": "Fraser Valley highway",
+          "detail": "Highway 1 West through Chilliwack and Abbotsford toward Vancouver.",
+          "kind": "travel"
+        },
+        {
+          "time": "14:00",
+          "title": "Arrive in Vancouver",
+          "detail": "Cross into Vancouver West Side via 41st Avenue.",
+          "kind": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "Check in at Dunbar Airbnb",
+          "detail": "Check into 3540 West 37th Avenue (Dunbar-Southlands), unpack.",
+          "kind": "rest"
+        },
+        {
+          "time": "16:00",
+          "title": "Pacific Spirit Regional Park",
+          "detail": "Gentle walk among towering coastal Douglas fir and cedar trees near the stay.",
+          "kind": "walk"
+        },
+        {
+          "time": "17:00",
+          "title": "Kitsilano / Spanish Banks sunset",
+          "detail": "Sunset view over English Bay, downtown skyline and North Shore mountains.",
+          "kind": "explore"
+        },
+        {
+          "time": "18:00",
+          "title": "Celebratory farewell dinner",
+          "detail": "Dinner in Kitsilano, Point Grey or Kerrisdale.",
+          "kind": "food"
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner",
+          "detail": "Relaxed final trip meal.",
+          "kind": "food"
+        },
+        {
+          "time": "20:00",
+          "title": "Pack for CX867 international flight",
+          "detail": "Pack bags, weigh luggage, organize passports and airport documents.",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Wind down",
+          "detail": "Final night in Canada.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "label": "Day 14 · Vancouver West Side & final Dunbar night",
+      "base": "Dunbar-Southlands",
+      "route": "Dunbar-Southlands → Pacific Spirit Regional Park → Kitsilano / Spanish Banks → Dunbar-Southlands",
+      "focus": "A full city day in Vancouver with no driving: rainforest trails from the door, a Kitsilano beach walk, and the west-side neighbourhoods before the flight home.",
+      "overnight": "Dunbar Street Airbnb · 3540 West 37th Avenue, Vancouver, BC V6N 2V8",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Slow breakfast in Dunbar / Kerrisdale",
+          "detail": "Local bakery breakfast near 3540 West 37th Avenue — this is the only day of the trip with no driving.",
+          "kind": "food"
+        },
+        {
+          "time": "09:00",
+          "title": "Pacific Spirit Regional Park",
+          "detail": "Coastal rainforest trails straight from the neighbourhood: towering Douglas fir and cedar, quiet on a weekday morning.",
+          "kind": "walk"
+        },
+        {
+          "time": "10:00",
+          "title": "UBC & Museum of Anthropology (option)",
+          "detail": "World-class Indigenous art — totem poles, carvings and the Great Hall. Paid entry; check opening hours for the day.",
+          "kind": "culture"
+        },
+        {
+          "time": "11:00",
+          "title": "Wreck Beach / Spanish Banks overlook",
+          "detail": "Short walk down to the water for the Strait of Georgia and Vancouver Island on the horizon.",
+          "kind": "walk"
+        },
+        {
+          "time": "12:00",
+          "title": "Lunch in Kitsilano or Point Grey",
+          "detail": "Kits has the widest choice; casual and walkable on 4th Avenue.",
+          "kind": "food"
+        },
+        {
+          "time": "13:00",
+          "title": "Kitsilano Beach & Jericho",
+          "detail": "Waterfront walk with the downtown skyline and North Shore mountains across English Bay.",
+          "kind": "walk"
+        },
+        {
+          "time": "14:00",
+          "title": "Granville Island Public Market",
+          "detail": "Market stalls, artisan studios and food halls — mid-afternoon dodges the worst of the crowds.",
+          "kind": "shop"
+        },
+        {
+          "time": "15:00",
+          "title": "Queen Elizabeth Park & Quarry Garden",
+          "detail": "The city's highest point: free panoramic views over Vancouver, and the sunken quarry garden in autumn colour.",
+          "kind": "view"
+        },
+        {
+          "time": "16:00",
+          "title": "Return to Dunbar",
+          "detail": "Drop shopping and reset at the Airbnb.",
+          "kind": "rest"
+        },
+        {
+          "time": "17:00",
+          "title": "Spanish Banks sunset",
+          "detail": "The best west-side sunset: sand flats, the freighters offshore and the mountains behind the city.",
+          "kind": "view"
+        },
+        {
+          "time": "18:00",
+          "title": "Farewell dinner",
+          "detail": "Dinner in Kitsilano, Point Grey or Kerrisdale — the last proper meal of the trip.",
+          "kind": "food"
+        },
+        {
+          "time": "19:00",
+          "title": "Relaxed evening",
+          "detail": "No early alarm tomorrow: the flight is at 14:10.",
+          "kind": "rest"
+        },
+        {
+          "time": "20:00",
+          "title": "Pack for CX867",
+          "detail": "Bags, passports and airport documents. Weigh the luggage and keep the Discovery Pass handy — the rental car goes back tomorrow.",
+          "kind": "plan"
+        },
+        {
+          "time": "21:00",
+          "title": "Check flight & rental car return",
+          "detail": "Confirm CX867 status, the YVR rental return location and the fuel-up plan for the morning.",
+          "kind": "plan"
+        },
+        {
+          "time": "22:00",
+          "title": "Wind down",
+          "detail": "Final night in Vancouver.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Sleep",
+          "detail": "Overnight recovery.",
+          "kind": "rest"
+        }
+      ],
+      "notes": "FINAL NIGHT GAP: the supplied Dunbar dates (5–7 Oct) end with checkout on the morning of 7 Oct, so they do not by themselves cover the night of 6→7 Oct that this day assumes. Confirm the last night with the host or the budget's unbooked-night line covers it."
+    },
+    {
+      "date": "2026-10-07",
+      "label": "Day 15 · Dunbar Street to YVR Departure",
+      "base": "YVR",
+      "route": "Dunbar Street, Dunbar-Southlands → YVR Airport · CX867 14:10 → HKG 19:20 on 8 Oct",
+      "focus": "Slow west-side morning, then the rental car back at YVR for the 14:10 departure to Hong Kong. Matches your booked CX867 exactly.",
+      "overnight": "CX867 in flight",
+      "blocks": [
+        {
+          "time": "08:00",
+          "title": "Breakfast in Dunbar / Kerrisdale",
+          "detail": "Relaxed local bakery breakfast near the Airbnb.",
+          "kind": "food"
+        },
+        {
+          "time": "09:00",
+          "title": "Final packing & check out",
+          "detail": "Check out from 3540 West 37th Avenue by 10:00 AM.",
+          "kind": "rest"
+        },
+        {
+          "time": "10:00",
+          "title": "Short drive to YVR",
+          "detail": "Easy 15–20 min drive south to Vancouver International Airport.",
+          "kind": "travel"
+        },
+        {
+          "time": "11:00",
+          "title": "Return rental car at YVR",
+          "detail": "Fuel the RAV4 nearby, return at airport rental centre and inspect receipt.",
+          "kind": "travel"
+        },
+        {
+          "time": "12:00",
+          "title": "Check in for CX867",
+          "detail": "Cathay Pacific bag drop, international security and customs.",
+          "kind": "travel"
+        },
+        {
+          "time": "13:00",
+          "title": "Gate buffer & airport duty-free",
+          "detail": "Relax at the departure gate; flight boarding at 13:30.",
+          "kind": "travel"
+        },
+        {
+          "time": "14:00",
+          "title": "CX867 departure (14:10)",
+          "detail": "Depart Vancouver International Airport for Hong Kong.",
+          "kind": "travel"
+        },
+        {
+          "time": "15:00",
+          "title": "CX867 in flight",
+          "detail": "Transpacific flight to Hong Kong.",
+          "kind": "travel"
+        },
+        {
+          "time": "16:00",
+          "title": "CX867 in flight",
+          "detail": "In flight.",
+          "kind": "travel"
+        },
+        {
+          "time": "17:00",
+          "title": "CX867 in flight",
+          "detail": "In flight.",
+          "kind": "travel"
+        },
+        {
+          "time": "18:00",
+          "title": "CX867 in flight",
+          "detail": "In flight.",
+          "kind": "travel"
+        },
+        {
+          "time": "19:00",
+          "title": "CX867 in flight",
+          "detail": "Scheduled arrival is 19:20 on 8 Oct (next day) HK time.",
+          "kind": "travel"
+        },
+        {
+          "time": "20:00",
+          "title": "Arrival recovery",
+          "detail": "Next calendar day in Hong Kong.",
+          "kind": "rest"
+        },
+        {
+          "time": "21:00",
+          "title": "Arrival recovery",
+          "detail": "Trip complete.",
+          "kind": "rest"
+        },
+        {
+          "time": "22:00",
+          "title": "Arrival recovery",
+          "detail": "Trip complete.",
+          "kind": "rest"
+        },
+        {
+          "time": "23:00",
+          "title": "Arrival recovery",
+          "detail": "Trip complete.",
+          "kind": "rest"
+        }
+      ],
+      "summary": "Your latest booking sequence (Bragg Creek 30 Sep–2 Oct, Yellowhead 2–3 Oct, Revelstoke 3–4 Oct, Kelowna 4–5 Oct, Vancouver 5–7 Oct) ends right where the booked CX867 departs, so there is no flight conflict — but 'Vancouver 5–7' needs one more night than the Dunbar checkout shows, so confirm the last night before departure."
+    }
+  ],
+  "hotels": {
+    "vancouver": [
+      {
+        "name": "Clive Avenue Airbnb · Collingwood",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed first stay, 23–26 September. Joyce-Collingwood base near Joyce Station, Central Park and Metrotown."
+      }
+    ],
+    "kamloops": [
+      {
+        "name": "Delta Hotels Kamloops",
+        "type": "city hotel",
+        "why": "Central, full-service overnight after the interior drive.",
+        "url": "https://www.marriott.com/en-us/hotels/ykade-delta-hotels-kamloops/overview/",
+        "book": "https://www.google.com/travel/search?q=Delta%20Hotels%20Kamloops"
+      },
+      {
+        "name": "Hampton Inn Kamloops",
+        "type": "hotel",
+        "why": "Practical breakfast, parking and a simple reset.",
+        "url": "https://www.hilton.com/en/hotels/kambchx-hampton-kamloops/",
+        "book": "https://www.google.com/travel/search?q=Hampton%20Inn%20Kamloops"
+      },
+      {
+        "name": "Coast Kamloops Hotel",
+        "type": "hotel",
+        "why": "Pool, hot tub and highway-friendly location.",
+        "url": "https://mundihotels.ca/properties/",
+        "book": "https://www.google.com/travel/search?q=Coast%20Kamloops%20Hotel"
+      },
+      {
+        "name": "Airbnb Kamloops search",
+        "type": "vacation rental",
+        "why": "Search a suite with parking and a kitchen.",
+        "url": "https://www.airbnb.com/kamloops-canada/stays",
+        "book": "https://www.airbnb.com/kamloops-canada/stays"
+      },
+      {
+        "name": "Cozy King with private patio and barrel sauna",
+        "type": "Airbnb private suite",
+        "why": "Search result shows a verified Kamloops suite with king bed, full kitchen, free parking, laundry, private patio, fire table and private barrel sauna. Exact dates and price still need checking.",
+        "url": "https://www.airbnb.ca/rooms/1038384976094405586",
+        "book": "https://www.airbnb.ca/rooms/1038384976094405586"
+      }
+    ],
+    "golden": [
+      {
+        "name": "Your booking · Golden",
+        "type": "fixed Airbnb stay",
+        "why": "Supplied stay for 27–28 September."
+      }
+    ],
+    "canmore": [
+      {
+        "name": "Canmore Rocky Mountain Inn",
+        "type": "economy hotel",
+        "why": "Value-oriented Canmore base with easy highway access.",
+        "url": "https://www.canmoreinn.com/",
+        "book": "https://www.google.com/travel/search?q=Canmore%20Rocky%20Mountain%20Inn"
+      },
+      {
+        "name": "Blackstone Mountain Lodge",
+        "type": "suite hotel",
+        "why": "Kitchen-style rooms and resort amenities for a multi-night base.",
+        "url": "https://www.blackstonemountainlodge.com/",
+        "book": "https://www.google.com/travel/search?q=Blackstone%20Mountain%20Lodge%20Canmore"
+      },
+      {
+        "name": "Pocaterra Inn & Waterslide",
+        "type": "hotel",
+        "why": "Practical Canmore base with breakfast and indoor amenities.",
+        "url": "https://www.pocaterrainn.com/",
+        "book": "https://www.google.com/travel/search?q=Pocaterra%20Inn%20Canmore"
+      },
+      {
+        "name": "Super 8 by Wyndham Canmore",
+        "type": "motel-style hotel",
+        "why": "Budget-first candidate. Confirm exact room and cancellation terms.",
+        "url": "https://www.wyndhamhotels.com/super-8/canmore-alberta/super-8-canmore/overview",
+        "book": "https://www.google.com/travel/search?q=Super%208%20Canmore"
+      },
+      {
+        "name": "The Drake Inn",
+        "type": "inn",
+        "why": "Central Canmore option with access to town restaurants.",
+        "url": "https://www.thedrakeinn.ca/",
+        "book": "https://www.google.com/travel/search?q=The%20Drake%20Inn%20Canmore"
+      },
+      {
+        "name": "Canmore accommodation directory",
+        "type": "directory",
+        "why": "Compare more hotels, suites and motels in the main economic base.",
+        "url": "https://www.explorecanmore.ca/all-accommodations",
+        "book": "https://www.explorecanmore.ca/all-accommodations"
+      },
+      {
+        "name": "Airbnb Canmore search",
+        "type": "vacation rental",
+        "why": "Search Canmore or Dead Man's Flats for kitchen, parking and multi-night value.",
+        "url": "https://www.airbnb.com/canmore-canada/stays",
+        "book": "https://www.airbnb.com/canmore-canada/stays"
+      },
+      {
+        "name": "Canmore Mountain Retreat",
+        "type": "Airbnb 1-bedroom",
+        "why": "Search result shows 5.0 overall rating, mountain view, kitchen, private patio and rooftop hot tub access with private evening booking windows. Exact dates and price must be checked.",
+        "url": "https://www.airbnb.ca/rooms/972526590434794327",
+        "book": "https://www.airbnb.ca/rooms/972526590434794327"
+      },
+      {
+        "name": "Modern Mountain Escape 2BR",
+        "type": "Airbnb townhouse",
+        "why": "Search result shows 4.96 from 76 reviews, kitchen, fireplace, balcony BBQ, parking, pool and hot tub; it is walkable to Canmore dining and about 20 minutes to Banff. Exact dates and price must be checked.",
+        "url": "https://www.airbnb.ca/rooms/919785469808320998",
+        "book": "https://www.airbnb.ca/rooms/919785469808320998"
+      }
+    ],
+    "cabins": [
+      {
+        "name": "Baker Creek by Basecamp",
+        "type": "romantic cabin",
+        "why": "Best all-round cabin base: log cabins, creekside fire pits, café, sauna and Bow Valley Parkway location.",
+        "url": "https://www.basecampresorts.com/bakercreek",
+        "book": "https://www.basecampresorts.com/bakercreek"
+      },
+      {
+        "name": "Storm Mountain Lodge & Cabins",
+        "type": "unplugged historic cabin",
+        "why": "Most romantic splurge: fireplace, historic cabin and on-site dining. No Wi-Fi, TV or kitchen.",
+        "url": "https://stormmountainlodge.com/logcabins",
+        "book": "https://us2.cloudbeds.com/reservation/uc9zZn"
+      },
+      {
+        "name": "Paradise Lodge & Bungalows",
+        "type": "Lake Louise cabin",
+        "why": "Cabins and suites near Lake Louise, with guest shuttle and e-bike options.",
+        "url": "https://www.paradiselodge.com/",
+        "book": "https://www.paradiselodge.com/"
+      },
+      {
+        "name": "Emerald Lake Lodge",
+        "type": "lake lodge alternative",
+        "why": "Use only if you want to trade one Canmore night for a one-night lake splurge.",
+        "url": "https://crmr.com/resorts/emerald-lake/accommodations/",
+        "book": "https://bookings.travelclick.com/115058"
+      }
+    ],
+    "jasper": [
+      {
+        "name": "Tourism Jasper accommodation directory",
+        "type": "directory",
+        "why": "Check 2026 operating status after the 2024 wildfire before booking.",
+        "url": "https://jasper.travel/accommodations",
+        "book": "https://jasper.travel/accommodations"
+      },
+      {
+        "name": "The Crimson Jasper",
+        "type": "town hotel",
+        "why": "Central candidate for the Icefields Parkway overnight.",
+        "url": "https://jasper.travel/accommodations/crimson-jasper/",
+        "book": "https://www.google.com/travel/search?q=The%20Crimson%20Jasper"
+      },
+      {
+        "name": "Jasper Inn & Suites",
+        "type": "town hotel",
+        "why": "Quiet town base listed by Tourism Jasper.",
+        "url": "https://jasper.travel/accommodations/jasper-inn-suites/",
+        "book": "https://www.google.com/travel/search?q=Jasper%20Inn%20Suites"
+      },
+      {
+        "name": "Fairmont Jasper Park Lodge",
+        "type": "lodge / cabins",
+        "why": "Lakeside lodge and cabin experience. Premium alternative.",
+        "url": "https://jasper.travel/accommodations/fairmont-jasper-park-lodge/",
+        "book": "https://www.google.com/travel/search?q=Fairmont%20Jasper%20Park%20Lodge"
+      },
+      {
+        "name": "Airbnb Jasper search",
+        "type": "vacation rental",
+        "why": "Search Jasper, Hinton and Jasper Lake if town inventory is tight.",
+        "url": "https://www.airbnb.com/jasper-canada/stays",
+        "book": "https://www.airbnb.com/jasper-canada/stays"
+      },
+      {
+        "name": "The Bears Den - Whistlers Suite",
+        "type": "Airbnb apartment",
+        "why": "Search result describes a 5.0-rated one-bedroom apartment within walking distance of downtown Jasper, with mountain views, full kitchen and electric fireplace.",
+        "url": "https://www.airbnb.ca/jasper-canada/stays/apartments",
+        "book": "https://www.airbnb.ca/jasper-canada/stays/apartments"
+      },
+      {
+        "name": "The Cedar Suite - Jasper East Gates",
+        "type": "Airbnb guest suite",
+        "why": "Located about 35 minutes from Jasper townsite near Hinton, with mountain views, kitchen, free parking and a BBQ; use only if town inventory is unavailable.",
+        "url": "https://www.airbnb.ca/rooms/27761749",
+        "book": "https://www.airbnb.ca/rooms/27761749"
+      }
+    ],
+    "revelstoke": [
+      {
+        "name": "Your booking · Revelstoke",
+        "type": "fixed Airbnb stay",
+        "why": "Supplied stay for 3–4 October."
+      }
+    ],
+    "yvr": [
+      {
+        "name": "Westin Wall Centre Vancouver Airport",
+        "type": "airport hotel",
+        "why": "Airport shuttle, Richmond location and McArthurGlen access.",
+        "url": "https://www.marriott.com/en-us/hotels/yvrwc-the-westin-wall-centre-vancouver-airport/overview/",
+        "book": "https://www.google.com/travel/search?q=Westin%20Wall%20Centre%20Vancouver%20Airport"
+      },
+      {
+        "name": "Holiday Inn Vancouver Airport Richmond",
+        "type": "airport hotel",
+        "why": "Airport shuttle, parking and restaurant for the last night.",
+        "url": "https://www.ihg.com/holidayinn/hotels/us/en/richmond/yvrap/hoteldetail",
+        "book": "https://www.google.com/travel/search?q=Holiday%20Inn%20Vancouver%20Airport%20Richmond"
+      },
+      {
+        "name": "Residence Inn Vancouver Airport",
+        "type": "airport hotel / kitchen",
+        "why": "In-room kitchens and airport shuttle listed by Marriott.",
+        "url": "https://www.marriott.com/en-us/hotels/yvrra-residence-inn-vancouver-airport/overview/",
+        "book": "https://www.google.com/travel/search?q=Residence%20Inn%20Vancouver%20Airport"
+      }
+    ],
+    "harvie-heights": [
+      {
+        "name": "Your booking · Harvie Heights",
+        "type": "fixed Airbnb stay",
+        "why": "Supplied stay for 28–30 September; practical Bow Valley base."
+      }
+    ],
+    "bragg-creek": [
+      {
+        "name": "Calgary & Kananaskis",
+        "type": "city + national/provincial park day",
+        "why": "Downtown Calgary (Stephen Avenue, Olympic Plaza, East Village, RiverWalk, +15 skywalks), MEC and Bass Pro Shops for gear, then Elbow Falls and Forgetmenot Pond in Kananaskis on the way back to the acreage.",
+        "url": "https://www.calgary.ca/"
+      },
+      {
+        "name": "Your booking · Bragg Creek",
+        "type": "fixed Airbnb stay",
+        "why": "Supplied stay for 30 September–2 October; foothills base."
+      }
+    ],
+    "yellowhead-county": [
+      {
+        "name": "Your booking · Yellowhead County",
+        "type": "fixed Airbnb stay",
+        "why": "Supplied stay for 2–3 October; use the exact address for final routing."
+      }
+    ],
+    "kelowna": [
+      {
+        "name": "Your booking · Kelowna",
+        "type": "fixed Airbnb stay",
+        "why": "Supplied stay for 4–5 October."
+      }
+    ],
+    "clive-avenue": [
+      {
+        "name": "Clive Avenue Airbnb · Collingwood",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed first stay, 23–26 September. Exact address should be used for door-to-door directions."
+      }
+    ],
+    "dunbar-street": [
+      {
+        "name": "Dunbar Street Airbnb · Dunbar-Southlands",
+        "type": "fixed Airbnb stay",
+        "why": "Fixed final stay, 5–7 October. West-side base near UBC, Pacific Spirit Park and Kitsilano."
+      }
+    ]
+  },
+  "restaurants": {
+    "Vancouver": [
+      {
+        "name": "Blue Water Cafe",
+        "type": "seafood",
+        "note": "Downtown seafood candidate. Reserve after flight times are known.",
+        "url": "https://bluewatercafe.net/"
+      },
+      {
+        "name": "Elisa",
+        "type": "steak",
+        "note": "Yaletown steakhouse candidate.",
+        "url": "https://elisasteak.com/"
+      },
+      {
+        "name": "ARC Restaurant",
+        "type": "hotel dining",
+        "note": "Convenient waterfront hotel-dining option.",
+        "url": "https://www.fairmont.com/waterfront-vancouver/dining/arc-restaurant/"
+      },
+      {
+        "name": "Kissa Tanto",
+        "type": "Japanese-Italian",
+        "note": "Popular Chinatown option. Reserve well ahead.",
+        "url": "https://kissatanto.com/"
+      },
+      {
+        "name": "CínCin",
+        "type": "Italian",
+        "note": "Downtown Italian option for Day 2 or final night.",
+        "url": "https://cincin.net/"
+      }
+    ],
+    "Whistler": [
+      {
+        "name": "Tourism Whistler dining search",
+        "type": "restaurant directory",
+        "note": "Choose a mountain-view or village restaurant after the actual road plan is fixed.",
+        "url": "https://www.whistler.com/restaurants/"
+      }
+    ],
+    "Golden": [
+      {
+        "name": "Golden town dining search",
+        "type": "restaurant directory",
+        "note": "Choose a nearby dinner for the 27 Sep overnight after checking current opening hours.",
+        "url": "https://www.tourismgolden.com/food-drink"
+      }
+    ],
+    "Canmore": [
+      {
+        "name": "The Trough Dining Co.",
+        "type": "Canadian",
+        "note": "Romantic Canmore dinner candidate.",
+        "url": "https://www.thetrough.ca/"
+      },
+      {
+        "name": "Communitea Café",
+        "type": "café",
+        "note": "Casual breakfast / lunch candidate.",
+        "url": "https://www.communiteacafe.ca/"
+      },
+      {
+        "name": "Rocky Mountain Flatbread",
+        "type": "casual",
+        "note": "Easy shared meal after a road day.",
+        "url": "https://rockymountainflatbread.ca/"
+      }
+    ],
+    "Banff": [
+      {
+        "name": "The Bison Restaurant",
+        "type": "Canadian",
+        "note": "Banff dinner candidate.",
+        "url": "https://thebison.ca/"
+      },
+      {
+        "name": "Park Distillery",
+        "type": "distillery / casual",
+        "note": "Casual downtown option.",
+        "url": "https://parkdistillery.com/"
+      },
+      {
+        "name": "Bluebird",
+        "type": "steak / fondue",
+        "note": "Reserve if choosing a special Banff dinner.",
+        "url": "https://bluebirdbanff.com/"
+      },
+      {
+        "name": "Grizzly House",
+        "type": "fondue",
+        "note": "Classic fondue option. Confirm menu and reservation.",
+        "url": "https://www.banffgrizzly.com/"
+      }
+    ],
+    "Lake Louise / cabin zone": [
+      {
+        "name": "Walliser Stube",
+        "type": "fondue / Swiss",
+        "note": "Fairmont Chateau Lake Louise splurge candidate.",
+        "url": "https://www.fairmont.com/lake-louise/dining/walliser-stube/"
+      },
+      {
+        "name": "Post Hotel Dining Room",
+        "type": "fine dining",
+        "note": "Lake Louise area splurge candidate.",
+        "url": "https://posthotel.com/dine/cuisine"
+      },
+      {
+        "name": "Storm Mountain Lodge dining",
+        "type": "lodge dining",
+        "note": "On-site dining; reservation recommended.",
+        "url": "https://stormmountainlodge.com/cuisine/"
+      },
+      {
+        "name": "Baker Creek food options",
+        "type": "café / cabin",
+        "note": "Creekside Café and food packages. Confirm seasonal service.",
+        "url": "https://www.basecampresorts.com/bakercreek"
+      }
+    ],
+    "Jasper": [
+      {
+        "name": "Jasper restaurant search",
+        "type": "town dining",
+        "note": "Keep dinner simple after the Parkway and check current operating status.",
+        "url": "https://jasper.travel/eat-drink/"
+      }
+    ]
+  },
+  "route_legs": [
+    {
+      "from": "Clive Avenue / Vancouver",
+      "to": "Kamloops",
+      "distance": "≈350 km",
+      "distance_km": 350,
+      "time": "≈4.5–5.5 h",
+      "baseline_hours": 4.5,
+      "planned_hours": "5–6",
+      "estimated_liters": "32–35",
+      "estimated_gas_cad": "65–72",
+      "note": "Via Highway 1, Hope (Othello Tunnels), Coquihalla Highway 5 and Merritt to 824 Nicolani Drive."
+    },
+    {
+      "from": "Kamloops",
+      "to": "Golden",
+      "distance": "≈360 km",
+      "distance_km": 360,
+      "time": "≈4–5 h direct / 6–8 h scenic",
+      "baseline_hours": 4.5,
+      "planned_hours": "6–8",
+      "estimated_liters": "33–36",
+      "estimated_gas_cad": "68–74",
+      "note": "Trans-Canada via Sicamous, Revelstoke, Rogers Pass Discovery Centre and Hemlock Grove Boardwalk."
+    },
+    {
+      "from": "Golden",
+      "to": "Harvie Heights",
+      "distance": "≈162 km",
+      "distance_km": 162,
+      "time": "≈2 h direct / 5–7 h scenic",
+      "baseline_hours": 2.0,
+      "planned_hours": "5–7",
+      "estimated_liters": "15–16",
+      "estimated_gas_cad": "25–33",
+      "note": "Via Yoho National Park (Natural Bridge, Emerald Lake, Takakkaw Falls) and Lake Louise to 750 Harvie Heights Road."
+    },
+    {
+      "from": "Harvie Heights",
+      "to": "Bragg Creek",
+      "distance": "≈185 km",
+      "distance_km": 185,
+      "time": "≈2.5 h direct / 4–5 h with Kananaskis",
+      "baseline_hours": 2.5,
+      "planned_hours": "4–5",
+      "estimated_liters": "16–18",
+      "estimated_gas_cad": "27–33",
+      "note": "Via Canmore, Highway 22 South (Cowboy Trail) and Highway 66 through the Elbow Valley: Elbow Falls and the Elbow Valley pullouts come before the 16:00 Bragg Creek check-in, so Kananaskis is on the arrival day rather than a separate outing."
+    },
+    {
+      "from": "Bragg Creek",
+      "to": "Calgary & Kananaskis loop",
+      "distance": "≈215 km",
+      "distance_km": 215,
+      "time": "≈3.5 h driving",
+      "baseline_hours": 3.5,
+      "planned_hours": "6–8",
+      "estimated_liters": "18–20",
+      "estimated_gas_cad": "30–35",
+      "note": "Bragg Creek → Highway 8 → Calgary downtown → Deerfoot Meadows → Highway 22X/22 → Highway 66 → Elbow Falls → Forgetmenot Pond → Bragg Creek. Kananaskis Conservation Pass needed for the Elbow Falls and Forgetmenot Pond parking lots."
+    },
+    {
+      "from": "Bragg Creek",
+      "to": "Yellowhead County",
+      "distance": "≈457 km",
+      "distance_km": 457,
+      "time": "≈5.5 h direct / 8–10 h scenic",
+      "baseline_hours": 5.5,
+      "planned_hours": "10–12 (07:00 start)",
+      "estimated_liters": "42–46",
+      "estimated_gas_cad": "72–82",
+      "note": "Via Lake Louise, Crowfoot Glacier, Bow Lake, Peyto Lake, Columbia Icefield and Athabasca Falls — the world's premier glacier highway, fully covered by your Annual Discovery Pass. Leave at 07:00; this is the trip's longest single day."
+    },
+    {
+      "from": "Yellowhead County",
+      "to": "Revelstoke via Jasper",
+      "distance": "≈435 km",
+      "distance_km": 435,
+      "time": "≈5–6 h direct / 7–8 h with Jasper",
+      "baseline_hours": 5.5,
+      "planned_hours": "8–9",
+      "estimated_liters": "40–44",
+      "estimated_gas_cad": "80–88",
+      "note": "Combined day: 10:00 Yellowhead checkout, Jasper morning loop, then Highway 16 West through Valemount and Blue River to 1500 1 Street West."
+    },
+    {
+      "from": "Revelstoke",
+      "to": "Kelowna",
+      "distance": "≈200 km",
+      "distance_km": 200,
+      "time": "≈2.5–3 h",
+      "baseline_hours": 2.75,
+      "planned_hours": "3–4",
+      "estimated_liters": "18–20",
+      "estimated_gas_cad": "37–41",
+      "note": "Via Sicamous, Shuswap Lake, Vernon, Lake Country to 104 Clifton Road North, plus West Kelowna wineries."
+    },
+    {
+      "from": "Kelowna",
+      "to": "Vancouver (Dunbar)",
+      "distance": "≈390 km",
+      "distance_km": 390,
+      "time": "≈4.5–5.5 h direct / 6–7 h realistic",
+      "baseline_hours": 4.75,
+      "planned_hours": "6–7",
+      "estimated_liters": "35–39",
+      "estimated_gas_cad": "72–80",
+      "note": "Via Highway 97C (Okanagan Connector), Merritt, Coquihalla Highway 5, Hope to 3540 West 37th Avenue."
+    },
+    {
+      "from": "Vancouver (Dunbar)",
+      "to": "YVR Airport",
+      "distance": "≈15 km",
+      "distance_km": 15,
+      "time": "≈20 min",
+      "baseline_hours": 0.35,
+      "planned_hours": "0.5",
+      "estimated_liters": "2",
+      "estimated_gas_cad": "4",
+      "note": "Short morning drive from Dunbar to YVR airport rental return for flight CX867 (14:10)."
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "label": "Banff planning",
+      "url": "https://parks.canada.ca/pn-np/ab/banff/visit"
+    },
+    {
+      "id": 2,
+      "label": "Lake Louise and Moraine access",
+      "url": "https://parks.canada.ca/pn-np/ab/banff/visit/parkbus/louise"
+    },
+    {
+      "id": 3,
+      "label": "Yoho planning",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/visit"
+    },
+    {
+      "id": 4,
+      "label": "Jasper planning",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/visit"
+    },
+    {
+      "id": 5,
+      "label": "Jasper 2026 bulletin",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/bulletins/76ECAE58-8A63-480C-8304-DC903837EEFD"
+    },
+    {
+      "id": 6,
+      "label": "McArthurGlen plan your visit",
+      "url": "https://www.mcarthurglen.com/en/outlets/ca/designer-outlet-vancouver/plan-your-visit"
+    },
+    {
+      "id": 7,
+      "label": "Baker Creek",
+      "url": "https://www.basecampresorts.com/bakercreek"
+    },
+    {
+      "id": 8,
+      "label": "Storm Mountain Lodge",
+      "url": "https://stormmountainlodge.com/logcabins"
+    },
+    {
+      "id": 9,
+      "label": "Emerald Lake Lodge",
+      "url": "https://crmr.com/resorts/emerald-lake/accommodations/"
+    },
+    {
+      "id": 10,
+      "label": "Paradise Lodge",
+      "url": "https://www.paradiselodge.com/"
+    },
+    {
+      "id": 11,
+      "label": "The Juniper",
+      "url": "https://thejuniper.com/"
+    },
+    {
+      "id": 12,
+      "label": "Tourism Jasper stays",
+      "url": "https://jasper.travel/accommodations"
+    },
+    {
+      "id": 13,
+      "label": "Canmore stays",
+      "url": "https://www.explorecanmore.ca/all-accommodations"
+    },
+    {
+      "id": 14,
+      "label": "Tourism Whistler activities",
+      "url": "https://www.whistler.com/activities/"
+    },
+    {
+      "id": 15,
+      "label": "Icefields Parkway stops",
+      "url": "https://icefieldsparkway.com/things-to-do-see/popular-stops-along-the-way"
+    },
+    {
+      "id": 16,
+      "label": "DriveBC",
+      "url": "https://www.drivebc.ca/"
+    },
+    {
+      "id": 17,
+      "label": "511 Alberta",
+      "url": "https://511.alberta.ca/"
+    },
+    {
+      "id": 18,
+      "label": "Parks Canada advisories",
+      "url": "https://parks.canada.ca/voyage-travel/advisories"
+    },
+    {
+      "id": 19,
+      "label": "Fuel-price planning reference · CAA / NRCan context",
+      "url": "https://natural-resources.canada.ca/energy-facts/energy-facts/transportation-energy-use/gasoline-prices"
+    },
+    {
+      "id": 20,
+      "label": "Rental-car planning reference",
+      "url": "https://ca.kayak.com/Cheap-Vancouver-Car-Rentals.6668.cars.ksp"
+    },
+    {
+      "id": 21,
+      "label": "Canada travel-cost planning reference",
+      "url": "https://www.budgetyourtrip.com/canada"
+    },
+    {
+      "id": 22,
+      "label": "Toyota Canada · 2026 RAV4 features",
+      "url": "https://www.toyota.ca/en/vehicles/rav4/features-benefits/"
+    },
+    {
+      "id": 23,
+      "label": "Toyota Canada · 2026 RAV4 fuel economy and AWD",
+      "url": "https://media.toyota.ca/en/releases/2026/the-canadian-built-rav4-is-all-new-for-2026--and-offered-at-sugg.html"
+    },
+    {
+      "id": 24,
+      "label": "IIHS · 2026 Top Safety Picks",
+      "url": "https://www.iihs.org/ratings/top-safety-picks"
+    },
+    {
+      "id": 25,
+      "label": "British Columbia · winter tires for visitors and rentals",
+      "url": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/seasonal/winter-driving/visitors"
+    },
+    {
+      "id": 26,
+      "label": "Consumer Reports · Toyota RAV4 reliability",
+      "url": "https://www.consumerreports.org/cars/toyota/rav4/2025/reliability/"
+    },
+    {
+      "id": 27,
+      "label": "Toyota Canada · 2026 Highlander specifications",
+      "url": "https://www.toyota.ca/en/vehicles/highlander/models-specifications"
+    },
+    {
+      "id": 28,
+      "label": "Environment Canada · Canadian climate normals",
+      "url": "https://climate.weather.gc.ca/climate_normals/index_e.html"
+    },
+    {
+      "id": 29,
+      "label": "Parks Canada · mountain safety and fall conditions",
+      "url": "https://parks.canada.ca/pn-np/mtn/securiteenmontagne-mountainsafety/ete-summer"
+    },
+    {
+      "id": 30,
+      "label": "Parks Canada · Banff / Lake Louise safety information",
+      "url": "https://parks.canada.ca/pn-np/ab/banff/visit/~/-/media/09aa48b48c2b45c2baceef01630c981d.ashx"
+    },
+    {
+      "id": 31,
+      "label": "Parks Canada · Jasper weather and climate",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/visit/meteo-climate"
+    },
+    {
+      "id": 32,
+      "label": "Parks Canada · Mount Revelstoke weather and climate",
+      "url": "https://parks.canada.ca/pn-np/bc/revelstoke/visit/meteo-weather"
+    },
+    {
+      "id": 33,
+      "label": "British Columbia · designated winter tire and chain routes",
+      "url": "https://www2.gov.bc.ca/gov/content/transportation/driving-and-cycling/traveller-information/seasonal/winter-driving/winter-tire-and-chain-up-routes"
+    },
+    {
+      "id": 34,
+      "label": "XE · HKD to CAD exchange rate reference",
+      "url": "https://www.xe.com/currencyconverter/convert?Amount=1&From=HKD&To=CAD"
+    },
+    {
+      "id": 35,
+      "label": "Parks Canada · Passes, permits and fees (Discovery Pass)",
+      "url": "https://parks.canada.ca/voyage-travel/admission"
+    },
+    {
+      "id": 36,
+      "label": "Parks Canada · Banff National Park fees",
+      "url": "https://parks.canada.ca/pn-np/ab/banff/visit/tarifs-fees"
+    },
+    {
+      "id": 37,
+      "label": "Parks Canada · Icefields Parkway gates and passes",
+      "url": "https://parks.canada.ca/pn-np/ab/banff/visit/promenadedesglaciers-icefieldsparkway"
+    },
+    {
+      "id": 38,
+      "label": "Alberta · Kananaskis Conservation Pass",
+      "url": "https://alberta.ca/kananaskis-conservation-pass.aspx"
+    },
+    {
+      "id": 39,
+      "label": "Parks Canada · Lake Louise and Moraine Lake shuttle reservations",
+      "url": "https://parks.canada.ca/pn-np/ab/banff/visit/parkbus/louise"
+    },
+    {
+      "id": 40,
+      "label": "Parks Canada · Jasper National Park road restrictions and seasonal closures 2026",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/visit/routes-roads"
+    },
+    {
+      "id": 41,
+      "label": "Parks Canada · Yoho National Park hours and seasonal closures",
+      "url": "https://parks.canada.ca/pn-np/bc/yoho/visit/heures-hours"
+    },
+    {
+      "id": 42,
+      "label": "Parks Canada · Miette Hot Springs hours of operation",
+      "url": "https://parks.canada.ca/pn-np/ab/jasper/sources-miette-springs/heures-hours"
+    }
+  ],
+  "airbnb_stays": [
+    {
+      "base": "Vancouver · Clive Avenue",
+      "dates": "23–26 September (3 nights)",
+      "note": "3264 Vanness Avenue, Vancouver."
+    },
+    {
+      "base": "Kamloops",
+      "dates": "26–27 September (1 night)",
+      "note": "824 Nicolani Drive, Kamloops."
+    },
+    {
+      "base": "Golden",
+      "dates": "27–28 September (1 night)",
+      "note": "818 12 Street South, Golden."
+    },
+    {
+      "base": "Harvie Heights",
+      "dates": "28–30 September (2 nights)",
+      "note": "750 Harvie Heights Road."
+    },
+    {
+      "base": "Bragg Creek",
+      "dates": "30 September–2 October (2 nights)",
+      "note": "50023 Boyce Ranch Road."
+    },
+    {
+      "base": "Yellowhead County / Jasper",
+      "dates": "2–3 October (1 night)",
+      "note": "50410 Yellowhead Highway (one night — the Jasper content becomes a checkout-morning day-trip)."
+    },
+    {
+      "base": "Revelstoke",
+      "dates": "3–4 October (1 night)",
+      "note": "1500 1 Street West, Revelstoke."
+    },
+    {
+      "base": "Kelowna",
+      "dates": "4–5 October (1 night)",
+      "note": "104 Clifton Road North, Kelowna."
+    },
+    {
+      "base": "Vancouver · Dunbar Street",
+      "dates": "5–7 October (2 nights)",
+      "note": "3540 West 37th Avenue. Confirm the final night: 'Oct 5–7' needs a checkout later than 7 Oct 10:00."
+    }
+  ],
+  "budget": {
+    "currency": "CAD",
+    "scope": "Estimated for 2 travelers across the updated 15-day plan. Eight accommodation bookings and the 14-day Toyota RAV4 rental price were supplied in HKD and converted at 1 HKD = 0.176799 CAD on the planning date. International flights are excluded because fares were not supplied.",
+    "assumptions": {
+      "total_driving_km": 3234,
+      "vehicle_consumption_l_per_100km": "8.0 planning",
+      "fuel_price_blended_cad_per_l": "1.85–2.05",
+      "food_per_person_per_day_cad": "60–110",
+      "airbnb_and_accommodation_prices": "actual supplied booking totals"
+    },
+    "categories": [
+      {
+        "name": "Supplied accommodation bookings",
+        "low": 4600.13,
+        "high": 4600.13,
+        "note": "HKD 26,019 total across 8 bookings, converted to CAD; taxes/fees are included only if included in the amounts you supplied."
+      },
+      {
+        "name": "Bragg Creek · 2 Oct bridge day (calgary city + Kananaskis loop)",
+        "low": 0,
+        "high": 0,
+        "note": "No new lodging needed — 2 Oct is a Calgary city day that loops back to the same Bragg Creek Airbnb, so the line is CAD 0. Fuel and food for the loop sit in the Gas and Food categories."
+      },
+      {
+        "name": "Toyota RAV4 rental · FWD · unlimited mileage",
+        "low": 620.03,
+        "high": 620.03,
+        "note": "HKD 3,507 for 14 days, converted to CAD; confirm whether insurance, taxes and deposits are included."
+      },
+      {
+        "name": "Gas",
+        "low": 429,
+        "high": 572,
+        "note": "FWD RAV4 planning estimate for about 3,234 km at approximately 8.0 L/100 km; mountain weather, traffic and detours can increase this."
+      },
+      {
+        "name": "Food and groceries",
+        "low": 1920,
+        "high": 3520,
+        "note": "CAD 60–110 per person per day for 15 days; kitchen access should make the lower end achievable."
+      },
+      {
+        "name": "Parks, attractions, parking and local transport",
+        "low": 600,
+        "high": 1200,
+        "note": "Planning allowance for park access, lake shuttle, parking and selected paid sights; verify current fees."
+      }
+    ],
+    "totals": {
+      "low": 8169,
+      "high": 10512,
+      "recommended_reserve_low": 8986,
+      "recommended_reserve_high": 11563
+    },
+    "note": "The 10% reserve covers fuel-price movement, parking, weather detours and small unplanned costs. Add international airfare and any Airbnb charges not included in the supplied amounts. Confirm the Dunbar checkout time: '5–7 Oct' is held as checkout 7 Oct 11:00."
+  },
+  "driving_summary": {
+    "intercity_km": 2784,
+    "local_sightseeing_allowance_km": 450,
+    "total_planned_km": 3234,
+    "baseline_driving_hours": 35.3,
+    "planned_driving_hours_without_long_stops": "42–50",
+    "fuel_liters_at_9_l_per_100km": 291,
+    "fuel_liters_at_10_l_per_100km": 323,
+    "fuel_estimate_cad": "540–661",
+    "method": "Route-leg estimates plus a 450 km local/sightseeing allowance, now including the Calgary + Kananaskis loop. Fuel uses 9–10 L/100 km, BC CAD 2.05/L and Alberta CAD 1.55/L planning prices; prices and conditions can change.",
+    "extra_day_note": "1 Oct was repurposed from a quiet foothills day into a Calgary city + Kananaskis day, and the 3 Oct Jasper content now shares a day with the Yellowhead → Revelstoke transfer. Total planned distance rose from 3,166 km to 3,234 km."
+  },
+  "vehicle_recommendation": {
+    "recommendation": "Toyota RAV4 FWD",
+    "rental_class": "Toyota RAV4 FWD or equivalent",
+    "verdict": "The booked RAV4 FWD is a sensible, economical choice for two people, but it is not as capable as AWD on snow or steep unplowed access roads. For this route, tire quality and conservative driving are essential.",
+    "why": [
+      "The booked FWD RAV4 is practical for two travelers and economical, but it does not provide AWD traction on snow or steep unplowed access roads.",
+      "Its compact-SUV dimensions suit mountain highways, Airbnb parking and Vancouver city driving.",
+      "Toyota's RAV4 has a strong recent reliability record; the recent model is recommended by Consumer Reports.",
+      "The exact fuel type was not supplied, so the site uses the conservative gasoline FWD planning estimate of about 8.0 L/100 km.",
+      "The Mazda CX-90 is an excellent handling alternative, but it is larger, more complex and less economical for this trip."
+    ],
+    "ranked_alternatives": [
+      {
+        "rank": 1,
+        "model": "Toyota Highlander Hybrid AWD",
+        "best_for": "More luggage and maximum highway comfort",
+        "tradeoff": "Bigger, harder to park and thirstier than the RAV4."
+      },
+      {
+        "rank": 2,
+        "model": "Mazda CX-90 AWD",
+        "best_for": "Handling, power and premium cabin",
+        "tradeoff": "Larger, more expensive to fuel, and a newer/more complex powertrain."
+      },
+      {
+        "rank": 3,
+        "model": "Toyota RAV4 gasoline AWD",
+        "best_for": "Fallback if the hybrid is unavailable",
+        "tradeoff": "Still practical, but higher fuel use."
+      },
+      {
+        "rank": 4,
+        "model": "Ford Escape Hybrid AWD",
+        "best_for": "Acceptable alternative",
+        "tradeoff": "Choose only if the rental condition, tires and roadside coverage are clearly better."
+      }
+    ],
+    "avoid_for_this_trip": [
+      "Toyota Corolla, Toyota Camry, Nissan Kicks, Volkswagen Taos and Audi Q3: less cargo/reserve and less suitable as the preferred choice for remote mountain legs.",
+      "Ford Expedition, Infiniti QX80, Volvo XC90, Hyundai Palisade and full-size SUVs: unnecessary size and fuel cost for two people.",
+      "Jeep Wrangler: capable off pavement, but noisier, less comfortable and less fuel-efficient for your long highway days.",
+      "Jeep Grand Cherokee, Ford Edge and similar larger gasoline SUVs: workable, but not as balanced as the RAV4 Hybrid AWD."
+    ],
+    "fuel_comparison_for_3166km": [
+      {
+        "model": "RAV4 FWD (booked)",
+        "consumption": "≈8.0 L/100 km planning",
+        "liters": "≈270 L",
+        "fuel_cost_cad": "≈445–595"
+      },
+      {
+        "model": "RAV4 Hybrid AWD (if upgraded)",
+        "consumption": "≈5.5–6.2 L/100 km",
+        "liters": "≈178–200 L",
+        "fuel_cost_cad": "≈327–398"
+      },
+      {
+        "model": "Highlander Hybrid AWD",
+        "consumption": "≈6.7 L/100 km",
+        "liters": "≈217 L",
+        "fuel_cost_cad": "≈398–434"
+      },
+      {
+        "model": "RAV4 gasoline AWD",
+        "consumption": "≈8.0 L/100 km",
+        "liters": "≈258 L",
+        "fuel_cost_cad": "≈480–521"
+      },
+      {
+        "model": "CX-90 Turbo AWD",
+        "consumption": "≈9.8 L/100 km planning",
+        "liters": "≈317 L",
+        "fuel_cost_cad": "≈582–633"
+      },
+      {
+        "model": "Wrangler / large gasoline SUV",
+        "consumption": "≈11.0 L/100 km planning",
+        "liters": "≈355 L",
+        "fuel_cost_cad": "≈654–715"
+      }
+    ],
+    "must_confirm_at_pickup": [
+      "3PMSF mountain/snowflake-rated tires, not just the words AWD or M+S",
+      "Tire tread, spare tire or proper puncture kit, and roadside-assistance number",
+      "No dashboard warning lights; inspect brakes, wipers, windshield and lights",
+      "Snow/road mode operation, luggage cover, and rental restrictions on mountain roads",
+      "Exact model is subject to rental-fleet availability; reserve the vehicle class, not only the badge."
+    ],
+    "important_tire_note": "For the Sea-to-Sky, Coquihalla, Icefields Parkway and interior BC, tire specification matters more than AWD branding. BC advises out-of-province visitors to ensure rental vehicles have winter tires; 3PMSF tires provide better winter traction than basic M+S tires.",
+    "source_ids": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ]
+  },
+  "lodging_details": [
+    {
+      "number": 1,
+      "base": "Clive Avenue / Collingwood",
+      "address": "3264 Vanness Avenue, Vancouver, BC V5R 4V3",
+      "check_in": "2026-09-23 16:00",
+      "check_out": "2026-09-26 10:00",
+      "price_hkd": 6056,
+      "price_cad": 1070.69,
+      "note": "Joyce-Collingwood / East Vancouver."
+    },
+    {
+      "number": 2,
+      "base": "Kamloops",
+      "address": "824 Nicolani Drive, Kamloops, BC V2B 5B3",
+      "check_in": "2026-09-26 15:00",
+      "check_out": "2026-09-27 10:00",
+      "price_hkd": 1200,
+      "price_cad": 212.16,
+      "note": "North Kamloops base."
+    },
+    {
+      "number": 3,
+      "base": "Golden",
+      "address": "818 12 Street South, Golden, BC V0A 1H0",
+      "check_in": "2026-09-27 16:00",
+      "check_out": "2026-09-28 11:00",
+      "price_hkd": 1816,
+      "price_cad": 321.07,
+      "note": "Rutherford House area in Golden."
+    },
+    {
+      "number": 4,
+      "base": "Harvie Heights",
+      "address": "750 Harvie Heights Road, Harvie Heights, AB T1W 2W2",
+      "check_in": "2026-09-28 17:00",
+      "check_out": "2026-09-30 11:00",
+      "price_hkd": 4994,
+      "price_cad": 882.93,
+      "note": "Bow Valley base between Canmore and Banff."
+    },
+    {
+      "number": 5,
+      "base": "Bragg Creek",
+      "address": "50023 Boyce Ranch Road, Bragg Creek, AB T0L 0K0",
+      "check_in": "2026-09-30 16:00",
+      "check_out": "2026-10-02 11:00",
+      "price_hkd": 3634,
+      "price_cad": 642.49,
+      "note": "Foothills acreage Airbnb, 30 Sep–2 Oct (2 nights). Night 1: arrive from Harvie Heights with the Kananaskis stops on the way in. Night 2: a full Calgary day on 1 Oct that loops back here. Checkout 11:00 on 2 Oct sits inside the Icefields Parkway transfer day."
+    },
+    {
+      "number": 6,
+      "base": "Yellowhead County / Hinton",
+      "address": "50410 Yellowhead Highway, Yellowhead County, AB T0E 0C0",
+      "check_in": "2026-10-02 16:00",
+      "check_out": "2026-10-03 10:00",
+      "price_hkd": 4460,
+      "price_cad": 788.52,
+      "note": "Jasper Gateway Glamping area (single night, 2–3 Oct). WARNING: the 3 Oct Jasper content runs from a base you have already checked out of — confirm with the host whether a late checkout or luggage drop is possible."
+    },
+    {
+      "number": 7,
+      "base": "Revelstoke",
+      "address": "1500 1 Street West, Revelstoke, BC V0E 2S0",
+      "check_in": "2026-10-03 16:00",
+      "check_out": "2026-10-04 11:00",
+      "price_hkd": 1150,
+      "price_cad": 203.32,
+      "note": "Central Revelstoke address."
+    },
+    {
+      "number": 8,
+      "base": "Kelowna / Glenmore",
+      "address": "104 Clifton Road North, Kelowna, BC V1V 1A1",
+      "check_in": "2026-10-04 15:00",
+      "check_out": "2026-10-05 11:00",
+      "price_hkd": 1694,
+      "price_cad": 299.5,
+      "note": "Glenmore area, north of downtown Kelowna."
+    },
+    {
+      "number": 9,
+      "base": "Dunbar-Southlands",
+      "address": "3540 West 37th Avenue, Vancouver, BC V6N 2V8",
+      "check_in": "2026-10-05 15:00",
+      "check_out": "2026-10-07 11:00",
+      "price_hkd": 2223,
+      "price_cad": 392.93,
+      "note": "Final Vancouver booking, 5–7 October (2 nights). The booking message says 'Oct 5–7', so checkout is held at 7 Oct 11:00 — confirm the exact checkout time with the host, since the CX867 flight departs at 14:10 the same day."
+    },
+    {
+      "number": 10,
+      "base": "Possible extra night — confirm with host",
+      "address": "3540 West 37th Avenue, Vancouver, BC V6N 2V8",
+      "check_in": "2026-10-07 15:00",
+      "check_out": "2026-10-08 10:00",
+      "price_hkd": 0,
+      "price_cad": 0,
+      "note": "NOT BOOKED. Only needed if 'Vancouver Oct 5–7' actually means a checkout on 8 Oct; the booked CX867 departs 7 Oct 14:10, so under the supplied dates you leave on 7 Oct and this night does not exist. Confirm the checkout time rather than assuming either way."
+    }
+  ],
+  "weather": {
+    "summary": "Late September to early October crosses several microclimates: mild/wet Vancouver, cooler Golden and the Rockies, potentially frosty or snowy high elevations, a short Calgary city day, then a relatively mild but cool Kelowna and Vancouver finish. These are planning ranges, not a forecast.",
+    "locations": [
+      {
+        "place": "Vancouver · Collingwood / Dunbar",
+        "dates": "23–26 Sep and 5–7 Oct",
+        "typical": "September average high about 19°C / low 11°C; October average high about 14°C / low 9°C",
+        "pack": "Rain shell, light layers and comfortable waterproof shoes; umbrella is optional but useful."
+      },
+      {
+        "place": "Golden",
+        "dates": "27–28 Sep",
+        "typical": "September averages around 13–18°C daytime and 2–5°C overnight; October cools quickly and can approach freezing at night",
+        "pack": "Warm mid-layer, insulated jacket, gloves and hat for mornings/evenings."
+      },
+      {
+        "place": "Harvie Heights / Banff / Lake Louise",
+        "dates": "28–30 Sep",
+        "typical": "Banff September average high/low about 16.1°C / 2.7°C; October about 10.1°C / −1.1°C. Early snow and frost are possible.",
+        "pack": "Insulating layer, waterproof shell, traction-capable footwear and optional microspikes."
+      },
+      {
+        "place": "Bragg Creek / Kananaskis / Calgary",
+        "dates": "30 Sep–2 Oct (Kananaskis 30 Sep, Calgary 1 Oct)",
+        "typical": "Foothills and city weather can shift quickly; Calgary mornings may be frosty while sunny afternoons are comfortable, and Kananaskis is colder than the city.",
+        "pack": "Layering system, rain/wind shell, gloves, warm hat and extra dry socks."
+      },
+      {
+        "place": "Yellowhead County / Jasper–Hinton area",
+        "dates": "2–3 Oct",
+        "typical": "Jasper-area early October brings fall colours and cooler temperatures; mountain roads can be colder than Hinton or valley forecasts.",
+        "pack": "Warm layer, gloves, hat, headlamp and vehicle emergency clothing; plan for limited cell service on the Parkway."
+      },
+      {
+        "place": "Revelstoke",
+        "dates": "3–4 Oct",
+        "typical": "Cooler and wetter; snow is usually more likely on Mount Revelstoke's summit, and weather varies sharply by elevation.",
+        "pack": "Waterproof shell, warm layer, waterproof footwear and dry spare socks."
+      },
+      {
+        "place": "Kelowna",
+        "dates": "4–5 Oct",
+        "typical": "October averages around 12°C daytime and 4°C overnight, with rain possible.",
+        "pack": "Light insulated layer, rain shell, walking shoes and sun protection."
+      }
+    ],
+    "daily_check": [
+      "Environment Canada forecast and alerts",
+      "DriveBC / 511 Alberta road conditions",
+      "Parks Canada trail and facility advisories",
+      "AQHI and wildfire notices",
+      "Sunrise/sunset and daylight remaining before every mountain transfer"
+    ],
+    "driving_rule": "The Toyota RAV4 is FWD, not AWD. Do not continue onto a snowy or icy mountain route simply because the schedule says so; wait, reroute or use a safer transport option if conditions exceed your experience."
+  },
+  "packing_checklist": {
+    "documents_and_phone": [
+      "Passports and flight confirmations",
+      "Accommodation confirmations and check-in instructions",
+      "Rental agreement and insurance details",
+      "Driver's licence and payment card",
+      "Offline maps for the Icefields Parkway and rural Airbnb approaches",
+      "Power bank, charging cables and car charger"
+    ],
+    "clothing_system": [
+      "4–5 moisture-wicking base tops",
+      "2 long-sleeve tops",
+      "1 fleece or wool mid-layer",
+      "1 lightweight insulated jacket",
+      "1 waterproof and windproof hooded shell",
+      "2 hiking/outdoor trousers",
+      "1 comfortable travel trouser or jeans",
+      "Warm hat / beanie",
+      "Light gloves",
+      "Neck gaiter",
+      "7–8 pairs of socks including warm wool socks",
+      "Sleepwear and underwear",
+      "Compact umbrella for Vancouver"
+    ],
+    "footwear": [
+      "Waterproof walking or hiking shoes with good tread",
+      "Comfortable city shoes",
+      "Optional microspikes / traction cleats for icy trails",
+      "Optional gaiters for wet or snowy trail sections"
+    ],
+    "outdoor_and_health": [
+      "Small daypack",
+      "Reusable water bottles",
+      "Headlamp",
+      "Sunglasses",
+      "Sunscreen and lip balm",
+      "Basic first-aid kit and blister care",
+      "Personal medicines and prescriptions",
+      "Insect repellent",
+      "Tissues / hand sanitizer",
+      "Binoculars or camera"
+    ],
+    "car_and_emergency": [
+      "Warm blanket or emergency bivy",
+      "Extra water and shelf-stable snacks",
+      "Reflective vest or flashlight",
+      "Ice scraper / brush",
+      "Paper towels and rubbish bags",
+      "Basic tire-pressure check and roadside-assistance details",
+      "Confirm spare tire or puncture kit",
+      "Confirm 3PMSF winter-rated tires or an approved alternative before leaving the rental counter",
+      "Do not leave luggage visible in the parked RAV4"
+    ],
+    "airbnb_items_to_confirm": [
+      "Parking and driveway access, especially Boyce Ranch Road and rural Yellowhead County",
+      "Heating and extra blankets",
+      "Laundry access and detergent",
+      "Kitchen equipment and groceries",
+      "Check-in key / lockbox instructions",
+      "Wi-Fi and mobile coverage",
+      "Any wildfire, fire-ban or outdoor-fire rules"
+    ],
+    "not_needed_to_overpack": [
+      "Heavy winter coat unless the forecast changes sharply",
+      "Multiple formal outfits",
+      "Large hiking gear if you are doing only short walks",
+      "Camping equipment—the itinerary uses booked accommodations"
+    ],
+    "source_ids": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ]
+  },
+  "park_passes": {
+    "summary": "Your Annual Parks Canada Discovery Pass is ALREADY PURCHASED and active for this trip, so every national park stop is prepaid: Glacier NP (Rogers Pass, Hemlock Grove), Yoho NP (Natural Bridge, Emerald Lake, Takakkaw Falls), Banff NP (Lake Louise area, Bow Lake, Peyto Lake, Johnston Canyon, Icefields Parkway), Jasper NP (Columbia Icefield, Athabasca Glacier, Sunwapta Falls, Athabasca Falls, Pyramid Lake, Maligne corridor) and Mount Revelstoke NP. Display the pass at park gates. The ONLY remaining paid pass is the separate Alberta Kananaskis Conservation Pass for the Calgary / Elbow Falls day on 1 Oct and the Bragg Creek foothills. There is no shuttle reservation on this route: every lake is drive-up.",
+    "parks_canada_discovery_pass": {
+      "name": "Parks Canada Discovery Pass (Family / Group)",
+      "price_cad": 0,
+      "price_note": "Already purchased. No further cost. Keep the physical pass in the vehicle — there is no digital-only pass, so display it at every park gate.",
+      "covers": [
+        "Yoho National Park (Natural Bridge, Emerald Lake, Takakkaw Falls, Field)",
+        "Glacier National Park (Rogers Pass Discovery Centre, Hemlock Grove Boardwalk)",
+        "Banff National Park (Lake Louise, Moraine Lake, Bow Lake, Peyto Lake, Crowfoot Glacier, Johnston Canyon, Icefields Parkway)",
+        "Jasper National Park (Columbia Icefield, Athabasca Glacier, Glacier Skywalk, Sunwapta Falls, Athabasca Falls, Pyramid Lake, Maligne corridor; Valley of the Five Lakes is closed for 2026)",
+        "Mount Revelstoke National Park (Meadows in the Sky Parkway)",
+        "Kootenay National Park and all National Historic Sites"
+      ],
+      "days_used": "Every national-park day on the route: 27 Sep (Glacier/Rogers Pass), 28 Sep (Yoho), 29 Sep (Banff, Johnston Canyon and Grassi Lakes), 2 Oct (Icefields Parkway: Bow Lake, Peyto Lake, Columbia Icefield), 3 Oct (Jasper morning — Pyramid Lake), 4 Oct (Mount Revelstoke option). 30 Sep is Kananaskis Country (provincial) and needs the separate Kananaskis Conservation Pass.",
+      "where_to_buy": "Already purchased. Nothing to buy. Just carry the pass in the vehicle.",
+      "how_to_display": "Print/hang the pass on the dashboard or rear-view mirror, printed date side visible, at every park gate. No digital-only pass is accepted.",
+      "buy_anytime_note": "Not applicable — the annual pass is already active.",
+      "status": "PURCHASED — Annual Discovery Pass active for this trip"
+    },
+    "kananaskis_conservation_pass": {
+      "name": "Kananaskis Conservation Pass (Alberta provincial)",
+      "price_cad": "15 per day / 90 per year",
+      "covers": "Parking at provincial park and public-land sites in Kananaskis Country and the Bow Valley, including Elbow Falls, Elbow Valley and West Bragg Creek trailheads.",
+      "days_needed": "30 Sep (the arrival day: Elbow Falls and Elbow Valley parking on Highway 66) plus any Bragg Creek foothills parking on 1–2 Oct. The pass covers the day you park, so register the plate before 11:59 pm on 30 Sep.",
+      "where_to_buy": "Online at alberta.ca before 11:59 pm on the visit date, or in person / on Wi-Fi at Kananaskis Visitor Information Centres. Must register the rental car's licence plate.",
+      "note": "NOT covered by the Discovery Pass. Required only when you park at provincial sites, not when driving through on Highway 66."
+    },
+    "shuttle_reservation": {
+      "name": "Lake Louise / Moraine Lake Shuttle",
+      "price_cad": "Not required",
+      "requirement": "ELIMINATED — itinerary swapped to 100% drive-up lakes (Two Jack Lake, Lake Minnewanka, Vermilion Lakes, Emerald Lake, Bow Lake, Peyto Lake).",
+      "where_to_book": "No booking needed. Every lake on this route is directly accessible with your personal vehicle and covered by your Annual National Pass.",
+      "status": "NOT REQUIRED"
+    },
+    "not_required": [
+      "A Kootenay pass is not needed on this route.",
+      "A Waterton / Elk Island pass is not needed on this route.",
+      "Columbia Icefield Glacier Adventure or Skywalk is an optional paid tour, not covered by any pass."
+    ],
+    "budget_estimate_cad": "About CAD 182.50–197.50 total for two travelers: Discovery Pass CAD 167.50 (already purchased) + Kananaskis day pass(es) CAD 15–30. The Lake Louise / Moraine shuttle is not required on this route.",
+    "source_ids": [
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "park_passes_note": "The Kananaskis Conservation Pass is separate from the Discovery Pass: buy online at alberta.ca, registered to the rental car's licence plate, before 11:59 pm on the day of use."
+  },
+  "hidden_gems": {
+    "summary": "Hand-picked hidden and off-the-beaten-path spots per stay: nature, viewpoints, shops, malls and seasonal experiences for late September to early October. Check opening status for anything seasonal before you go — fall shoulder-season hours change fast.",
+    "bases": [
+      {
+        "base": "Vancouver · Clive Avenue (Joyce-Collingwood) · 23–26 Sep",
+        "spots": [
+          {
+            "name": "Wang Shanghai soup dumplings",
+            "kind": "food",
+            "why": "Some of the best xiaolongbao in the city, tucked in the old London Drugs parking lot at 3328 Kingsway and easy to miss.",
+            "tip": "Go early, it fills up."
+          },
+          {
+            "name": "Kingsway 3300-block food walk",
+            "kind": "food",
+            "why": "24 restaurants and bakeries from Chinese, Filipino, Chilean and Indian communities along one block.",
+            "tip": "Do a small-plates crawl for lunch."
+          },
+          {
+            "name": "Burnaby Village Museum",
+            "kind": "culture",
+            "why": "1912 carousel, blacksmith, historic streetcar — a step back in time.",
+            "tip": "Seasonal; check autumn weekend hours."
+          },
+          {
+            "name": "Deer Lake Park",
+            "kind": "nature",
+            "why": "Lake loop, heritage homes and Japanese garden; quiet autumn colours.",
+            "tip": "Combines with Metrotown."
+          },
+          {
+            "name": "Vancouver Police Museum",
+            "kind": "culture",
+            "why": "Former morgue turned museum of crime history and evidence — eerie but unforgettable.",
+            "tip": "Compact, rainy-day option."
+          },
+          {
+            "name": "Lynn Canyon Park & suspension bridge",
+            "kind": "nature",
+            "why": "Free alternative to Capilano, less crowded, deep rainforest and a 50 m suspension bridge.",
+            "tip": "North Vancouver; take the Seabus/SkyTrain combo."
+          }
+        ]
+      },
+      {
+        "base": "Vancouver · Dunbar-Southlands · 5–7 Oct",
+        "spots": [
+          {
+            "name": "Pacific Spirit Regional Park",
+            "kind": "nature",
+            "why": "Huge coastal rainforest right from your door; golden autumn trails.",
+            "tip": "Start early, quietest then."
+          },
+          {
+            "name": "Museum of Anthropology (UBC)",
+            "kind": "culture",
+            "why": "World-class Indigenous art — totem poles, carvings, great architecture.",
+            "tip": "Paid; check hours."
+          },
+          {
+            "name": "Queen Elizabeth Park + Quarry Garden",
+            "kind": "view",
+            "why": "Vancouver's highest point, free panoramic city and mountain views.",
+            "tip": "Best at sunset."
+          },
+          {
+            "name": "Kitsilano & Jericho beaches",
+            "kind": "nature",
+            "why": "Scenic waterfront walk with mountain views and no crowds in October.",
+            "tip": "Pack a hot drink."
+          },
+          {
+            "name": "Granville Island",
+            "kind": "shop",
+            "why": "Public market, artisan studios and food stalls — a relaxed afternoon outing.",
+            "tip": "Go mid-afternoon to dodge the rush."
+          },
+          {
+            "name": "Stanley Park Prospect Point",
+            "kind": "view",
+            "why": "Lions Gate Bridge and harbour panorama from the high lookout.",
+            "tip": "Drive or bus up; short walk from the lot."
+          }
+        ]
+      },
+      {
+        "base": "Kamloops · bridge night · 26 Sep",
+        "spots": [
+          {
+            "name": "Paul Lake Provincial Park",
+            "kind": "nature",
+            "why": "Mountain lake 25 minutes from town with easy lakeside trails and far fewer people.",
+            "tip": "Short leg-stretch on arrival."
+          },
+          {
+            "name": "Kenna Cartwright Park sunset",
+            "kind": "view",
+            "why": "Kamloops' largest park with big-sky panoramic views over the valley.",
+            "tip": "Best just before sunset."
+          },
+          {
+            "name": "BC Wildlife Park",
+            "kind": "culture",
+            "why": "Black bears, wolves, elk, moose and raptors in natural enclosures.",
+            "tip": "Only if you have daylight to spare."
+          },
+          {
+            "name": "Thompson Valley Wine Trail",
+            "kind": "food",
+            "why": "One of Canada's northernmost wine regions; harvest season in late September.",
+            "tip": "Sagewood or Privato for boutique tastings."
+          }
+        ]
+      },
+      {
+        "base": "Golden · 27–28 Sep",
+        "spots": [
+          {
+            "name": "Wapta Falls",
+            "kind": "nature",
+            "why": "The widest waterfall on the Kicking Horse River (~100 m across), easy family trail 30 min from Golden.",
+            "tip": "Tucked in Yoho; quietest in the morning."
+          },
+          {
+            "name": "Takakkaw Falls",
+            "kind": "nature",
+            "why": "Canada's second-tallest waterfall at 373 m, visible from the road and thundering in the canyon.",
+            "tip": "Yoho; road is seasonal, verify access."
+          },
+          {
+            "name": "Thompson Falls",
+            "kind": "nature",
+            "why": "Under-the-radar powerful waterfall on the Blaeberry River, ~30 min from downtown and car-accessible.",
+            "tip": "Easy overlook, few visitors."
+          },
+          {
+            "name": "Golden Skybridge",
+            "kind": "view",
+            "why": "Canada's highest suspension bridge pair over a canyon — with zipline, swing and mountain coaster.",
+            "tip": "Paid; check if the coaster is running in shoulder season."
+          },
+          {
+            "name": "Emerald Lake & Natural Bridge at sunset",
+            "kind": "view",
+            "why": "Already on the route, but going late-day beats the midday crowds and lights Yoho's limestone cliffs gold.",
+            "tip": "Pair with a Field coffee stop."
+          }
+        ]
+      },
+      {
+        "base": "Harvie Heights · Banff / Canmore · 28–30 Sep",
+        "spots": [
+          {
+            "name": "Johnson Lake",
+            "kind": "nature",
+            "why": "Banff's best-kept-secret lake — calm water, forest loop, way fewer people than Lake Louise.",
+            "tip": "Easy flat trail, great morning."
+          },
+          {
+            "name": "Vermilion Lakes",
+            "kind": "view",
+            "why": "Classic mirror-like reflections of Mount Rundle at sunrise or sunset.",
+            "tip": "Scenic drive from Banff Ave, no hiking needed."
+          },
+          {
+            "name": "Cascade Ponds + Two Jack Lake",
+            "kind": "nature",
+            "why": "Quiet picnic-style spots with big mountain views minutes from Banff.",
+            "tip": "Great fall-colour photography."
+          },
+          {
+            "name": "Grassi Lakes (Canmore)",
+            "kind": "nature",
+            "why": "Vivid turquoise lakes under limestone cliffs; short hike from Canmore.",
+            "tip": "Take the easy 'easy route', steep route is slippery."
+          },
+          {
+            "name": "Policeman's Creek Boardwalk (Canmore)",
+            "kind": "nature",
+            "why": "Elevated wetland boardwalk with Three Sisters reflections from downtown.",
+            "tip": "Dawn = mirror water."
+          },
+          {
+            "name": "Canmore Engine Bridge",
+            "kind": "view",
+            "why": "Historic rail bridge turned pedestrian crossing; best vantage of Mount Rundle.",
+            "tip": "Golden-hour photo spot."
+          },
+          {
+            "name": "Quarry Lake (Canmore)",
+            "kind": "nature",
+            "why": "Local favourite for a calm lakeside sit and sunset.",
+            "tip": "Great with a picnic."
+          },
+          {
+            "name": "The Ink Pots",
+            "kind": "nature",
+            "why": "Secret alpine meadow with six colourful spring-fed pools, past Johnston Canyon's Upper Falls.",
+            "tip": "Moderate 6 km each way; larches in fall."
+          }
+        ]
+      },
+      {
+        "base": "Bragg Creek / Kananaskis · 30 Sep–2 Oct",
+        "spots": [
+          {
+            "name": "Calgary downtown walk (Stephen Ave + East Village)",
+            "kind": "culture",
+            "why": "Sandstone heritage blocks, the RiverWalk and Studio Bell — the compact downtown core is walkable in two to three hours.",
+            "tip": "Park at City Hall or the Telus Convention Centre parkade; use the +15 skywalks if it rains."
+          },
+          {
+            "name": "Forgetmenot Pond",
+            "kind": "nature",
+            "why": "Genuine hidden gem: a serene reflection pond with an easy loop through aspen that glows gold in autumn.",
+            "tip": "Free, quiet in October; needs Kananaskis pass to park."
+          },
+          {
+            "name": "Elbow Falls & Elbow Valley",
+            "kind": "nature",
+            "why": "Short walkway to river falls with flame-coloured fall foliage.",
+            "tip": "Go early, popular on weekends."
+          },
+          {
+            "name": "West Bragg Creek trails",
+            "kind": "nature",
+            "why": "Tens of kilometres of foothills singletrack and forest trails from the village.",
+            "tip": "Easy loops near the trailhead."
+          },
+          {
+            "name": "Bass Pro Shops Calgary (Deerfoot Meadows, 11411 40 St SE)",
+            "kind": "shop",
+            "why": "The giant outdoor megastore you found — fish aquariums, boats, hunting/fishing gear and a wildlife display; an attraction in itself.",
+            "tip": "About 40 min from Bragg Creek; weekday is quieter."
+          },
+          {
+            "name": "MEC Calgary (830 10 Ave SW)",
+            "kind": "shop",
+            "why": "Serious outdoor gear — microspikes, layering, maps — if you need anything for the mountains.",
+            "tip": "Also downtown: make it a coffee + walk combo."
+          },
+          {
+            "name": "Bragg Creek village",
+            "kind": "shop",
+            "why": "One main street of boutiques, a bakery and café culture in the foothills.",
+            "tip": "Try the local bakery before heading out."
+          }
+        ]
+      },
+      {
+        "base": "Yellowhead County / Hinton · Jasper area · 2–3 Oct (1 night)",
+        "spots": [
+          {
+            "name": "Hinton Beaver Boardwalk",
+            "kind": "nature",
+            "why": "Canada's longest freshwater boardwalk, winding through beaver wetland.",
+            "tip": "Easy, flat, great for wildlife."
+          },
+          {
+            "name": "Obed Lake Provincial Park",
+            "kind": "nature",
+            "why": "Hidden-gem lake ~20 min from Hinton; still water and golden reeds at sunset.",
+            "tip": "Go about an hour before sunset."
+          },
+          {
+            "name": "Pyramid Lake & Patricia Lake",
+            "kind": "view",
+            "why": "Quiet lakes with mountain backdrops; also your best dark-sky / aurora spot near Jasper.",
+            "tip": "Face north after midnight for aurora."
+          },
+          {
+            "name": "Athabasca Falls",
+            "kind": "nature",
+            "why": "Powerful canyon waterfall — open and worth the short walk.",
+            "tip": "On the Icefields Parkway route."
+          },
+          {
+            "name": "Maligne Lake road + Medicine Lake",
+            "kind": "nature",
+            "why": "The 'vanishing lake' in fall as it drains underground, then Maligne Lake and Moose Lake loop.",
+            "tip": "Maligne Canyon and Edith Cavell are CLOSED for 2026 — do this instead."
+          },
+          {
+            "name": "Miette Hot Springs",
+            "kind": "nature",
+            "why": "Remote mountain hot pools near the park's east edge.",
+            "tip": "Confirm early-October hours; entry after 3 pm is often cheaper."
+          }
+        ]
+      },
+      {
+        "base": "Revelstoke · 3–4 Oct",
+        "spots": [
+          {
+            "name": "Giant Cedars Boardwalk",
+            "kind": "nature",
+            "why": "500 m loop through ancient inland rainforest with huge cedars — magical light.",
+            "tip": "Boardwalk typically closes right after Thanksgiving; check the bulletin for 2026."
+          },
+          {
+            "name": "Skunk Cabbage Boardwalk",
+            "kind": "nature",
+            "why": "Marsh boardwalk with muskrat and beaver activity, great for wildlife.",
+            "tip": "Easy and family-friendly."
+          },
+          {
+            "name": "Meadows in the Sky Parkway",
+            "kind": "view",
+            "why": "26 km paved road to Mount Revelstoke's summit meadows and viewpoints.",
+            "tip": "High-elevation snow likely by 4 Oct; check if the road is open."
+          },
+          {
+            "name": "The Enchanted Forest + SkyTrek Adventure Park",
+            "kind": "culture",
+            "why": "Whimsical forest trail with fairy-tale scenes, then tree-canopy ziplines next door on Hwy 1.",
+            "tip": "32 km west of town, on the Kelowna route."
+          },
+          {
+            "name": "Halfway / Halcyon / Nakusp Hot Springs",
+            "kind": "nature",
+            "why": "Natural hot pools in forest settings within a short drive.",
+            "tip": "Best on the cold evening of 3 Oct."
+          }
+        ]
+      },
+      {
+        "base": "Kelowna / Glenmore · 4–5 Oct",
+        "spots": [
+          {
+            "name": "Myra Canyon Trestles",
+            "kind": "view",
+            "why": "18 historic Kettle Valley Rail trestles and tunnels over a deep canyon — the #1 fall pick, with golden western larches.",
+            "tip": "Free parking at Myra or Ruth station; flat 12 km trail; larch peak is mid-late Oct."
+          },
+          {
+            "name": "Knox Mountain + Paul's Tomb",
+            "kind": "view",
+            "why": "Panoramic views over Okanagan Lake and downtown from the city's signature hike, ending at a hidden beach.",
+            "tip": "1 hr return; sunsets are superb."
+          },
+          {
+            "name": "Crawford Falls",
+            "kind": "nature",
+            "why": "Hidden canyon waterfalls in East Kelowna.",
+            "tip": "Use the longer safe route, not the rope descent."
+          },
+          {
+            "name": "Mission Creek Greenway — salmon run",
+            "kind": "nature",
+            "why": "October's free natural spectacle: kokanee salmon spawning in the creek.",
+            "tip": "First three weeks of October are best."
+          },
+          {
+            "name": "Orchard Park Mall",
+            "kind": "mall",
+            "why": "The Okanagan's largest indoor mall with 170+ stores, food court and cinema.",
+            "tip": "Wet-day option; Kelowna Farmers Market also here on Wed/Sat mornings."
+          },
+          {
+            "name": "Wineries (Summerhill, CedarCreek, Tantalus)",
+            "kind": "food",
+            "why": "Harvest season tasting — golden vineyards, lake views.",
+            "tip": "Book tastings in advance in fall."
+          },
+          {
+            "name": "Davison Orchards (Vernon)",
+            "kind": "food",
+            "why": "U-pick apples, pumpkins, a bakery and farm animals — classic fall outing.",
+            "tip": "30 min north, on the way from Revelstoke."
+          }
+        ]
+      }
+    ],
+    "source_ids": [
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
+  },
+  "closures_and_safety": {
+    "summary": "Verified 2026 status (Parks Canada + Alberta official sources): everything on the driving route is open for the trip dates. Two famous Jasper sights are closed for the whole 2026 season and are intentionally NOT on this route. Several seasonal items end right around your travel window, so check status before each day.",
+    "closed_2026": [
+      {
+        "name": "Maligne Canyon (Jasper NP)",
+        "status": "Closed all 2026",
+        "detail": "Parks Canada rehabilitation after the 2024 wildfire; picnic area and trail not permitted. Not on the route — the plan uses Maligne Lake Road + Medicine Lake instead."
+      },
+      {
+        "name": "Edith Cavell Road / Angel Glacier / Cavell Meadows (Jasper NP)",
+        "status": "Closed all 2026",
+        "detail": "Slope instability and landslide risk. Not on the route."
+      },
+      {
+        "name": "Valley of the Five Lakes trails (Jasper)",
+        "status": "Closed until further notice",
+        "detail": "Trails 9 and 9C closed for hazard tree removal (closed until further notice). Removed from the 3 Oct Jasper content; Pyramid Lake, Medicine Lake and Miette Hot Springs are the open substitutes."
+      },
+      {
+        "name": "Wabasso & Whirlpool campgrounds",
+        "status": "Closed 2026",
+        "detail": "Full infrastructure rebuilds. Irrelevant — the plan uses booked private accommodation."
+      }
+    ],
+    "open_with_conditions": [
+      {
+        "name": "Moraine Lake + Lake Louise (not on this route)",
+        "status": "Shuttle eliminated — drive-up lakes instead",
+        "detail": "Moraine Lake Road stays closed to personal vehicles year-round and Lake Louise parking fills before sunrise, so both were removed from this plan. The Banff day uses drive-up lakes instead: Two Jack Lake, Lake Minnewanka and Vermilion Lakes — no shuttle, no reservation, no extra ticket."
+      },
+      {
+        "name": "Takakkaw Falls / Yoho Valley Road (Sep 28)",
+        "status": "Open, season ends ~Oct 13",
+        "detail": "Road open mid-June to mid-October, weather permitting. Parking is limited; arrive early."
+      },
+      {
+        "name": "Miette Hot Springs (Oct 3)",
+        "status": "Open, season ends Oct 12",
+        "detail": "Last operating day 2026 is Oct 12. Fall hours ~10:30 am–9 pm, last entry 30 min before close. First-come, first-served."
+      },
+      {
+        "name": "Giant Cedars Boardwalk (Oct 4)",
+        "status": "Open, closes ~Oct 13",
+        "detail": "Parkway snow possible at summit in early Oct; check the trail-conditions report and bulletins before driving up."
+      },
+      {
+        "name": "Meadows in the Sky Parkway (Oct 4)",
+        "status": "Open, closes mid-Oct",
+        "detail": "Snow possible at the summit ~1,600 m elevation gain. If the summit road is closed by snow, stay low — Golden Skybridge and Giant Cedars still work."
+      }
+    ],
+    "winter_tire_rule": "From 1 October, BC law REQUIRES winter tires (M+S minimum, 3PMSF mountain/snowflake recommended) on designated routes including the Sea-to-Sky (Hwy 99), Coquihalla (Hwy 5), Okanagan Connector (Hwy 97C) and the Trans-Canada through the mountain sections. The booked RAV4 is FWD — confirm winter-rated tires and a spare/puncture kit at the rental counter BEFORE leaving Vancouver. The Oct 1–5 legs fall inside this window.",
+    "driving_rule": "The booked RAV4 is FWD, not AWD. If a mountain road is snowy or icy, do not continue just because it is in the itinerary — wait, reroute or shorten the day. Check DriveBC (drivebc.ca) and 511 Alberta (511.alberta.ca) before every mountain transfer.",
+    "verify_before_you_go": [
+      "Parks Canada bulletins (Banff, Jasper, Yoho, Mount Revelstoke)",
+      "DriveBC road conditions + 511 Alberta",
+      "Kananaskis Conservation Pass purchase for 1 Oct (register the rental plate) — no shuttle needed on this route",
+      "Miette Hot Springs fall hours and last-entry time",
+      "Takakkaw / Yoho Valley Road and Giant Cedars / parkway status"
+    ],
+    "source_ids": [
+      35,
+      36,
+      37,
+      39,
+      40,
+      41,
+      42
+    ]
+  },
+  "instagram_spots": {
+    "note": "Highest-impact photo stops on this route, ordered by day. All national-park stops are covered by the active Annual Discovery Pass.",
+    "spots": [
+      {
+        "day": "Day 4 · 26 Sep (Kamloops)",
+        "location": "Kamloops Hoodoos & Silt Bluffs",
+        "why": "Desert-like rock pillars and slot-canyon terrain that looks nothing like typical Canada. Golden-hour gold.",
+        "access": "~10 min drive from the Airbnb; short walk",
+        "best_light": "Late afternoon / golden hour"
+      },
+      {
+        "day": "Day 4 · 26 Sep (Kamloops)",
+        "location": "Lac du Bois Grasslands",
+        "why": "Rolling dry grassland hills above the Thompson valley — the 'Arizona of BC'.",
+        "access": "Drive-up viewpoint plus short walks",
+        "best_light": "Golden hour"
+      },
+      {
+        "day": "Day 4 · 26 Sep (Kamloops)",
+        "location": "Riverside Park & Thompson River",
+        "why": "Sunset over the river with the city lights coming on.",
+        "access": "Downtown, flat walk",
+        "best_light": "Sunset"
+      },
+      {
+        "day": "Day 5 · 27 Sep",
+        "location": "Hemlock Grove Boardwalk (Glacier NP)",
+        "why": "Moody old-growth rainforest boardwalk — rare interior temperate rainforest.",
+        "access": "30-45 min barrier-free boardwalk",
+        "best_light": "Any; soft light is best"
+      },
+      {
+        "day": "Day 5 · 27 Sep",
+        "location": "Rogers Pass Discovery Centre",
+        "why": "Alpine pass panorama and railway-heritage exhibits.",
+        "access": "Roadside, minutes from parking",
+        "best_light": "Midday"
+      },
+      {
+        "day": "Day 5 · 27 Sep",
+        "location": "Golden Skybridge",
+        "why": "Canada's highest suspension bridges over a canyon and waterfall.",
+        "access": "1.5-2 h visit, gentle walk",
+        "best_light": "Afternoon"
+      },
+      {
+        "day": "Day 6 · 28 Sep",
+        "location": "Natural Bridge (Yoho)",
+        "why": "River carved straight through solid rock into a natural arch.",
+        "access": "20-30 min, roadside",
+        "best_light": "Midday"
+      },
+      {
+        "day": "Day 6 · 28 Sep",
+        "location": "Emerald Lake (Yoho)",
+        "why": "THE signature Yoho shot: turquoise water, President Range, wooden bridge.",
+        "access": "1.5-2 h shoreline loop, easy",
+        "best_light": "Morning calm water"
+      },
+      {
+        "day": "Day 6 · 28 Sep",
+        "location": "Takakkaw Falls (Yoho)",
+        "why": "Canada's second-highest waterfall, thundering spray and sheer rock walls.",
+        "access": "45-75 min; short walk from lot",
+        "best_light": "Midday"
+      },
+      {
+        "day": "Day 7 · 29 Sep",
+        "location": "Two Jack Lake & Lake Minnewanka",
+        "why": "Mirror reflections of Mount Rundle on emerald water and historic red boat docks; 100% drive-up, zero shuttle.",
+        "access": "Direct parking at shoreline; paved roads",
+        "best_light": "Morning calm water (9–11 AM)"
+      },
+      {
+        "day": "Day 7 · 29 Sep",
+        "location": "Vermilion Lakes",
+        "why": "The #1 sunset and mountain-reflection location in Banff; Mount Rundle reflected in glassy waters from wooden docks.",
+        "access": "Paved scenic drive directly along lakeshore; 0-minute walk",
+        "best_light": "Sunset / late afternoon golden hour"
+      },
+      {
+        "day": "Day 7 · 29 Sep",
+        "location": "Surprise Corner & Bow Falls (Banff)",
+        "why": "Classic Fairmont Banff Springs viewpoint plus a tumbling river cascade.",
+        "access": "Roadside viewpoint + short walk",
+        "best_light": "Afternoon"
+      },
+      {
+        "day": "Day 7 · 29 Sep",
+        "location": "Johnston Canyon Lower Falls",
+        "why": "Catwalks bolted to the canyon wall over a roaring gorge — moved onto the Banff/Canmore day because day 8 now runs straight through Kananaskis to Bragg Creek.",
+        "access": "1.5-2 h easy walk",
+        "best_light": "Morning shade is fine"
+      },
+      {
+        "day": "Day 7 · 29 Sep",
+        "location": "Grassi Lakes (Canmore)",
+        "why": "Two vivid turquoise lakes above the Bow Valley; now part of the 29 Sep Canmore afternoon instead of day 8.",
+        "access": "30-40 min easy hike",
+        "best_light": "Midday"
+      },
+      {
+        "day": "Day 8 · 30 Sep (Kananaskis arrival)",
+        "location": "Elbow Falls (Kananaskis)",
+        "why": "The Jumanji / Bourne Legacy waterfall on Highway 66 — the Kananaskis stop on the drive into Bragg Creek, seconds from parking.",
+        "access": "Seconds from parking; 20 km west of the Bragg Creek turnoff",
+        "best_light": "Early afternoon"
+      },
+      {
+        "day": "Day 8 · 30 Sep (Kananaskis arrival)",
+        "location": "Forgetmenot Pond (Kananaskis)",
+        "why": "Still water with mirror reflections of the front ranges; golden aspens this week — first of the Kananaskis stops on the arrival day.",
+        "access": "Flat shoreline, easy",
+        "best_light": "Afternoon calm"
+      },
+      {
+        "day": "Day 9 · 1 Oct (Calgary day option)",
+        "location": "Wedge Pond (Hwy 40)",
+        "why": "Optional add-on east of Bragg on the way back from Calgary if the light is right — Mount Kidd reflected in calm water.",
+        "access": "50 m from parking",
+        "best_light": "Sunrise / golden hour"
+      },
+      {
+        "day": "Day 9 · 1 Oct (Calgary)",
+        "location": "Calgary downtown & RiverWalk",
+        "why": "Sandstone heritage blocks on Stephen Avenue, the Bow River and Studio Bell skyline — an easy urban set between the Kananaskis stops.",
+        "access": "City Hall / Telus Convention Centre parkades; flat walking, +15 skywalks if wet",
+        "best_light": "Late morning"
+      },
+      {
+        "day": "Day 10 · 2 Oct",
+        "location": "Crowfoot Glacier Viewpoint",
+        "why": "A hanging glacier right off the highway — a 0-minute detour.",
+        "access": "Paved roadside pullout",
+        "best_light": "Midday"
+      },
+      {
+        "day": "Day 10 · 2 Oct",
+        "location": "Bow Lake & Num-Ti-Jah Lodge",
+        "why": "Intense glacial turquoise with the historic red-roof lodge on the shore.",
+        "access": "2-min walk to shoreline; 30-60 min",
+        "best_light": "Early / calm water"
+      },
+      {
+        "day": "Day 10 · 2 Oct",
+        "location": "Peyto Lake / Bow Summit",
+        "why": "The most photographed viewpoint in the Canadian Rockies — wolf-head turquoise basin.",
+        "access": "15-min uphill paved walk to the platform",
+        "best_light": "Late morning (9-11am)"
+      },
+      {
+        "day": "Day 10 · 2 Oct",
+        "location": "Columbia Icefield & Athabasca Glacier",
+        "why": "Massive ancient blue ice and a lunar moraine landscape; decade markers show the retreat.",
+        "access": "1.4 km return walk to the glacier toe",
+        "best_light": "Midday (south-facing ice)"
+      },
+      {
+        "day": "Day 10 · 2 Oct",
+        "location": "Sunwapta Falls & Athabasca Falls",
+        "why": "Two of the Rockies' most dramatic canyon waterfalls in the final run to Jasper.",
+        "access": "Short walks from each parking area",
+        "best_light": "Afternoon"
+      },
+      {
+        "day": "Day 11 · 3 Oct (Jasper morning)",
+        "location": "Pyramid Island wooden bridge",
+        "why": "Mirror reflections of Pyramid Mountain from an island footbridge — hit this first on the checkout-morning Jasper loop.",
+        "access": "Flat walk over the bridge from the Pyramid Lake lot",
+        "best_light": "Morning calm"
+      },
+      {
+        "day": "Day 11 · 3 Oct",
+        "location": "Maligne Lake / Spirit Island (option)",
+        "why": "The world-famous Spirit Island viewpoint at the far end of Maligne Lake.",
+        "access": "45-km scenic drive + boat cruise to Spirit Island",
+        "best_light": "Morning"
+      },
+      {
+        "day": "Day 12 · 4 Oct",
+        "location": "Mount Robson Viewpoint",
+        "why": "The highest peak in the Canadian Rockies (3,954 m) rising straight off Hwy 16.",
+        "access": "Roadside visitor-centre viewpoint",
+        "best_light": "Midday"
+      },
+      {
+        "day": "Day 12 · 4 Oct",
+        "location": "Mount Revelstoke Meadows in the Sky (option)",
+        "why": "A summit drive with subalpine meadows and panoramic Selkirk views.",
+        "access": "Drive-up parkway if open",
+        "best_light": "Late afternoon"
+      },
+      {
+        "day": "Day 13 · 5 Oct",
+        "location": "Sicamous & Shuswap Lake",
+        "why": "Wide lake channels and forested shoreline.",
+        "access": "Roadside pullout",
+        "best_light": "Midday"
+      },
+      {
+        "day": "Day 13 · 5 Oct",
+        "location": "Mission Hill Family Estate (West Kelowna)",
+        "why": "Sweeping vineyard-and-lake floor-to-ceiling views from the bell tower.",
+        "access": "Guided tasting / estate walk",
+        "best_light": "Late afternoon"
+      },
+      {
+        "day": "Day 13 · 5 Oct",
+        "location": "Okanagan Lake waterfront (Kelowna)",
+        "why": "Sunset over the lake with the bridge and downtown skyline.",
+        "access": "City Park boardwalk, flat",
+        "best_light": "Sunset"
+      }
+    ]
+  }
+}
